@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Human Resources | AwesomeCo</title>
+    </head>
+    <body>
+        <ul>
+            <li>
+                <a href="help/holiday_pay.html" class="popup">Holiday Pay</a>
+            </li>
+        </ul>
+    
+        <!-- <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script> -->
+        <script src="https://cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
+    
+        <script>
+            $("a.popup").click(function(event){
+                event.preventDefault();
+                window.open(this.getAttribute('href'));
+            });
+        </script>
+    </body>
+</html>

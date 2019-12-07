@@ -18,3 +18,27 @@ p, li{ line-height: 20px; }
     padding: 0;
     display: inline;
 }
+
+#posts{
+    float: left;
+    width: 74%;
+}
+#posts aside{
+    float: right;
+    font-size: 20px;
+    line-height: 40px;
+    margin-left: 5%;
+    width: 35%;
+}
+
+#sidebar{
+    float: left;
+    width: 25%;
+}
+
+#page_footer{
+    clear: both;
+    display: block;
+    text-align: center;
+    width: 100%;
+}

@@ -16,3 +16,7 @@ label{
 
 input{ border: 1px solid #333; }
 input:focus{ background-color: #ffe; }
+
+.simpleColorContainer, .simpleColorDisplay{
+    float: left;
+}

@@ -3,7 +3,7 @@ var applyColorPicker = function(){
 };
 
 Modernizr.load({
-    test: Modernizr.color,
+    test: Modernizr.inputtypes.color,
     nope: "javascripts/jquery.simple-color.js",
     callback: function(url, result){
         if (!result){

@@ -1,4 +1,4 @@
-body{
+ibody{
     margin:15px auto;
     width:960px;
 }
@@ -42,14 +42,4 @@ p, li{ line-height:20px; }
     display: block; 
     text-align: center;
     width: 100%; 
-}
-
-@media only screen and (max-device-width: 480px) {
-    body{ width:480px; }
-    nav, section, header, footer{ margin: 0 10px 0 10px; }
-    
-    #sidebar, #posts{
-      float: none;
-      width: 100%;
-    }
 }

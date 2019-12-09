@@ -1,0 +1,9 @@
+@media only screen and (max-device-width: 480px) {
+    body{ width:480px; }
+    nav, section, header, footer{ margin: 0 10px 0 10px; }
+    
+    #sidebar, #posts{
+      float: none;
+      width: 100%;
+    }
+}

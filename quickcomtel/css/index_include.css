@@ -1,0 +1,102 @@
+.include-top-image{
+  background: url(../img/1.jpg) no-repeat top left;
+  background-size:100% 100%;
+  display: flex;
+  align-items: center;
+}
+.include-top-content{
+  background-color: #3e505d;
+  color:#fff;
+}
+.include-top-content-wraper{
+  padding:10px;
+}
+.include-top-content .include-top-content-wraper:nth-child(2){
+  border-top:1px solid #fff;
+}
+.include-top-content-title{
+  font-size:2.5rem;
+  font-weight: 100;
+  cursor: pointer;
+  padding-top:30px;
+}
+.include-top-content-title:hover{
+  text-decoration: underline;
+}
+.include-top-content-link{
+  font-size:1.5rem;
+  padding-top:20px;
+  padding-bottom:20px;
+}
+.notify{
+  background-color:rgba(55, 103, 152, 0.15);
+  padding:20px;
+  font-size:16px;
+  margin-top:15px;
+  border:1px solid #376798;
+}
+@media(max-width:992px){
+  .include-top-content-wraper{
+    padding:20px 0;
+  }
+  .include-top-content-title{
+    font-size:1.75rem;
+    padding:0 20px;
+  }
+  .include-top-content-link{
+    font-size:1.25rem;
+    padding:0 20px;
+  }
+}
+@media(max-width:767px){
+  .include-top-content .include-top-content-wraper:nth-child(2){
+    border-top:1px solid #fff;
+  }
+  .include-top-content{
+    margin-top:15px;
+    width:calc(100% - 30px);
+    margin-left:15px!important;
+  }
+}
+@media(min-width:1200px){
+  .include-top-content-title{
+    font-size:28px;
+  }
+}
+@media(min-width:1109px){
+  .include-top-content .include-top-content-wraper:nth-child(2){
+    border-top:1px solid #fff!important;
+  }
+  .include-top-content-title{
+    border-left: none!important;
+  }
+  .include-top-content-link{
+    border-left: none!important;
+  }
+}
+@media(max-width:1199px) and (min-width:768px){
+  .include-top-content .include-top-content-wraper:nth-child(2){
+    border-top:none;
+  }
+  .include-top-content .include-top-content-wraper:nth-child(2) .include-top-content-title{
+    border-left: 1px solid #fff;
+  }
+  .include-top-content .include-top-content-wraper:nth-child(2) .include-top-content-link{
+    border-left: 1px solid #fff;
+  }
+}
+.notify-icon{
+  float: left;
+  width:30px
+}
+.notify-content{
+  float: left;
+  width:calc(100% - 60px)
+}
+.notify-button{
+  float: left;
+  width:30px;
+  font-size:30px;
+  cursor:pointer;
+  text-align:right
+}

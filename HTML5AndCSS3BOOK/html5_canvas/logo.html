@@ -12,19 +12,20 @@
     </canvas>
     <script>
         var drawLogo = function () {
-            /** @type {HTMLCanvasElement} */
             var canvas = document.getElementById("logo");
             var context = canvas.getContext("2d");
 
             context.fillStyle = "#FF0000";
             context.strokeStyle = "#FF0000";
+
             context.lineWidth = 2;
             context.beginPath();
             context.moveTo(0, 40);
             context.lineTo(30, 0);
             context.lineTo(60, 40);
             context.lineTo(285, 40);
-            context.stroke();
+
+            context.fill();
             context.closePath();
 
             context.font = "italic 40px 'Arial'";
@@ -34,20 +35,24 @@
             context.translate(20, 20);
             context.fillRect(0, 0, 20, 20);
 
-            context.fillStyle="#FFFFFF";
-            context.strokeStyle="#FFFFFF";
-            context.lineWidth=2;
+            context.fillStyle = "#FFFFFF";
+            context.strokeStyle = "#FFFFFF";
+
+            context.lineWidth = 2;
             context.beginPath();
-            context.moveTo(0,20);
-            context.lineTo(10,0);
-            context.lineTo(20,20);
-            context.lineTo(0,20);
+            context.moveTo(0, 20);
+            context.lineTo(10, 0);
+            context.lineTo(20, 20);
+            context.lineTo(0, 20);
+
             context.fill();
             context.closePath();
             context.restore();
+
         };
 
         var canvas = document.getElementById("logo");
+
         if (canvas.getContext) {
             drawLogo();
         }

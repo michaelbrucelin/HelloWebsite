@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Test offline</title>
+</head>
+
+<body>
+    <script>
+        if (navigator.onLine) {
+            alert('online')
+        } else {
+            alert('offline');
+        }
+
+        window.addEventListener("offline", function (e) {
+            alert("offline");
+        }, false);
+
+        window.addEventListener("online", function (e) {
+            alert("online");
+        }, false);
+
+    </script>
+</body>
+
+</html>

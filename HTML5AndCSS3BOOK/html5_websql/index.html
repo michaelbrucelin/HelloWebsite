@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!--[if lte IE 9]>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <![endif]-->
+
+    <title>AwesomeNotes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="sidebar">
+        <input type="button" id="new_button" value="New note">
+        <input type="button" id="delete_all_button" value="Delete all">
+
+        <ul id="notes">
+        </ul>
+    </section>
+    <section id="main">
+        <form>
+            <ol>
+                <li>
+                    <input type="submit" id="save_button" value="Save">
+                    <input type="submit" id="delete_button" value="Delete">
+                </li>
+                <li>
+                    <label for="title">Title</label>
+                    <input type="text" id="title">
+                </li>
+                <li>
+                    <label for="note">Note</label>
+                    <textarea id="note"></textarea>
+                </li>
+            </ol>
+        </form>
+    </section>
+
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+    <script src="https://cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
+    <script src="javascripts/notes.js"></script>
+</body>
+
+</html>

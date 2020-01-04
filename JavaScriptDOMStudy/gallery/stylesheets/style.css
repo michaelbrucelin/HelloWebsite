@@ -1,3 +1,21 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    background-color: #cccccc;
+    margin: 1em 1%;
+}
+
+a, p {
+    color: #cc6600;
+    background-color: transparent;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+ul {
+    padding: 0 0 0 10px;
+}
+
 #leftbar {
     float: left;
     width: 15%;

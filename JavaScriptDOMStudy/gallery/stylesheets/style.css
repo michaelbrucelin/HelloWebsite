@@ -1,0 +1,13 @@
+#leftbar {
+    float: left;
+    width: 15%;
+}
+
+#imagearea {
+    float: right;
+    width: 85%;
+}
+
+#placeholder {
+    width: 100%;
+}

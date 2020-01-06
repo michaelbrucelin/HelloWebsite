@@ -7,10 +7,17 @@ function showPic(whichpic) {
     description.firstChild.nodeValue = text;
 }
 
-function onclick() {
+function onclickRegist() {
+    if (!document.getElementById("leftbar")) {
+        return false;
+    }
     var allatag = document.getElementById("leftbar").getElementsByTagName("a");
     for (var i = 0; i < allatag.length; i++) {
-        allatag[i].setAttribute("onclick", "showPic(this); return false;");
+        //allatag[i].setAttribute("onclick", "showPic(this); return false;");
+        allatag[i].onclick = function () {
+            showPic(this);
+            return false;
+        }
     }
 }
 
@@ -19,4 +26,18 @@ function countBodyChildren() {
     alert(body_element.childNodes.length);
 }
 
-window.onload = onclick;
+function addLoadEvent(func) {
+    var oldonload = window.onload;
+    if (typeof window.onload != 'function') {
+        window.onload = func;
+    } else {
+        window.onload = function () {
+            oldonload();
+            func();
+        }
+    }
+}
+
+window.onload = function () {
+    this.onclickRegist();
+}

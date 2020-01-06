@@ -1,4 +1,13 @@
 var height = "about 5'10\" tall";
 //alert(height);
 
-alert(document.getElementById("myh3").setAttribute("class", "myh3"));
+function popUp() {
+    window.open("http://www.pinger.cc", "popup", "width=320,height=480");
+}
+
+function popUpRegist(){
+    var btn = document.getElementById("btnPopUp");
+    btn.setAttribute("onclick", "popUp();")
+}
+
+window.onload = popUpRegist;

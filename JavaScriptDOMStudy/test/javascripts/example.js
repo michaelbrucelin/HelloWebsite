@@ -15,4 +15,15 @@ function popUpRegist(){
     btn.onclick = popUp;
 }
 
-window.onload = popUpRegist;
+function newPTag(){
+    var para = document.createElement("p");
+    var txt = document.createTextNode("Hello World!");
+    para.appendChild(txt);
+    var testdiv=document.getElementById("testdiv");
+    testdiv.appendChild(para);
+}
+
+window.onload = function(){
+    this.popUpRegist();
+    this.newPTag();
+}

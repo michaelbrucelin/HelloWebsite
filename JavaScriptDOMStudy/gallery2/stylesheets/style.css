@@ -1,0 +1,33 @@
+body {
+    width: 95%;
+    margin: 5px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    background-color: #cccccc;
+}
+
+a, p {
+    color: #cc6600;
+    background-color: transparent;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+ul {
+    list-style: circle;
+    padding: 0 0 0 10px;
+}
+
+#leftbar {
+    float: left;
+    width: 15%;
+}
+
+#imagearea {
+    float: right;
+    width: 85%;
+}
+
+#placeholder {
+    width: 100%;
+}

@@ -17,6 +17,14 @@
             <td><input type="button" value="启动" onclick="f1()"></td>
             <td><input type="button" value="停止" onclick="f2()"></td>
         </tr>
+        <tr>
+            <td><input type="button" value="自增" onclick="zizeng1()"></td>
+            <td><input type="text" id="zizeng1" value="1"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="自增" onclick="zizeng2()"></td>
+            <td><input type="number" id="zizeng2" value="1"></td>
+        </tr>
     </table>
     <script>
         //window.alert('hello world.');
@@ -25,11 +33,29 @@
         var timer0;
         function f1() {
             alert("start");
-            timer0 = setInterval(function () { alert('hello timer.') }, 2000);
+            timer0 = setInterval(() => {
+                alert('hello timer.')
+            }, 2000);
         }
         function f2() {
             alert("stop");
             if (timer0) { clearInterval(timer0); }
+        }
+        function zizeng1() {
+            alert("start");
+            setInterval(() => {
+                var numbox = document.getElementById("zizeng1");
+                num = numbox.value;
+                num = parseInt(num) + 1;
+                numbox.value = num;
+            }, 1000);
+        }
+        function zizeng2() {
+            alert("start");
+            setInterval(() => {
+                var numbox = document.getElementById("zizeng2");
+                numbox.value++;
+            }, 1000);
         }
     </script>
 </body>

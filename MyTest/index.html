@@ -1,21 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <table>
         <tr>
             <td><label for="userid" accesskey="n">用户名</label></td>
             <td><input id="userid" name="username" type="text"></td>
         </tr>
+        <tr>
+            <td><input type="button" value="启动" onclick="f1()"></td>
+            <td><input type="button" value="停止" onclick="f2()"></td>
+        </tr>
     </table>
     <script>
-        window.alert('hello world.');
-        window.confirm('are you ok?');
+        //window.alert('hello world.');
+        //window.confirm('are you ok?');
         //window.setInterval('alert(\'hello world\')', 5000);
+        var timer0;
+        function f1() {
+            alert("start");
+            timer0 = setInterval(function () { alert('hello timer.') }, 2000);
+        }
+        function f2() {
+            alert("stop");
+            if (timer0) { clearInterval(timer0); }
+        }
     </script>
 </body>
+
 </html>

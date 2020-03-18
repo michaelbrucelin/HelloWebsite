@@ -57,6 +57,12 @@
                 numbox.value++;
             }, 1000);
         }
+
+        window.onload = () => {
+            document.onmousemove = () => {
+                document.title = "Document: " + window.event.clientX + "-" + window.event.clientY;
+            }
+        }
     </script>
 </body>
 

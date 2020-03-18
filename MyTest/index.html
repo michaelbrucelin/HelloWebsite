@@ -26,8 +26,12 @@
             <td><input type="number" id="zizeng2" value="1"></td>
         </tr>
         <tr>
-            <td><input type="button" value="+" onclick="srcElementSample()"><input type="button" value="-" onclick="srcElementSample()"></td>
-            <td><input type="button" value="*" onclick="srcElementSample()"><input type="button" value="/" onclick="srcElementSample()"></td>
+            <td><input type="button" value="+" onclick="srcElementSample()"></td>
+            <td><input type="button" value="-" onclick="srcElementSample()"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="*" onclick="srcElementSample()"></td>
+            <td><input type="button" value="/" onclick="srcElementSample()"></td>
         </tr>
     </table>
     <script>
@@ -66,7 +70,7 @@
             var v = window.event.srcElement.value;
             if (v == "+") { alert("加法"); }
             else if (v == "-") { alert("减法"); }
-            else { alert("I don't konw."); }
+            else { alert("I don't kown."); }
         }
 
         window.onload = () => {

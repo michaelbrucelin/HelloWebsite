@@ -25,6 +25,10 @@
             <td><input type="button" value="自增" onclick="zizeng2()"></td>
             <td><input type="number" id="zizeng2" value="1"></td>
         </tr>
+        <tr>
+            <td><input type="button" value="+" onclick="srcElementSample()"></td><input type="button" value="-" onclick="srcElementSample()">
+            <td><input type="button" value="*" onclick="srcElementSample()"></td><input type="button" value="/" onclick="srcElementSample()">
+        </tr>
     </table>
     <script>
         //window.alert('hello world.');
@@ -56,6 +60,13 @@
                 var numbox = document.getElementById("zizeng2");
                 numbox.value++;
             }, 1000);
+        }
+
+        function srcElementSample() {
+            var v = window.event.srcElement.value;
+            if (v == "+") { alert("加法"); }
+            else if (v == "-") { alert("减法"); }
+            else { alert("I don't konw."); }
         }
 
         window.onload = () => {

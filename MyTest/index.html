@@ -35,19 +35,23 @@
         </tr>
         <tr>
             <td><label for="fcopy">禁止复制</label></td>
-            <td><input id="fcopy" name="fcopy" type="text"></td>
+            <td><input id="fcopy" name="fcopy" type="text" oncopy="alert('禁止复制');return false;"></td>
         </tr>
         <tr>
             <td><label for="fcut">禁止剪切</label></td>
-            <td><input id="fcut" name="fcut" type="text"></td>
+            <td><input id="fcut" name="fcut" type="text" oncut="alert('禁止剪切');return false;"></td>
         </tr>
         <tr>
             <td><label for="fpaste">禁止粘贴</label></td>
-            <td><input id="fpaste" name="fpaste" type="text"></td>
+            <td><input id="fpaste" name="fpaste" type="text" onpaste="alert('禁止粘贴');return false;"></td>
         </tr>
         <tr>
             <td><label for="fdrag">禁止拖拽</label></td>
-            <td><input id="fdrag" name="fdrag" type="text"></td>
+            <td><input id="fdrag" name="fdrag" type="text" ondrag="alert('禁止拖拽');return false;"></td>
+        </tr>
+        <tr>
+            <td><label for="addcr">添加版权</label></td>
+            <td><input id="addcr" name="addcr" type="text" oncopy="AddCopyRight()"></td>
         </tr>
     </table>
     <script>
@@ -89,9 +93,15 @@
             else { alert("I don't kown."); }
         }
 
+        function AddCopyRight(){
+            var v = document.getElementById("addcr").value;
+            //alert(v);
+            //window.Clipboard.Set
+        }
+
         window.onload = () => {
             document.onmousemove = () => {
-                document.title = "Document: " + window.event.clientX + "-" + window.event.clientY;
+                document.title = window.event.clientX + "-" + window.event.clientY;
             }
         }
     </script>

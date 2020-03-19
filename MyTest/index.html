@@ -51,13 +51,14 @@
         </tr>
         <tr>
             <td><label for="addcr">添加版权</label></td>
-            <td><input id="addcr" name="addcr" type="text" oncopy="AddCopyRight()"></td>
+            <td><input id="addcr" name="addcr" type="text" oncopy="setTimeout('AddCopyRight()',10)"></td>
         </tr>
     </table>
     <script>
         //window.alert('hello world.');
         //window.confirm('are you ok?');
         //window.setInterval('alert(\'hello world\')', 5000);
+
         var timer0;
         function f1() {
             alert("start");
@@ -93,10 +94,10 @@
             else { alert("I don't kown."); }
         }
 
-        function AddCopyRight(){
+        function AddCopyRight() {
             var v = document.getElementById("addcr").value;
-            //alert(v);
-            //window.Clipboard.Set
+            v = v + "<br />CopyRight: http://mlin.403found.cn";
+            window.clipboardData.setData("text", v);
         }
 
         window.onload = () => {

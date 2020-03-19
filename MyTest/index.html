@@ -53,6 +53,23 @@
             <td><label for="addcr">添加版权</label></td>
             <td><input id="addcr" name="addcr" type="text" oncopy="setTimeout('AddCopyRight()',10)"></td>
         </tr>
+        <tr>
+            <td><label for="sex" onclick="GetSex()">性别</label></td>
+            <td>
+                <input type="radio" name="sex" value="male">
+                <input type="radio" name="sex" value="female">
+                <input type="radio" name="sex" value="unkown">
+            </td>
+        </tr>
+        <tr>
+            <td><label>全选</label><input type="checkbox" onclick="SetAllChks()"></td>
+            <td>
+                <input type="checkbox" name="chks" value="A">
+                <input type="checkbox" name="chks" value="B">
+                <input type="checkbox" name="chks" value="C">
+                <input type="checkbox" name="chks" value="D">
+            </td>
+        </tr>
     </table>
     <script>
         //window.alert('hello world.');
@@ -98,6 +115,26 @@
             var v = document.getElementById("addcr").value;
             v = v + "<br />CopyRight: http://mlin.403found.cn";
             window.clipboardData.setData("text", v);
+        }
+
+        function GetSex() {
+            var rdos = document.getElementsByName("sex");
+            for (let i = 0; i < rdos.length; i++) {
+                if (rdos[i].checked) {
+                    alert(rdos[i].value);
+                    break;
+                }
+            }
+        }
+
+        function SetAllChks() {
+            var ifchk = event.srcElement.checked;
+            var chks = document.getElementsByName("chks");
+            for (let i = 0; i < chks.length; i++) {
+                //if (chks[i].type == "checkbox") {
+                chks[i].checked = ifchk;
+                //}
+            }
         }
 
         window.onload = () => {

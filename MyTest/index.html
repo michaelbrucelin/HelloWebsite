@@ -72,16 +72,23 @@
             </td>
         </tr>
     </table>
+
     <table onclick="alert('table')">
         <tr onclick="alert('tr R1')">
             <td onclick="alert('td R1C1')"><label onclick="alert('label R1C1')">R1C1</label></td>
-            <td onclick="alert('td R1C2')"><label onclick="alert('label R1C2'); window.event.cancelBubble='true'">R1C2</label></td>
+            <td onclick="alert('td R1C2')"><label
+                    onclick="alert('label R1C2'); window.event.cancelBubble='true'">R1C2</label></td>
         </tr>
         <tr>
             <td><label>R2C1</label></td>
             <td><label>R2C2</label></td>
         </tr>
     </table>
+
+    <div id="div1">
+        <input type="text" id="txt1">
+    </div>
+
     <script>
         //window.alert('hello world.');
         //window.confirm('are you ok?');
@@ -151,6 +158,18 @@
         window.onload = () => {
             document.onmousemove = () => {
                 document.title = window.event.clientX + "-" + window.event.clientY;
+            }
+
+            //var btn = document.createElement("<input type='button' value='动态创建'>")
+            var btn = document.createElement("input");
+            btn.type = "button";
+            btn.value = "动态创建";
+            var div1 = document.getElementById("div1");
+            div1.appendChild(btn);
+
+            btn.onclick = () => {
+                var txt1 = document.getElementById("txt1");
+                div1.removeChild(txt1);
             }
         }
     </script>

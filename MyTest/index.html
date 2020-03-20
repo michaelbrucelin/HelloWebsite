@@ -155,6 +155,14 @@
             }
         }
 
+        function CreateTableDynamic() {
+            var json = [
+                { "name": "microsoft", "stie": "https://www.microsoft.com" },
+                { "name": "google", "stie": "https://www.google.com" },
+                { "name": "github", "stie": "https://www.github.com" },
+            ];
+        }
+
         window.onload = () => {
             document.onmousemove = () => {
                 document.title = window.event.clientX + "-" + window.event.clientY;

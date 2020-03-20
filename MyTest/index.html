@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
 </head>
 
 <body>
@@ -69,6 +70,16 @@
                 <input type="checkbox" name="chks" value="C">
                 <input type="checkbox" name="chks" value="D">
             </td>
+        </tr>
+    </table>
+    <table onclick="alert('table')">
+        <tr onclick="alert('tr R1')">
+            <td onclick="alert('td R1C1')"><label onclick="alert('label R1C1')">R1C1</label></td>
+            <td onclick="alert('td R1C2')"><label onclick="alert('label R1C2'); window.event.cancelBubble='true'">R1C2</label></td>
+        </tr>
+        <tr>
+            <td><label>R2C1</label></td>
+            <td><label>R2C2</label></td>
         </tr>
     </table>
     <script>

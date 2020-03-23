@@ -89,8 +89,9 @@
         <input type="text" id="txt1">
     </div>
     <div id="div2">
-
+        <input type="button" value="创建表格" onclick="CreateTableDynamic()">
     </div>
+    <div id="div3" style="position: absolute; background-color: aqua; width: 88px; height: 88px;"></div>
 
     <script>
         //window.alert('hello world.');
@@ -176,16 +177,25 @@
                 tr.appendChild(td1);
                 var td2 = document.createElement("td");
                 td2.innerHTML = "<a href='" + site.stie + "'>" + site.name + "</a>";
-                te.appendChild(td2);
+                tr.appendChild(td2);
+                var td3 = document.createElement("td");
+                td3.innerText = site.stie;
+                tr.appendChild(td3);
                 table.appendChild(tr);
             }
 
-            div.appendChild()
+            div.appendChild(table);
         }
 
         window.onload = () => {
+            var div3 = document.getElementById("div3");
             document.onmousemove = () => {
-                document.title = window.event.clientX + "-" + window.event.clientY;
+                document.title = event.clientX + "-" + event.clientY;
+
+                div3.innerText = event.clientX + "-" + event.clientY;
+                div3.style.left = event.clientX;
+                div3.style.top = event.clientY;
+                div3.innerText = "{" + event.clientX + "-" + event.clientY + "}";
             }
 
             //var btn = document.createElement("<input type='button' value='动态创建'>")
@@ -199,6 +209,7 @@
                 var txt1 = document.getElementById("txt1");
                 div1.removeChild(txt1);
             }
+
         }
     </script>
 </body>

@@ -91,7 +91,7 @@
     <div id="div2">
         <input type="button" value="创建表格" onclick="CreateTableDynamic()">
     </div>
-    <div id="div3" style="position: absolute; background-color: aqua; width: 88px; height: 88px;"></div>
+    <div id="div3" style="position: absolute; background-color: aqua; width: 40px; height: 40px;"></div>
 
     <script>
         //window.alert('hello world.');
@@ -192,10 +192,9 @@
             document.onmousemove = () => {
                 document.title = event.clientX + "-" + event.clientY;
 
-                div3.innerText = event.clientX + "-" + event.clientY;
-                div3.style.left = event.clientX;
-                div3.style.top = event.clientY;
                 div3.innerText = "{" + event.clientX + "-" + event.clientY + "}";
+                div3.style.left = event.clientX + "px";
+                div3.style.top = event.clientY + "px";
             }
 
             //var btn = document.createElement("<input type='button' value='动态创建'>")
@@ -209,7 +208,6 @@
                 var txt1 = document.getElementById("txt1");
                 div1.removeChild(txt1);
             }
-
         }
     </script>
 </body>

@@ -88,6 +88,9 @@
     <div id="div1">
         <input type="text" id="txt1">
     </div>
+    <div id="div2">
+
+    </div>
 
     <script>
         //window.alert('hello world.');
@@ -161,6 +164,23 @@
                 { "name": "google", "stie": "https://www.google.com" },
                 { "name": "github", "stie": "https://www.github.com" },
             ];
+
+            var div = document.getElementById("div2");
+            var table = document.createElement("table");
+            table.border = 1;
+            for (let i = 0; i < json.length; i++) {
+                var site = json[i];
+                var tr = document.createElement("tr");
+                var td1 = document.createElement("td");
+                td1.innerText = site.name;
+                tr.appendChild(td1);
+                var td2 = document.createElement("td");
+                td2.innerHTML = "<a href='" + site.stie + "'>" + site.name + "</a>";
+                te.appendChild(td2);
+                table.appendChild(tr);
+            }
+
+            div.appendChild()
         }
 
         window.onload = () => {

@@ -15,6 +15,10 @@
             <td><input id="userid" name="username" type="text"></td>
         </tr>
         <tr>
+            <td colspan="2"><label for="userid" accesskey="n">用户名: <input id="userid2" name="username2"
+                        type="text"></label></td>
+        </tr>
+        <tr>
             <td><input type="button" value="启动" onclick="f1()"></td>
             <td><input type="button" value="停止" onclick="f2()"></td>
         </tr>
@@ -193,8 +197,8 @@
                 document.title = event.clientX + "-" + event.clientY;
 
                 div3.innerText = "{" + event.clientX + "-" + event.clientY + "}";
-                div3.style.left = (event.clientX+10) + "px";
-                div3.style.top = (event.clientY+10) + "px";
+                div3.style.left = (event.clientX + 10) + "px";
+                div3.style.top = (event.clientY + 10) + "px";
             }
 
             //var btn = document.createElement("<input type='button' value='动态创建'>")

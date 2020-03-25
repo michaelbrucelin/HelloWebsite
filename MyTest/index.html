@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <table>
+    <table id="table1">
         <tr>
             <td><label for="userid" accesskey="n">用户名</label></td>
             <td><input id="userid" name="username" type="text"></td>
@@ -74,6 +74,11 @@
                 <input type="checkbox" name="chks" value="C">
                 <input type="checkbox" name="chks" value="D">
             </td>
+        </tr>
+    </table>
+    <table id="table2">
+        <tr>
+            <td colspan="2"><a href="https://www.403found.cn" title="403found" target="_blank">新窗口</a></td>
         </tr>
     </table>
 
@@ -197,8 +202,9 @@
                 document.title = event.clientX + "-" + event.clientY;
 
                 div3.innerText = "{" + event.clientX + "-" + event.clientY + "}";
-                div3.style.left = (event.clientX + 10) + "px";
-                div3.style.top = (event.clientY + 10) + "px";
+                div3.style.left = (event.clientX + 8) + "px";
+                div3.style.top = (event.clientY + 8) + "px";
+                div3.style.fontSize = "1px";
             }
 
             //var btn = document.createElement("<input type='button' value='动态创建'>")

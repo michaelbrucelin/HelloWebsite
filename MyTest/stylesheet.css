@@ -2,6 +2,10 @@ table, tr, td{
     border: 1px solid #000000;
 }
 
+#table1{
+    float: left;
+}
+
 #table2{
     border: 1px solid #000000;
 }

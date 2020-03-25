@@ -9,3 +9,7 @@ table, tr, td{
 #table2{
     border: 1px solid #000000;
 }
+
+#table3{
+    clear: both;
+}

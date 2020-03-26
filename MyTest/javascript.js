@@ -117,11 +117,20 @@ window.onload = () => {
     var course = document.getElementsByName("course");
     for (let i = 0; i < course.length; i++) {
         course[i].onclick = () => {
+            srcValue = event.srcElement.value;
             var tbodysfather = document.getElementById("table3");
             var tbodys = tbodysfather.getElementsByTagName("tbody");
-            tbodys.forEach(e => {
-                alert(123);
-            });
+            for (let i = 0; i < tbodys.length; i++) {
+                if (tbodys[i].id == "tbody0") {
+                    tbodys[i].style.display = "block";
+                }
+                else if (tbodys[i].id == srcValue) {
+                    tbodys[i].style.display = "block";
+                }
+                else {
+                    tbodys[i].style.display = "none";
+                }
+            }
         }
     }
 }

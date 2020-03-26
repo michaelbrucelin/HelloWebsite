@@ -113,4 +113,15 @@ window.onload = () => {
         var txt1 = document.getElementById("txt1");
         div1.removeChild(txt1);
     }
+
+    var course = document.getElementsByName("course");
+    for (let i = 0; i < course.length; i++) {
+        course[i].onclick = () => {
+            var tbodysfather = document.getElementById("table3");
+            var tbodys = tbodysfather.getElementsByTagName("tbody");
+            tbodys.forEach(e => {
+                alert(123);
+            });
+        }
+    }
 }

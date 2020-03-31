@@ -1,0 +1,23 @@
+div{
+    border: 1px solid #0000FF;
+}
+
+#d1{
+    width: 100%;
+    height: 15%;
+}
+
+#d2{
+    width: 30%;
+    height: 70%;
+}
+
+#d3{
+    width: 70%;
+    height: 70%;
+}
+
+#d4{
+    width: 100%;
+    height: 15%;
+}

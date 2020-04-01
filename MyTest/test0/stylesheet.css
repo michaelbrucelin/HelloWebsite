@@ -2,6 +2,15 @@ table, caption, thead, tbody, tfoot, th, tr, td{
     border: 1px solid #000000;
 }
 
+#div001{
+    width: 33.3%;
+    float: left;
+}
+#div002{
+    width: 33.3%;
+    float: left;
+}
+
 #table1{
     float: left;
 }

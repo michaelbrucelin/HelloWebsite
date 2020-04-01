@@ -4,6 +4,8 @@ html, body{
 
 div{
     border: 0px solid #000000;
+    margin: 0px;
+    padding: 0px;
 }
 
 #d1{

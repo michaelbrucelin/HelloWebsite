@@ -1,5 +1,10 @@
+html, body{
+    height:100%;
+}
+
 div{
     border: 1px solid #0000FF;
+    margin: 0px;
 }
 
 #d1{
@@ -10,14 +15,17 @@ div{
 #d2{
     width: 30%;
     height: 70%;
+    float: left;
 }
 
 #d3{
     width: 70%;
     height: 70%;
+    float: right;
 }
 
 #d4{
     width: 100%;
     height: 15%;
+    clear: both;
 }

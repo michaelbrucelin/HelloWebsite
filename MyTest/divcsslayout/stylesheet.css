@@ -34,3 +34,33 @@ div{
     background-color: #FF0000;
     clear: both;
 }
+
+#d31{
+    width: 100%;
+    height: 10%;
+    background-color: #FFFF00;
+}
+
+#d32{
+    width: 100%;
+    height: 10%;
+    background-color: #FF00FF;
+}
+
+#d33{
+    width: 100%;
+    height: 10%;
+    background-color: #00FFFF;
+}
+
+#d34{
+    width: 100%;
+    height: 10%;
+    background-color: #FF00FF;
+}
+
+#d35{
+    width: 100%;
+    height: 10%;
+    background-color: #FFFF00;
+}

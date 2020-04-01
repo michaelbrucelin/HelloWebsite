@@ -9,192 +9,196 @@
 </head>
 
 <body>
-    <table id="table1">
-        <tr>
-            <td><label for="userid" accesskey="n">用户名</label></td>
-            <td><input id="userid" name="username" type="text"></td>
-        </tr>
-        <tr>
-            <td colspan="2"><label for="userid" accesskey="n">用户名: <input id="userid2" name="username2"
-                        type="text"></label></td>
-        </tr>
-        <tr>
-            <td><input type="button" value="启动" onclick="f1()"></td>
-            <td><input type="button" value="停止" onclick="f2()"></td>
-        </tr>
-        <tr>
-            <td><input type="button" value="自增" onclick="zizeng1()"></td>
-            <td><input type="text" id="zizeng1" value="1"></td>
-        </tr>
-        <tr>
-            <td><input type="button" value="自增" onclick="zizeng2()"></td>
-            <td><input type="number" id="zizeng2" value="1"></td>
-        </tr>
-        <tr>
-            <td><input type="button" value="+" onclick="srcElementSample()"></td>
-            <td><input type="button" value="-" onclick="srcElementSample()"></td>
-        </tr>
-        <tr>
-            <td><input type="button" value="*" onclick="srcElementSample()"></td>
-            <td><input type="button" value="/" onclick="srcElementSample()"></td>
-        </tr>
-        <tr>
-            <td><label for="fcopy">禁止复制</label></td>
-            <td><input id="fcopy" name="fcopy" type="text" oncopy="alert('禁止复制');return false;"></td>
-        </tr>
-        <tr>
-            <td><label for="fcut">禁止剪切</label></td>
-            <td><input id="fcut" name="fcut" type="text" oncut="alert('禁止剪切');return false;"></td>
-        </tr>
-        <tr>
-            <td><label for="fpaste">禁止粘贴</label></td>
-            <td><input id="fpaste" name="fpaste" type="text" onpaste="alert('禁止粘贴');return false;"></td>
-        </tr>
-        <tr>
-            <td><label for="fdrag">禁止拖拽</label></td>
-            <td><input id="fdrag" name="fdrag" type="text" ondrag="alert('禁止拖拽');return false;"></td>
-        </tr>
-        <tr>
-            <td><label for="addcr">添加版权</label></td>
-            <td><input id="addcr" name="addcr" type="text" oncopy="setTimeout('AddCopyRight()',10)"></td>
-        </tr>
-        <tr>
-            <td><label for="sex" onclick="GetSex()">性别</label></td>
-            <td>
-                <input type="radio" name="sex" value="male">
-                <input type="radio" name="sex" value="female">
-                <input type="radio" name="sex" value="unkown">
-            </td>
-        </tr>
-        <tr>
-            <td><label>全选</label><input type="checkbox" onclick="SetAllChks()"></td>
-            <td>
-                <input type="checkbox" name="chks" value="A">
-                <input type="checkbox" name="chks" value="B">
-                <input type="checkbox" name="chks" value="C">
-                <input type="checkbox" name="chks" value="D">
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2">
-                <select size="10">
-                    <optgroup label="亚洲">
-                        <option value="zg">中国</option>
-                        <option value="rb">日本</option>
-                        <option value="hg">韩国</option>
-                    </optgroup>
-                    <optgroup label="欧洲">
-                        <option value="dg">德国</option>
-                        <option value="fg">法国</option>
-                        <option value="yg">英国</option>
-                    </optgroup>
-                </select>
-            </td>
-        </tr>
-    </table>
-
-    <table id="table2">
-        <tr>
-            <td>新窗口</td>
-            <td><a href="https://www.403found.cn" title="403found" target="_blank">403FOUND</a></td>
-        </tr>
-        <tr>
-            <td>当前窗口</td>
-            <td><a href="https://www.403found.cn" title="403found" target="_self">403FOUND</a></td>
-        </tr>
-        <tr>
-            <td>父窗口</td>
-            <td><a href="https://www.403found.cn" title="403found" target="_parent">403FOUND</a></td>
-        </tr>
-        <tr>
-            <td>顶级窗口</td>
-            <td><a href="https://www.403found.cn" title="403found" target="_top">403FOUND</a></td>
-        </tr>
-    </table>
-
-    <table id="table3">
-        <caption align="top">课程表</caption>
-        <thead>
+    <div id="div001">
+        <table id="table1">
             <tr>
-                <th>HEAD AAA</th>
-                <th>HEAD BBB</th>
+                <td><label for="userid" accesskey="n">用户名</label></td>
+                <td><input id="userid" name="username" type="text"></td>
             </tr>
-        </thead>
-        <tbody id="tbody0">
             <tr>
-                <td colspan="2">
-                    <input type="radio" name="course" value="tbody1">
-                    <input type="radio" name="course" value="tbody2">
-                    <input type="radio" name="course" value="tbody3">
+                <td colspan="2"><label for="userid" accesskey="n">用户名: <input id="userid2" name="username2"
+                            type="text"></label></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="启动" onclick="f1()"></td>
+                <td><input type="button" value="停止" onclick="f2()"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="自增" onclick="zizeng1()"></td>
+                <td><input type="text" id="zizeng1" value="1"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="自增" onclick="zizeng2()"></td>
+                <td><input type="number" id="zizeng2" value="1"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="+" onclick="srcElementSample()"></td>
+                <td><input type="button" value="-" onclick="srcElementSample()"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="*" onclick="srcElementSample()"></td>
+                <td><input type="button" value="/" onclick="srcElementSample()"></td>
+            </tr>
+            <tr>
+                <td><label for="fcopy">禁止复制</label></td>
+                <td><input id="fcopy" name="fcopy" type="text" oncopy="alert('禁止复制');return false;"></td>
+            </tr>
+            <tr>
+                <td><label for="fcut">禁止剪切</label></td>
+                <td><input id="fcut" name="fcut" type="text" oncut="alert('禁止剪切');return false;"></td>
+            </tr>
+            <tr>
+                <td><label for="fpaste">禁止粘贴</label></td>
+                <td><input id="fpaste" name="fpaste" type="text" onpaste="alert('禁止粘贴');return false;"></td>
+            </tr>
+            <tr>
+                <td><label for="fdrag">禁止拖拽</label></td>
+                <td><input id="fdrag" name="fdrag" type="text" ondrag="alert('禁止拖拽');return false;"></td>
+            </tr>
+            <tr>
+                <td><label for="addcr">添加版权</label></td>
+                <td><input id="addcr" name="addcr" type="text" oncopy="setTimeout('AddCopyRight()',10)"></td>
+            </tr>
+            <tr>
+                <td><label for="sex" onclick="GetSex()">性别</label></td>
+                <td>
+                    <input type="radio" name="sex" value="male">
+                    <input type="radio" name="sex" value="female">
+                    <input type="radio" name="sex" value="unkown">
                 </td>
             </tr>
-        </tbody>
-        <tbody id="tbody1">
             <tr>
-                <td>tbody1_11</td>
-                <td>tbody1_12</td>
+                <td><label>全选</label><input type="checkbox" onclick="SetAllChks()"></td>
+                <td>
+                    <input type="checkbox" name="chks" value="A">
+                    <input type="checkbox" name="chks" value="B">
+                    <input type="checkbox" name="chks" value="C">
+                    <input type="checkbox" name="chks" value="D">
+                </td>
             </tr>
             <tr>
-                <td>tbody1_21</td>
-                <td>tbody1_22</td>
+                <td colspan="2">
+                    <select size="10">
+                        <optgroup label="亚洲">
+                            <option value="zg">中国</option>
+                            <option value="rb">日本</option>
+                            <option value="hg">韩国</option>
+                        </optgroup>
+                        <optgroup label="欧洲">
+                            <option value="dg">德国</option>
+                            <option value="fg">法国</option>
+                            <option value="yg">英国</option>
+                        </optgroup>
+                    </select>
+                </td>
             </tr>
-        </tbody>
-        <tbody id="tbody2">
-            <tr>
-                <td>tbody2_11</td>
-                <td>tbody2_12</td>
-            </tr>
-            <tr>
-                <td>tbody2_21</td>
-                <td>tbody2_22</td>
-            </tr>
-        </tbody>
-        <tbody id="tbody3">
-            <tr>
-                <td>tbody3_11</td>
-                <td>tbody3_12</td>
-            </tr>
-            <tr>
-                <td>tbody3_21</td>
-                <td>tbody3_22</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <th>FOOT AAA</th>
-                <th>FOOT BBB</th>
-            </tr>
-        </tfoot>
-    </table>
+        </table>
 
-    <table id="table4" onclick="alert('table')">
-        <tr onclick="alert('tr R1')">
-            <td onclick="alert('td R1C1')"><label onclick="alert('label R1C1')">R1C1</label></td>
-            <td onclick="alert('td R1C2')"><label
-                    onclick="alert('label R1C2'); window.event.cancelBubble='true'">R1C2</label></td>
-        </tr>
-        <tr>
-            <td><label>R2C1</label></td>
-            <td><label>R2C2</label></td>
-        </tr>
-    </table>
+        <table id="table2">
+            <tr>
+                <td>新窗口</td>
+                <td><a href="https://www.403found.cn" title="403found" target="_blank">403FOUND</a></td>
+            </tr>
+            <tr>
+                <td>当前窗口</td>
+                <td><a href="https://www.403found.cn" title="403found" target="_self">403FOUND</a></td>
+            </tr>
+            <tr>
+                <td>父窗口</td>
+                <td><a href="https://www.403found.cn" title="403found" target="_parent">403FOUND</a></td>
+            </tr>
+            <tr>
+                <td>顶级窗口</td>
+                <td><a href="https://www.403found.cn" title="403found" target="_top">403FOUND</a></td>
+            </tr>
+        </table>
 
-    <div id="div1">
-        <input type="text" id="txt1">
+        <table id="table3">
+            <caption align="top">课程表</caption>
+            <thead>
+                <tr>
+                    <th>HEAD AAA</th>
+                    <th>HEAD BBB</th>
+                </tr>
+            </thead>
+            <tbody id="tbody0">
+                <tr>
+                    <td colspan="2">
+                        <input type="radio" name="course" value="tbody1">
+                        <input type="radio" name="course" value="tbody2">
+                        <input type="radio" name="course" value="tbody3">
+                    </td>
+                </tr>
+            </tbody>
+            <tbody id="tbody1">
+                <tr>
+                    <td>tbody1_11</td>
+                    <td>tbody1_12</td>
+                </tr>
+                <tr>
+                    <td>tbody1_21</td>
+                    <td>tbody1_22</td>
+                </tr>
+            </tbody>
+            <tbody id="tbody2">
+                <tr>
+                    <td>tbody2_11</td>
+                    <td>tbody2_12</td>
+                </tr>
+                <tr>
+                    <td>tbody2_21</td>
+                    <td>tbody2_22</td>
+                </tr>
+            </tbody>
+            <tbody id="tbody3">
+                <tr>
+                    <td>tbody3_11</td>
+                    <td>tbody3_12</td>
+                </tr>
+                <tr>
+                    <td>tbody3_21</td>
+                    <td>tbody3_22</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>FOOT AAA</th>
+                    <th>FOOT BBB</th>
+                </tr>
+            </tfoot>
+        </table>
+
+        <table id="table4" onclick="alert('table')">
+            <tr onclick="alert('tr R1')">
+                <td onclick="alert('td R1C1')"><label onclick="alert('label R1C1')">R1C1</label></td>
+                <td onclick="alert('td R1C2')"><label
+                        onclick="alert('label R1C2'); window.event.cancelBubble='true'">R1C2</label></td>
+            </tr>
+            <tr>
+                <td><label>R2C1</label></td>
+                <td><label>R2C2</label></td>
+            </tr>
+        </table>
     </div>
-    <div id="div2">
-        <input type="button" value="创建表格" onclick="CreateTableDynamic()">
-    </div>
-    <div id="div3" style="position: absolute; background-color: aqua; width: 40px; height: 40px;"></div>
-    <div>
-        <dl>
-            <dt>A</dt>
-            <dd>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</dd>
-            <dt>B</dt>
-            <dd>bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb</dd>
-            <dt>C</dt>
-            <dd>ccccccccccccccccccccccccccccccccc</dd>
-        </dl>
+
+    <div id="div002">
+        <div id="div1">
+            <input type="text" id="txt1">
+        </div>
+        <div id="div2">
+            <input type="button" value="创建表格" onclick="CreateTableDynamic()">
+        </div>
+        <div id="div3" style="position: absolute; background-color: aqua; width: 40px; height: 40px;"></div>
+        <div>
+            <dl>
+                <dt>A</dt>
+                <dd>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</dd>
+                <dt>B</dt>
+                <dd>bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb</dd>
+                <dt>C</dt>
+                <dd>ccccccccccccccccccccccccccccccccc</dd>
+            </dl>
+        </div>
     </div>
 
     <script src="./javascript.js"></script>

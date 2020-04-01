@@ -10,10 +10,10 @@ table, caption, thead, tbody, tfoot, th, tr, td{
     border: 1px solid #000000;
 }
 
-#table4{
-    clear: both;
-}
-
 div{
     border: 1px solid #0000FF;
+}
+
+#div1{
+    clear: both;
 }

@@ -1,0 +1,15 @@
+body{
+    background-color: #FF0000;
+}
+
+ul{
+    padding-left: 10px;
+}
+
+ul li{
+    width: 60px;
+    margin-right: 20px;
+    background-color: #00FF00;
+    list-style: none;
+    float: left;
+}

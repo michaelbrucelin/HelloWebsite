@@ -9,3 +9,10 @@ var arg4 = Number('abcd')
 console.log(typeof(arg3))
 console.log(arg4)
 console.log(typeof(arg4))
+
+var arg5
+console.log(arg5.toString())
+console.log(String(arg5))
+var arg6 = null
+console.log(arg6.toString())
+console.log(String(arg6))

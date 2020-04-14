@@ -16,3 +16,13 @@ for (let i = 0; i < arr2.length; i++) {
 for (let item in arr2) {
     console.log(item);
 }
+
+for (let item in window) {
+    console.log(item + ":\t" + window[item]);
+}
+
+//Array对象的常用声明方法
+var arr0 = Array();
+var arr0 = Array(10);
+var arr0 = Array("A", "B", "C", "D");
+var arr0 = ["A", "B", "C", "D"];

@@ -91,6 +91,10 @@ function CreateTableDynamic() {
     div.appendChild(table);
 }
 
+function StaticRegister() {
+    console.log("this is register static.");
+}
+
 window.onload = () => {
     var div3 = document.getElementById("div3");
     document.onmousemove = () => {

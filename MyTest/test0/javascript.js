@@ -91,8 +91,19 @@ function CreateTableDynamic() {
     div.appendChild(table);
 }
 
+function ABCDE() {
+    alert("time 1");
+    console.log("this is register dynamic.");
+    alert("time 2");
+}
+
 function StaticRegister() {
     console.log("this is register static.");
+
+    var btn = document.getElementById("btn02");
+    btn.value = "getu?";
+    btn.onclick = "ABCDE";
+    console.log("done");
 }
 
 window.onload = () => {

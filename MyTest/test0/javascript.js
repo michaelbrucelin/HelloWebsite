@@ -105,6 +105,41 @@ function DynamicRegister() {
     console.log("this is register dynamic.");
 }
 
+function console1() {
+    console.log("1111111111111111");
+}
+function console2() {
+    console.log("2222222222222222");
+}
+
+function regularRegister() {
+    var btn = document.getElementById("btn14");
+    btn.onclick = console1;
+    btn.onclick = console2;
+    console.log("done");
+}
+
+function csharpRegister() {
+    var btn = document.getElementById("btn14");
+    btn.onclick += console1;
+    btn.onclick += console2;
+    console.log("done");
+}
+
+function attachRegister() {
+    var btn = document.getElementById("btn14");
+    btn.attachEvent("onclick", console1);
+    btn.attachEvent("onclick", console2);
+    console.log("done");
+}
+
+function listenerRegister() {
+    var btn = document.getElementById("btn14");
+    btn.addEventListener("click", console1);
+    btn.addEventListener("click", console2);
+    console.log("done");
+}
+
 window.onload = () => {
     var div3 = document.getElementById("div3");
     document.onmousemove = () => {

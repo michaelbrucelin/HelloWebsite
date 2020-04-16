@@ -91,19 +91,18 @@ function CreateTableDynamic() {
     div.appendChild(table);
 }
 
-function ABCDE() {
-    alert("time 1");
-    console.log("this is register dynamic.");
-    alert("time 2");
-}
-
 function StaticRegister() {
     console.log("this is register static.");
 
     var btn = document.getElementById("btn02");
-    btn.value = "getu?";
-    btn.onclick = "ABCDE";
+    //这样是不对的，这样相当于将函数的结果注册给了onclick事件
+    //btn.onclick = DynamicRegister();
+    btn.onclick = DynamicRegister;
     console.log("done");
+}
+
+function DynamicRegister() {
+    console.log("this is register dynamic.");
 }
 
 window.onload = () => {

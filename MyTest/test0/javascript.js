@@ -112,6 +112,7 @@ function console2() {
     console.log("2222222222222222");
 }
 
+//这样注册第二个注册会覆盖第一个注册
 function regularRegister() {
     var btn = document.getElementById("btn14");
     btn.onclick = console1;
@@ -120,6 +121,7 @@ function regularRegister() {
     console.log("done");
 }
 
+//js不支持这样注册委托链
 function csharpRegister() {
     var btn = document.getElementById("btn14");
     btn.onclick += console1;
@@ -128,6 +130,7 @@ function csharpRegister() {
     console.log("done");
 }
 
+//IE中这样注册多个事件
 function attachRegister() {
     var btn = document.getElementById("btn14");
     btn.attachEvent("onclick", console1);
@@ -136,6 +139,7 @@ function attachRegister() {
     console.log("done");
 }
 
+//w3c标准，在chrome和firefox中这样注册多个事件
 function listenerRegister() {
     var btn = document.getElementById("btn14");
     btn.addEventListener("click", console1);

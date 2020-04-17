@@ -212,7 +212,10 @@
             <input id="btn14" type="button" value="button">
         </div>
         <div>
-            <input type="button" value="test" onclick="if(event.altKey){console.log('ALT Key')} else{console.log('Not ALT Key')}">
+            <input type="button" value="test"
+                onclick="if(event.altKey){console.log('ALT Key')} else{console.log('Not ALT Key')}">
+            <a href="http://www.baidu.com" onclick="event.returnValue=false">Baidu</a>
+            <input type="button" value="mousebutton" onclick="console.log(event.button); event.returnValue=false">
         </div>
     </div>
 

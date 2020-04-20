@@ -39,8 +39,11 @@ function srcElementSample() {
 
 function AddCopyRight() {
     var v = document.getElementById("addcr").value;
+    console.log(v);
     v = v + "<br />CopyRight: http://mlin.403found.cn";
-    window.clipboardData.setData("text", v);
+    console.log(v);
+    clipboardData.setData("text", v);
+    console.log(clipboardData.getData("text"));
 }
 
 function GetSex() {
@@ -89,6 +92,10 @@ function CreateTableDynamic() {
     }
 
     div.appendChild(table);
+}
+
+function DocWriteTag(){
+    document.write("<table><tr><td>AA11</td><td>BB11</td><td>CC11</td><td>DD11</td></tr><tr><td>AA22</td><td>BB22</td><td>CC22</td><td>DD22</td></tr><tr><td>AA33</td><td>BB33</td><td>CC33</td><td>DD33</td></tr><tr><td>AA44</td><td>BB44</td><td>CC44</td><td>DD44</td></tr></table>")
 }
 
 function StaticRegister() {

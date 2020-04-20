@@ -94,7 +94,7 @@ function CreateTableDynamic() {
     div.appendChild(table);
 }
 
-function DocWriteTag(){
+function DocWriteTable(){
     document.write("<table><tr><td>AA11</td><td>BB11</td><td>CC11</td><td>DD11</td></tr><tr><td>AA22</td><td>BB22</td><td>CC22</td><td>DD22</td></tr><tr><td>AA33</td><td>BB33</td><td>CC33</td><td>DD33</td></tr><tr><td>AA44</td><td>BB44</td><td>CC44</td><td>DD44</td></tr></table>")
 }
 

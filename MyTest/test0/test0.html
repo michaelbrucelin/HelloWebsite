@@ -223,6 +223,12 @@
             <input type="button" value="srcElement" onclick="console.log(event.srcElement.value)">
             <input type="button" value="this" onclick="console.log(this.value)">
         </div>
+        <div>
+            <input type="button" value="this1" onclick="testThis()">
+            <input type="button" value="srcElement" onclick="testSrcElement()">
+            <input type="button" value="this2" onclick="testThis(this)">
+            <input type="button" value="srcElement2" onclick="testSrcElement(this)">
+        </div>
     </div>
 
     <script src="./javascriptZ.js"></script>

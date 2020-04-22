@@ -169,6 +169,13 @@ function listenerRegister() {
     console.log("done");
 }
 
+function testThis() {
+    console.log(this.value);
+}
+function testSrcElement() {
+    console.log(event.srcElement.value);
+}
+
 window.onload = () => {
     var div3 = document.getElementById("div3");
     document.onmousemove = () => {

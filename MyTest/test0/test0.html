@@ -224,10 +224,26 @@
             <input type="button" value="this" onclick="console.log(this.value)">
         </div>
         <div>
-            <input type="button" value="this1" onclick="testThis()">
+            <input type="button" value="this" onclick="testThis()">
             <input type="button" value="srcElement" onclick="testSrcElement()">
             <input type="button" value="this2" onclick="testThis(this)">
             <input type="button" value="srcElement2" onclick="testSrcElement(this)">
+        </div>
+        <div>
+            <table onclick="console.log('This table:\t'+this.innerHTML)" style="float: left;">
+                <tr onclick="console.log('This tr:\t'+this.innerHTML)">
+                    <td onclick="console.log('This td:\t'+this.innerHTML)">
+                        <p onclick="console.log('This p:\t'+this.innerHTML)">This</p>
+                    </td>
+                </tr>
+            </table>
+            <table onclick="console.log('srcElement table:\t'+event.srcElement.innerHTML)">
+                <tr onclick="console.log('srcElement tr:\t'+event.srcElement.innerHTML)">
+                    <td onclick="console.log('srcElement td:\t'+event.srcElement.innerHTML)">
+                        <p onclick="console.log('srcElement p:\t'+event.srcElement.innerHTML)">srcElement</p>
+                    </td>
+                </tr>
+            </table>
         </div>
     </div>
 

@@ -246,10 +246,11 @@
             </table>
         </div>
         <div id="testinnerHTML">
-            <input type="button" value="innerHTML" onclick="()=>{
+            <input type="button" value="innerHTML" onclick="
                 var div = document.getElementById('testinnerHTML');
-                div.innerHTML = div.innerHTML + '<p>Hello, this is created by modify innerHTML property.</p>'
-            }">
+                div.innerHTML = div.innerHTML + '<p>Hello, this is created by modify innerHTML property.</p>';
+                div.innerHTML = div.innerHTML + '<input type=\'button\' value = \'new button\' onclick=\'console.log(abcd)\'>';
+            ">
         </div>
     </div>
 

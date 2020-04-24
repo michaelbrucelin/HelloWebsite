@@ -245,6 +245,12 @@
                 </tr>
             </table>
         </div>
+        <div id="testinnerHTML">
+            <input type="button" value="innerHTML" onclick="()=>{
+                var div = document.getElementById('testinnerHTML');
+                div.innerHTML = div.innerHTML + '<p>Hello, this is created by modify innerHTML property.</p>'
+            }">
+        </div>
     </div>
 
     <script src="./javascriptZ.js"></script>

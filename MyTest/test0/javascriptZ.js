@@ -108,6 +108,30 @@ function CreateTableDynamic() {
     div.appendChild(table);
 }
 
+function CreateTableDynamic2() {
+    var json = [
+        { "name": "microsoft2", "stie": "https://www.microsoft.com" },
+        { "name": "google2", "stie": "https://www.google.com" },
+        { "name": "github2", "stie": "https://www.github.com" },
+    ];
+
+    var div = document.getElementById("div2");
+    var table = document.createElement("table");
+    table.border = 1;
+    for (let i = 0; i < json.length; i++) {
+        var site = json[i];
+        var tr = table.insertRow(-1);
+        var td1 = tr.insertCell(-1);
+        td1.innerText = site.name;
+        var td2 = tr.insertCell(-1);
+        td2.innerHTML = "<a href='" + site.stie + "'>" + site.name + "</a>";
+        var td3 = tr.insertCell(-1);
+        td3.innerText = site.stie;
+    }
+
+    div.appendChild(table);
+}
+
 function DocWriteTable() {
     document.write("<table><tr><td>AA11</td><td>BB11</td><td>CC11</td><td>DD11</td></tr><tr><td>AA22</td><td>BB22</td><td>CC22</td><td>DD22</td></tr><tr><td>AA33</td><td>BB33</td><td>CC33</td><td>DD33</td></tr><tr><td>AA44</td><td>BB44</td><td>CC44</td><td>DD44</td></tr></table>")
 }
@@ -215,6 +239,21 @@ window.onload = () => {
                 else {
                     tbodys[i].style.display = "none";
                 }
+            }
+        }
+    }
+
+    var tdpoints = document.getElementsByName("tdpoint");
+    for (let i = 0; i < tdpoints.length; i++) {
+        tdpoints[i].style.cursor = "pointer";
+        tdpoints[i].id = i;
+        tdpoints[i].onmouseover = () => {
+            var index = this.id;
+            for (let m = 0; m < parseInt(index); m++) {
+                tdpoints[i].innerText = "★";
+            }
+            for (let n = parseInt(index) + 1; i < tdpoints.length; i++) {
+                tdpoints[i].innerText = "☆";
             }
         }
     }

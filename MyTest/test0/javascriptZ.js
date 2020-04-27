@@ -242,4 +242,19 @@ window.onload = () => {
             }
         }
     }
+
+    var tdpoints = document.getElementsByName("tdpoint");
+    for (let i = 0; i < tdpoints.length; i++) {
+        tdpoints[i].style.cursor = "pointer";
+        tdpoints[i].id = i;
+        tdpoints[i].onmouseover = () => {
+            var index = this.id;
+            for (let m = 0; m < parseInt(index); m++) {
+                tdpoints[i].innerText = "★";
+            }
+            for (let n = parseInt(index) + 1; i < tdpoints.length; i++) {
+                tdpoints[i].innerText = "☆";
+            }
+        }
+    }
 }

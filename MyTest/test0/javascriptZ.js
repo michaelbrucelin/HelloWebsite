@@ -123,10 +123,8 @@ function CreateTableDynamic2() {
         var tr = table.insertRow(-1);
         var td1 = tr.insertCell(-1);
         td1.innerText = site.name;
-        tr.appendChild(td1);
         var td2 = tr.insertCell(-1);
         td2.innerHTML = "<a href='" + site.stie + "'>" + site.name + "</a>";
-        tr.appendChild(td2);
         var td3 = tr.insertCell(-1);
         td3.innerText = site.stie;
     }

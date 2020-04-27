@@ -248,12 +248,14 @@ window.onload = () => {
         tdpoints[i].style.cursor = "pointer";
         tdpoints[i].id = i;
         tdpoints[i].onmouseover = () => {
-            var index = this.id;
-            for (let m = 0; m < parseInt(index); m++) {
-                tdpoints[i].innerText = "★";
-            }
-            for (let n = parseInt(index) + 1; i < tdpoints.length; i++) {
-                tdpoints[i].innerText = "☆";
+            var index = parseInt(event.srcElement.id);
+            for (let j = 0; j < tdpoints.length; j++) {
+                if (j <= index) {
+                    tdpoints[j].innerText = "★";
+                }
+                else {
+                    tdpoints[j].innerText = "☆";
+                }
             }
         }
     }

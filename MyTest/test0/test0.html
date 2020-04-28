@@ -252,8 +252,16 @@
                 div.innerHTML = div.innerHTML + '<p>Hello, this is created by modify innerHTML property.</p>';
                 div.innerHTML = div.innerHTML + '<input type=\'button\' value=\'new button\' onclick=\'console.log(this.value)\'>';
             ">
+            <input type="button" value="getwidth" onclick="
+                var div1 = document.getElementById('testdiv1');
+                console.log('div1 witdh:\t'+div1.style.width);
+                console.log('div1 clientWitdh:\t'+div1.clientWidth);
+                var div2 = document.getElementById('testdiv2');
+                console.log('div2 witdh:\t'+div2.style.width);
+                console.log('div2 clientWitdh:\t'+div2.clientWidth);
+            ">
         </div>
-        <div>
+        <div id="divpoint">
             <table style="border: 0px;">
                 <tr style="border: 0px; height: 16px;">
                     <td name="tdpoint" style="border:0px; width: 16px;">★</td>
@@ -269,6 +277,8 @@
                 </tr>
             </table>
         </div>
+        <div id="testdiv1"></div>
+        <div id="testdiv2" style="width: 400px;"></div>
     </div>
 
     <script src="./javascriptZ.js"></script>

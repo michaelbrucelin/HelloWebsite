@@ -21,3 +21,15 @@ str.match()    //匹配模式
 str.search()   //查找
 
 //一些示例
+var regex = /(.+)@((.+)\.(.+))/;
+var str = "123@abc.com";
+var match = str.match(regex);
+console.log("================================");
+for (let i = 0; i < match.length; i++) {
+    console.log(RegExp.$i);
+}
+console.log("================================");
+console.log(match);
+for (let i = 0; i < match.length; i++) {
+    console.log(match[i]);
+}

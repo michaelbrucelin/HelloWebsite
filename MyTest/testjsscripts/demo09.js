@@ -26,11 +26,11 @@ var regex1 = /(.+)@((.+)\.(.+))/;
 var str1 = "123@abc.com";
 var match1 = str1.match(regex1);
 console.log("================逐个输出================");
-console.log(RegExp.$i);
-console.log(RegExp.$i);
-console.log(RegExp.$i);
-console.log(RegExp.$i);
-console.log(RegExp.$i);
+console.log(RegExp.$0);
+console.log(RegExp.$1);
+console.log(RegExp.$2);
+console.log(RegExp.$3);
+console.log(RegExp.$4);
 console.log("================这样放在循环中无效================");
 for (let i = 0; i < match1.length; i++) {
     console.log(RegExp.$i);
@@ -40,3 +40,8 @@ console.log(match1);
 for (let i = 0; i < match1.length; i++) {
     console.log(match1[i]);
 }
+
+var str2 = "北京 北京 北京";
+console.log(str2.replace("北京", "大连"));
+console.log(str2.replace("/北京/", "大连"));
+console.log(str2.replace("/北京/g", "大连"));

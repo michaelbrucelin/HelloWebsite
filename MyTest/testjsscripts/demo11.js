@@ -1,4 +1,4 @@
-//密码强度校验
+//密码强度校验2
 function checkPassword3(fieldId, tipMsg) {
     //返回密码的强度级别
     function checkStrong(sPW) {

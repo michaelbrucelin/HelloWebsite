@@ -21,7 +21,7 @@ str.replace()  //支持正则替换
 str.match()    //匹配模式
 str.search()   //查找
 
-//一些示例
+//示例1
 var regex1 = /(.+)@((.+)\.(.+))/;
 var str1 = "123@abc.com";
 var match1 = str1.match(regex1);
@@ -41,7 +41,20 @@ for (let i = 0; i < match1.length; i++) {
     console.log(match1[i]);
 }
 
+//示例2
 var str2 = "北京 北京 北京";
 console.log(str2.replace("北京", "大连"));
-console.log(str2.replace("/北京/", "大连"));
-console.log(str2.replace("/北京/g", "大连"));
+console.log(str2.replace(/北京/, "大连"));
+console.log(str2.replace(/北京/g, "大连"));
+
+//示例3
+String.prototype.myTrim = function () {
+    //return this.replace(/(^\s+)|(\s+$)/g,"");
+    //据说在js中复杂的正则，尤其是带有 | 的正则很低效；
+    //所以尽管下面执行了两次正则，但是由于每个正则都很简单，仍然比上面的写法高效
+    //没有验证
+    return this.replace(/^\s+/, "").replace(/\s+$/, "");
+}
+
+var str3 = "  ====  ";
+console.log(str3.myTrim());

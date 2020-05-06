@@ -233,7 +233,7 @@ function setCity() {
         var option = document.createElement("option");
         option.innerHTML = citys[i];
         option.value = citys[i];
-        citys.appendChild(option);
+        city.appendChild(option);
     }
 }
 

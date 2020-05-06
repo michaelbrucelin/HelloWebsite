@@ -237,6 +237,25 @@ function setCity() {
     }
 }
 
+function rightMove() {
+    var right_all = document.getElementById("right_all");
+    var right_select = document.getElementById("right_select");
+    var btn_id = event.srcElement.id;
+    if (btn_id == "right_btn_select") {
+        var cnt_all = right_all.children.length;
+        for (let i = cnt_all - 1; i >= 0; i--) {
+            if (right_all.children[i].selected) {
+                var option = right_all.children[i];
+                option.selected = false;
+                right_select.insertBefore(option, right_select.firstChild);
+            }
+        }
+    }
+    else if (btn_id == "right_btn_delete") {
+        console.log("delete");
+    }
+}
+
 window.onload = () => {
     setProvince();
     setCity();

@@ -214,10 +214,32 @@ function setProvince() {
         option.value = item;
         province.appendChild(option);
     }
+
+    province.onchange = setCity;
+}
+
+function setCity() {
+    var province = document.getElementById("province");
+    var city = document.getElementById("city");
+    //city.innerHTML = "";这样做简单粗暴，但是如果选项有注册事件，选项虽然移除了，但是事件仍在在内存中，不彻底
+    //所以采用下面的方式
+    var cnt = city.children.length;
+    for (let i = cnt - 1; i >= 0; i--) {
+        city.removeChild(city.children[i]);
+    }
+
+    var citys = json_citys[province.value];
+    for (let i = 0; i < citys.length; i++) {
+        var option = document.createElement("option");
+        option.innerHTML = citys[i];
+        option.value = citys[i];
+        citys.appendChild(option);
+    }
 }
 
 window.onload = () => {
     setProvince();
+    setCity();
 
     var div3 = document.getElementById("div3");
     document.onmousemove = () => {

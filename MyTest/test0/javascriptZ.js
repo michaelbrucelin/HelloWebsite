@@ -200,7 +200,25 @@ function testSrcElement() {
     console.log(event.srcElement.value);
 }
 
+var json_citys = {
+    "辽宁省": ["沈阳市", "大连市", "鞍山市", "抚顺市", "本溪市", "丹东市", "锦州市", "营口市", "阜新市", "辽阳市", "盘锦市", "铁岭市", "朝阳市", "葫芦岛市"],
+    "吉林省": ["长春市", "吉林市", "四平市", "辽源市", "通化市", "白山市", "松原市", "白城市", "延边朝鲜族自治州"],
+    "黑龙江省": ["哈尔滨市", "齐齐哈尔市", "鸡西市", "鹤岗市", "双鸭山市", "大庆市", "伊春市", "佳木斯市", "七台河市", "牡丹江市", "黑河市", "绥化市", "大兴安岭地区"]
+}
+
+function setProvince() {
+    var province = document.getElementById("province");
+    for (var item in json_citys) {
+        var option = document.createElement("option");
+        option.innerHTML = item;
+        option.value = item;
+        province.appendChild(option);
+    }
+}
+
 window.onload = () => {
+    setProvince();
+
     var div3 = document.getElementById("div3");
     document.onmousemove = () => {
         document.title = event.clientX + "-" + event.clientY;

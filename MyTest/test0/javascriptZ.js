@@ -238,23 +238,27 @@ function setCity() {
 }
 
 function rightMove() {
-    var right_all = document.getElementById("right_all");
-    var right_select = document.getElementById("right_select");
     var btn_id = event.srcElement.id;
     if (btn_id == "right_btn_select") {
-        var cnt_all = right_all.children.length;
-        for (let i = 0; i < cnt_all; i++) {
-            if (right_all.children[i].selected) {
-                var option = right_all.children[i];
-                option.selected = false;
-                right_select.appendChild(option);
-                cnt_all--;
-                i--;
-            }
-        }
+        selectItemMove("right_all", "right_select");
     }
     else if (btn_id == "right_btn_delete") {
-        console.log("delete");
+        selectItemMove("right_select", "right_all");
+    }
+}
+
+function selectItemMove(srcId, tarId) {
+    var select_src = document.getElementById(srcId);
+    var select_tar = document.getElementById(tarId);
+    var cnt_src = select_src.children.length;
+    for (let i = 0; i < cnt_src; i++) {
+        if (select_src.children[i].selected) {
+            var option = select_src.children[i];
+            option.selected = false;
+            select_tar.appendChild(option);
+            cnt_src--;
+            i--;
+        }
     }
 }
 

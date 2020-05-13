@@ -6,6 +6,7 @@ function useDOMObject() {
 function useJQueryObject() {
     var $div = $("#div1");
     $div.html("Modified by JQuery");
+    //$div.innerHTML = "Modified by JQuery";  这样是不行的，JQuery对象不能使用DOM对象的属性
 }
 
 //window.onload注册多个事件时，后面的会覆盖前面的，相当于C#中的=赋值

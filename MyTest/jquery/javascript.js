@@ -17,6 +17,13 @@ function showJqueryUseDOMObject() {
     $div.html("Modified by JQuery use DOM object");
 }
 
+//将JQuery对象转为DOM对象
+function showDOMUseJQueryObject() {
+    var $div = $("#div1");
+    var div = $div[0];
+    div.innerHTML = "Modified by DOM use JQuery object";
+}
+
 //window.onload注册多个事件时，后面的会覆盖前面的，相当于C#中的=赋值
 //所以这里只输出最后一条信息
 window.onload = () => { console.log("========window.onload========"); }

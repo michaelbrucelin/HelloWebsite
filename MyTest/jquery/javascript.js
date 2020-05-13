@@ -1,3 +1,13 @@
+function useDOMObject() {
+    var div = document.getElementById("div1");
+    div.innerHTML = "Modified by DOM";
+}
+
+function useJQueryObject() {
+    var $div = $("#div1");
+    $div.html("Modified by JQuery");
+}
+
 //window.onload注册多个事件时，后面的会覆盖前面的，相当于C#中的=赋值
 //所以这里只输出最后一条信息
 window.onload = () => { console.log("========window.onload========"); }

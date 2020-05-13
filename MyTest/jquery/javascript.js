@@ -1,12 +1,19 @@
 function showDOMObject() {
     var div = document.getElementById("div1");
     div.innerHTML = "Modified by DOM";
+    //div.html("Modified by DOM");  这样是不行的，DOM对象不能使用JQuery对象的属性
 }
 
 function showJQueryObject() {
     var $div = $("#div1");
     $div.html("Modified by JQuery");
     //$div.innerHTML = "Modified by JQuery";  这样是不行的，JQuery对象不能使用DOM对象的属性
+}
+
+function showJqueryUseDOMObject() {
+    var div = document.getElementById("div1");
+    var $div = $(div)
+    div.html("Modified by JQuery use DOM object");
 }
 
 //window.onload注册多个事件时，后面的会覆盖前面的，相当于C#中的=赋值

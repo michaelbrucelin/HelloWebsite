@@ -1,9 +1,9 @@
-function useDOMObject() {
+function showDOMObject() {
     var div = document.getElementById("div1");
     div.innerHTML = "Modified by DOM";
 }
 
-function useJQueryObject() {
+function showJQueryObject() {
     var $div = $("#div1");
     $div.html("Modified by JQuery");
     //$div.innerHTML = "Modified by JQuery";  这样是不行的，JQuery对象不能使用DOM对象的属性

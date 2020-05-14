@@ -21,6 +21,7 @@ function showJqueryUseDOMObject() {
 function showDOMUseJQueryObject() {
     var $div = $("#div1");
     var div = $div[0];
+    //var div = $div.get(0);  这样也可以，都是取包装集的第一个元素
     div.innerHTML = "Modified by DOM use JQuery object";
 }
 

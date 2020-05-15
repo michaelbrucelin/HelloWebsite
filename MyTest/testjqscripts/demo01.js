@@ -2,7 +2,7 @@
 
 console.log("hello nodejs");
 
-require("jsdom").env("", function(err, window) {
+require("jsdom").env("", function (err, window) {
   if (err) {
     console.error(err);
     return;

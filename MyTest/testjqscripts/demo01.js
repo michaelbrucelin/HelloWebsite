@@ -2,12 +2,10 @@
 
 console.log("hello nodejs");
 
-require("jsdom").env("", function (err, window) {
-  if (err) {
-    console.error(err);
-    return;
-  }
-  var $ = require("jquery")(window);
-  $("body").append("<div>TEST</div>");
-  console.log($("body").html());
-});
+const jsdom = require('jsdom');
+const {JSDOM} = jsdom;
+const {document} = (new JSDOM('<!doctype html><html><body></body></html>')).window;
+global.document = document;
+const window = document.defaultView;
+const $ = require('jquery')(window);
+

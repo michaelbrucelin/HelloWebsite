@@ -1,6 +1,6 @@
 const jsdom = require('jsdom');
-const {JSDOM} = jsdom;
-const {document} = (new JSDOM('<!doctype html><html><body></body></html>')).window;
+const { JSDOM } = jsdom;
+const { document } = (new JSDOM('<!doctype html><html><body></body></html>')).window;
 global.document = document;
 const window = document.defaultView;
 const $ = require('jquery')(window);
@@ -15,3 +15,18 @@ arr = $.map(arr, function (item) {
 console.log(arr);
 
 //自己使用js模拟一个map方法
+function mymap(arr, fn) {
+    var rst = [], value;
+    for (let i = 0; i < arr.length; i++) {
+        value = fn(arr[i], i);
+        if (value != null) {
+            rst[rst.length] = value;
+        }
+    }
+    return rst;
+}
+
+arr = mymap(arr, (item, index) => {
+    return item * index;
+})
+console.log(arr);

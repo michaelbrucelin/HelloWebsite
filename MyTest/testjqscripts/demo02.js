@@ -5,7 +5,7 @@ global.document = document;
 const window = document.defaultView;
 const $ = require('jquery')(window);
 
-//jquery中可以使用map方法遍历数组
+//jquery中可以使用map()方法遍历数组
 var arr = [1, 2, 3, 4];
 console.log(arr);
 
@@ -30,3 +30,6 @@ arr = mymap(arr, (item, index) => {
     return item * index;
 })
 console.log(arr);
+
+//map()方法只能处理数组，如果需要处理字典，需要使用each()方法
+//each()方法的实现使用了js中的call()方法

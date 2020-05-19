@@ -11,4 +11,4 @@ var obj = {
 
 console.log("======== Sample 01 ========");
 console.log(obj.objAge);
-obg.myFun();
+obj.myFun();

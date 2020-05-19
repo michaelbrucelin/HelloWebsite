@@ -33,3 +33,16 @@ console.log(arr);
 
 //map()方法只能处理数组，如果需要处理字典，需要使用each()方法
 //each()方法的实现使用了js中的call()方法
+var dic = { "name": "ZhangSan", "age": 18, "sex": "boy" };
+console.log("========== 1 ==========");
+$.each(dic, (key, value) => {
+    console.log(key + ":\t" + value);
+})
+console.log("========== 2 ==========");
+$.each(dic, (key) => {
+    console.log(key + ":\t" + dic[key]);
+})
+console.log("========== 3 ==========");
+$.each(dic, () => {
+    console.log(this);
+})

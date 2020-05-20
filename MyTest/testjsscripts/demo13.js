@@ -4,7 +4,7 @@ var name = '张三', age = 18;
 var obj = {
     name: '李四',
     objAge: this.age,
-    myFun: () => {
+    myFun: function () {
         console.log(this.name + "的年龄是：" + this.age);
     }
 }

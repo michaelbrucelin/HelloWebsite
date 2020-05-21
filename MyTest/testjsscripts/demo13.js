@@ -39,4 +39,4 @@ var db = {
 console.log("======== Sample 03 ========");
 obj.myFun.call(db);
 obj.myFun.apply(db);
-obj.myFun.bind(db);
+obj.myFun.bind(db)();

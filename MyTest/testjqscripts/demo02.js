@@ -43,6 +43,6 @@ $.each(dic, (key) => {
     console.log(key + ":\t" + dic[key]);
 })
 console.log("========== 3 ==========");
-$.each(dic, () => {
+$.each(dic, function () {
     console.log(this);
 })

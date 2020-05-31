@@ -26,3 +26,7 @@ div{
 #div1{
     clear: both;
 }
+
+div li{
+    display: inline;
+}

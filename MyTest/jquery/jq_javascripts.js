@@ -7,7 +7,7 @@ $(function () {
     //$("#tb01 tr:not(:first):not(:last):lt(3)").css("background-color", "#EEEEEE");
     $("#tb01 tr:not(:first):not(:last):even").css("background-color", "#EEEEEE");
 
-    //光棒效果
+    //????
     var tbtr = "#tb01 tr:not(:first):not(:last)";
     var bgColor;
     $(tbtr).mouseover(function () {

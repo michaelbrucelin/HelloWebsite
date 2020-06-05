@@ -1,3 +1,11 @@
+function createLinkTag() {
+    //console.log($("#select01 option:selected").index());
+    //console.log($("#select01 option:selected").html());
+    var $link = $("<a id='a-dynamic' href='http://www.baidu.com'>baidu</a>");
+    $link.css("color", "#FF0000");
+    $link.click(function () { console.log("a-dynamic be clicked."); });
+}
+
 $(function () {
     $("#tb01, #td tr, #tb01 td, #tb01 th").css("border", "1px solid #000000").css("text-align", "center");
     $("#tb01 td").css("padding", "0 16px");

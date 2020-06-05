@@ -1,6 +1,24 @@
-div{
+div {
     width: 400px;
     height: 32px;
     border: 1px solid;
     margin: 8px 0;
+}
+
+#div1 {
+    width: 160px;
+    height: 20px;
+    margin: 0;
+}
+
+#div01 {
+    background-color: #FF0000;
+}
+
+#div02 {
+    background-color: #00FF00;
+}
+
+#div03 {
+    background-color: #0000FF;
 }

@@ -4,6 +4,16 @@ function createLinkTag() {
     var $link = $("<a id='a-dynamic' href='http://www.baidu.com'>baidu</a>");
     $link.css("color", "#FF0000");
     $link.click(function () { console.log("a-dynamic be clicked."); });
+
+    var selectindex = $("#select01 option:selected").index();
+    if (selectindex == 0) {
+        $("#a-dynamic").remove();
+        $("#div02").append($link);
+    }
+    else if (selectindex == 1) {
+        $("#a-dynamic").remove();
+        $("#div02").prepend($link);
+    }
 }
 
 $(function () {

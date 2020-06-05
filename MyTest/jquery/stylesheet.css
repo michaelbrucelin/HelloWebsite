@@ -1,14 +1,16 @@
 div {
     width: 400px;
     height: 32px;
-    border: 1px solid;
+    border: 1px solid #000000;
     margin: 8px 0;
+    color: #FFFFFF;
 }
 
 #div1 {
     width: 160px;
     height: 20px;
     margin: 0;
+    color: #000000;
 }
 
 #div01 {

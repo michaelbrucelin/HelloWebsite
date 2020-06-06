@@ -14,6 +14,18 @@ function createLinkTag() {
     else if (selectindex == 1) {
         $("#div02").prepend($link);
     }
+    else if (selectindex == 2) {
+        $("#div02").after($link);
+    }
+    else if (selectindex == 4) {
+        $("#div02").before($link);
+    }
+    else if (selectindex == 5) {
+        $link.appendTo($("#div02"));
+    }
+    else if (selectindex == 6) {
+        $link.prependTo($("#div02"));
+    }
 }
 
 $(function () {

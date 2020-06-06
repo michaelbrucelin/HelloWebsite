@@ -1,4 +1,6 @@
 function createLinkTag() {
+    $("#a-dynamic").remove();  //????????????????
+
     //console.log($("#select01 option:selected").index());
     //console.log($("#select01 option:selected").html());
     var $link = $("<a id='a-dynamic' href='http://www.baidu.com'>baidu</a>");
@@ -7,11 +9,9 @@ function createLinkTag() {
 
     var selectindex = $("#select01 option:selected").index();
     if (selectindex == 0) {
-        $("#a-dynamic").remove();
         $("#div02").append($link);
     }
     else if (selectindex == 1) {
-        $("#a-dynamic").remove();
         $("#div02").prepend($link);
     }
 }

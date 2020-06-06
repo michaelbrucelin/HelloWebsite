@@ -9,22 +9,22 @@ function createLinkTag() {
 
     var selectindex = $("#select01 option:selected").index();
     if (selectindex == 0) {
-        $("#div02").append($link);
+        $("#div02").append($link);     //?????????????
     }
     else if (selectindex == 1) {
-        $("#div02").prepend($link);
+        $("#div02").prepend($link);    //?????????????
     }
     else if (selectindex == 2) {
-        $("#div02").after($link);
+        $("#div02").after($link);      //????????????
     }
     else if (selectindex == 3) {
-        $("#div02").before($link);
+        $("#div02").before($link);     //????????????
     }
     else if (selectindex == 4) {
-        $link.appendTo($("#div02"));
+        $link.appendTo($("#div02"));   //???????????????????
     }
     else if (selectindex == 5) {
-        $link.prependTo($("#div02"));
+        $link.prependTo($("#div02"));  //???????????????????
     }
 }
 

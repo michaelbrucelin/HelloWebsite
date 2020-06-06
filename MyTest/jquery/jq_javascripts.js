@@ -17,13 +17,13 @@ function createLinkTag() {
     else if (selectindex == 2) {
         $("#div02").after($link);
     }
-    else if (selectindex == 4) {
+    else if (selectindex == 3) {
         $("#div02").before($link);
     }
-    else if (selectindex == 5) {
+    else if (selectindex == 4) {
         $link.appendTo($("#div02"));
     }
-    else if (selectindex == 6) {
+    else if (selectindex == 5) {
         $link.prependTo($("#div02"));
     }
 }

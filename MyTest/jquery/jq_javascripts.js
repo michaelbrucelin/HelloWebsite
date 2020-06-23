@@ -28,6 +28,11 @@ function createLinkTag() {
     }
 }
 
+function animateSample01() {
+    $("#div04").animate({ "width": 600, "height": 50, "background-color": "#FF0000" }, 2000);
+    $("#div04").animate({ "width": 400, "height": 10, "background-color": "#00FF00" }, 2000);
+}
+
 $(function () {
     $("#tb01, #td tr, #tb01 td, #tb01 th").css("border", "1px solid #000000").css("text-align", "center");
     $("#tb01 td").css("padding", "0 16px");

@@ -33,6 +33,21 @@ function animateSample01() {
     $("#div04").animate({ "width": 400, "height": 10, "background-color": "#00FF00" }, 2000);
 }
 
+//?????div?????????????width?height?????
+function animateSample02() {
+    $("#div05").animate({ "width": 600, "height": 50 }, 2000);
+    $("#div05").animate({ "width": 400, "height": 10 }, 2000);
+    $("#div05").css("background-color", "#0000FF");
+}
+
+//???????width?height??????????div????????
+function animateSample03() {
+    $("#div06").animate({ "width": 600, "height": 50 }, 2000);
+    $("#div06").animate({ "width": 400, "height": 10 }, 2000, () => {
+        $("#div06").css("background-color", "#0000FF");
+    });
+}
+
 $(function () {
     $("#tb01, #td tr, #tb01 td, #tb01 th").css("border", "1px solid #000000").css("text-align", "center");
     $("#tb01 td").css("padding", "0 16px");

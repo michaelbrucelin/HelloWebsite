@@ -48,6 +48,21 @@ function animateSample03() {
     });
 }
 
+//广告动画
+function animateAD() {
+    $("#divAD").toggle(animateADShow(), animateADHide());
+}
+
+//缓慢弹出广告
+function animateADShow() {
+    $("#divAD").animate({ "bottom": 0, "opacity": 100 }, 2000)
+}
+
+//缓慢隐藏广告
+function animateADHide() {
+    $("#divAD").animate({ "bottom": -150, "opacity": 0 }, 2000)
+}
+
 $(function () {
     $("#tb01, #td tr, #tb01 td, #tb01 th").css("border", "1px solid #000000").css("text-align", "center");
     $("#tb01 td").css("padding", "0 16px");

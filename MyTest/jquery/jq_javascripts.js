@@ -50,17 +50,13 @@ function animateSample03() {
 
 //广告动画
 function animateAD() {
-    $("#divAD").toggle(animateADShow(), animateADHide());
-}
-
-//缓慢弹出广告
-function animateADShow() {
-    $("#divAD").animate({ "bottom": 0, "opacity": 100 }, 2000)
-}
-
-//缓慢隐藏广告
-function animateADHide() {
-    $("#divAD").animate({ "bottom": -150, "opacity": 0 }, 2000)
+    var divAD = $("#divAD");
+    if (divAD.css("bottom") == "-150px") {
+        divAD.animate({ "bottom": 0, "opacity": 100 }, 2000);
+    }
+    else {
+        divAD.animate({ "bottom": -150, "opacity": 0 }, 2000);
+    }
 }
 
 $(function () {

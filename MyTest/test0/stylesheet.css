@@ -3,11 +3,15 @@ table, caption, thead, tbody, tfoot, th, tr, td{
 }
 
 #div001{
-    width: 33.3%;
+    width: 33%;
     float: left;
 }
 #div002{
-    width: 33.3%;
+    width: 33%;
+    float: left;
+}
+#div003{
+    width: 33%;
     float: left;
 }
 

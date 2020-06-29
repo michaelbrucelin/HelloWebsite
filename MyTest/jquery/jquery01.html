@@ -131,9 +131,16 @@
         广告
     </div>
 
+    <br>
+    <input id="int01" type="text" style="width: 32px;">
+    <input id="int02" type="text" style="width: 32px;">
+    <input id="jqbtn01" type="button" value="max" onclick="console.log($.myMax($('#int01').val(), $('#int02').val()))">
+    <input id="jqbtn02" type="button" value="min" onclick="console.log($.myMin($('#int01').val(), $('#int02').val()))">
+
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./javascript.js"></script>
     <script src="./jq_javascripts.js"></script>
+    <script src="./jq_pluginInside.js"></script>
 </body>
 
 </html>

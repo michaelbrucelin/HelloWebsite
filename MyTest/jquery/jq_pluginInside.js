@@ -4,7 +4,7 @@ $.extend({
     "myMax": function (x, y) {
         return x > y ? x : y;
     },
-    "myMin": function () {
+    "myMin": function (x, y) {
         return x > y ? y : x;
     }
 })

@@ -136,6 +136,9 @@
     <input id="int02" type="text" style="width: 32px;">
     <input id="jqbtn01" type="button" value="max" onclick="console.log($.myMax($('#int01').val(), $('#int02').val()))">
     <input id="jqbtn02" type="button" value="min" onclick="console.log($.myMin($('#int01').val(), $('#int02').val()))">
+    <input id="chk01" type="checkbox">
+    <input id="jqbtn03" type="button" value="chk" onclick="$('#chk01').myChecked()">
+    <input id="jqbtn04" type="button" value="unchk" onclick="$('#chk01').myUnChecked()">
 
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./javascript.js"></script>

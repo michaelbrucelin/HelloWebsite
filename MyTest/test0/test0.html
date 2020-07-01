@@ -326,14 +326,14 @@
 
     <div id="div003">
         <label for="locationX">Location</label>
-        <input id="locationX" type="number" value="0" style="width: 40px;">
-        <input id="locationY" type="number" value="0" style="width: 40px;">
+        <input id="locationX" type="number" value="0" style="width: 40px;" onchange="selectManyImgs()">
+        <input id="locationY" type="number" value="0" style="width: 40px;" onchange="selectManyImgs()">
         <label for="sizeWidth">Size</label>
-        <input id="sizeWidth" type="number" value="178" style="width: 40px;">
-        <input id="sizeHeight" type="number" value="178" style="width: 40px;">
+        <input id="sizeWidth" type="number" value="178" style="width: 40px;" onchange="selectManyImgs()">
+        <input id="sizeHeight" type="number" value="178" style="width: 40px;" onchange="selectManyImgs()">
         <br>
-        <img id="imgSmall" src="./manyImgs.jpg" style="width: 49%; margin: 0px; padding: 0px;">
-        <img id="imgbig" src="./manyImgs.jpg" style="width: 49%; margin: 0px; padding: 0px;">
+        <img id="imgbig" src="./manyImgs.jpg" style="width: 49%;">
+        <img id="imgSmall" style="background: url('./manyImgs.jpg'); background-position: 0px 0px; width: 178px; height: 178px;">
     </div>
 
     <script src="../node_modules/jquery/dist/jquery.js"></script>

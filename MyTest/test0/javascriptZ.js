@@ -262,6 +262,20 @@ function selectItemMove(srcId, tarId) {
     }
 }
 
+function selectManyImgs() {
+    var x = document.getElementById("locationX").value;
+    var y = document.getElementById("locationY").value;
+    var w = document.getElementById("sizeWidth").value;
+    var h = document.getElementById("sizeHeight").value;
+    console.log("{" + x + "," + y + "} [" + w + "," + h + "]");
+
+    var imgbox = document.getElementById("imgSmall");
+    var imgBoxStyle = "background: url('./manyImgs.jpg');";
+    imgBoxStyle = imgBoxStyle + " background-position: -" + x + "px -" + y + "px;";
+    imgBoxStyle = imgBoxStyle + " width: " + w + "px; height: " + h + "px;";
+    imgbox.style = imgBoxStyle;
+}
+
 window.onload = () => {
     setProvince();
     setCity();

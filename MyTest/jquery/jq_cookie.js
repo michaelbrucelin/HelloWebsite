@@ -1,9 +1,13 @@
-function MySetCookie(key, value) {
+function MySetCookie() {
+    var key = $("#keySet").val();
+    var value = $("#valueSet").val();
+
     //$.cookie('name', 'value', { expires: 7, path: '/' });
-    $.cookie('name', 'value');
+    $.cookie(key, value);
+    alert("done");
 }
 
-function MyGetCookie(key) {
-    console.log("wage45hyerwagteaw");
-    $("#valueGet").value = 100;
+function MyGetCookie() {
+    var value = $.cookie($("#keyGet").val());
+    $("#valueGet").val(value);
 }

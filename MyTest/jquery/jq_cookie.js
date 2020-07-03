@@ -16,3 +16,22 @@ function MyGetCookie() {
     var value = $.cookie($("#keyGet").val());
     $("#valueGet").val(value);
 }
+
+function MyLogin() {
+    var act = $("#txtAct").val();
+    if (act) {
+        $.cookie("act", act);
+    }
+    alert("登录成功");
+}
+
+function MyClear() {
+    $.removeCookie("act");
+}
+
+$(document).ready(function () {
+    var act = $.cookie("act");
+    if (act) {
+        $("#txtAct").val(act);
+    }
+})

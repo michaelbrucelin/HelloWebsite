@@ -1,3 +1,37 @@
+body {
+    background-color:#FFFFFF;
+}
+@media screen and (max-width: 900px) {
+    body {
+        background-color:#DDDDDD;
+    }
+}
+@media screen and (max-width: 600px) {
+    body {
+        background-color:#BBBBBB;
+    }
+}
+@media screen and (max-width: 300px) {
+    body {
+        background-color:#888888;
+    }
+}
+@media screen and (max-height: 800px) {
+    body {
+        background-color:#FF0000;
+    }
+}
+@media screen and (max-height: 600px) {
+    body {
+        background-color:#00FF00;
+    }
+}
+@media screen and (max-height: 200px) {
+    body {
+        background-color:#0000FF;
+    }
+}
+
 table, caption, thead, tbody, tfoot, th, tr, td{
     border: 1px solid #000000;
 }

@@ -21,7 +21,6 @@ body { color: #3d4c63; background: #f2f2f2; font: 14px/1.5 "Microsoft Yahei", sa
 ::-ms-input-placeholder { color: #999; }
 .wp { width: 76%; max-width: 1366px; margin: 0 auto; }
 
-
 .app {width: 100vw;height: 100vh;overflow: hidden;position: relative;background: url('../images/bg-main.jpg') no-repeat center center;background-size: cover;}
 
 .page-bg {position: absolute;top: 0;left: 0;bottom: 0;right: 0;z-index: 0;}
@@ -48,7 +47,6 @@ body { color: #3d4c63; background: #f2f2f2; font: 14px/1.5 "Microsoft Yahei", sa
 .menubox .bg .item.s2 {animation: rotateAnim1 5s linear infinite;}
 .menubox .bg .item.s3 {animation: rotateAnim2 1s linear infinite;}
 .menubox .bg .item.s4 {animation: rotateAnim1 10s linear infinite;}
-
 
 .menu01 {position: absolute;top: 50%;left: 50%;width: 640px;height: 640px;margin: -320px 0 0 -320px;overflow: hidden;border-radius: 50%;color: #0fccff;font-size: 20px;transition: 0.3s linear;z-index: 3;}
 .menu01 li {position: absolute;bottom: 50%;left: 50%;margin-left: -125px;white-space: nowrap;padding-bottom: 235px;transform-origin: 50% 100%;overflow: hidden;width: 250px;}
@@ -90,7 +88,6 @@ body { color: #3d4c63; background: #f2f2f2; font: 14px/1.5 "Microsoft Yahei", sa
 .menu02-list li:first-child:nth-last-child(3) {transform: rotate(12deg);}
 .menu02-list li:first-child:nth-last-child(3) ~ li:last-child {transform: rotate(-12deg);}
 
-
 .menu02-list li:first-child:nth-last-child(4) {transform: rotate(18deg);}
 .menu02-list li:first-child:nth-last-child(4) ~ li:nth-child(2) {transform: rotate(6deg);}
 .menu02-list li:first-child:nth-last-child(4) ~ li:nth-child(3) {transform: rotate(-6deg);}
@@ -119,11 +116,11 @@ body { color: #3d4c63; background: #f2f2f2; font: 14px/1.5 "Microsoft Yahei", sa
     from {transform: rotate(0);}
     to {transform: rotate(360deg);}
 }
+
 @keyframes rotateAnim2 {
     from {transform: rotate(0);}
     to {transform: rotate(-360deg);}
 }
-
 
 @media only screen and (max-width: 1380px) {
     .header {height: 70px;line-height: 70px;}

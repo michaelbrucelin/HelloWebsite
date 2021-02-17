@@ -1,0 +1,8 @@
+.bgimg {
+    height: 100%;
+    position: relative;
+    opacity: 0.95;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

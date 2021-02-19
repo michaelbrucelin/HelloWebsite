@@ -1,0 +1,260 @@
+/*
+ThemeWaves Responsive CSS
+*/
+/* Affects device widths of 959px and smaller. */
+@media (max-width: 1599px) {
+    .tw-header.tw-header-sidebar ~ .main-container {
+        margin-left: 0;
+    }
+    .uk-padding-large .uk-padding{
+        padding: 10px;
+    }
+    .uk-padding .uk-padding-large{
+        padding: 30px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .bottom-area .uk-padding-left{
+        padding-left: 0;
+    }
+    .uk-padding-large{
+        padding: 40px;
+    }
+    .tw-box.uk-padding:not(.layout-2){
+        padding: 10px;
+    }
+    .tw-box.uk-padding.layout-2:not(.right){
+        padding-right: 0;
+    }
+    .tw-call-action{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .call-content + .call-btn{
+        margin-top: 20px;
+    }
+    .sidebar-area .sidebar-inner{
+         padding-left: 10px;
+    }
+    .sidebar-area .widget{
+        margin-bottom: 36px;
+    }
+    .portfolio-single8{
+        width: 100%;
+    }
+}
+
+/* Affects device widths of 959px and smaller. */
+@media (max-width: 959px) {
+	
+    .fp-tableCell,
+    .tw-fullpage-main{
+        height: auto !important;
+        max-width: 100% !important;
+        display: inline-block !important;
+        left: 0 !important;
+        top:0 !important;
+        position: static !important;
+        transform: none !important;
+    }
+	.ds{
+		position:absolute;
+		top:50%;    transform: translatey(-50%);
+		left:0px;
+		margin:auto;
+		right:0px;
+		
+		
+	}
+	.tw-fullpage-main>section{     max-width: 100% !important;
+        display: inline-block !important;
+        left: 0 !important;
+        top:0 !important;
+        position: static !important;
+        transform: none !important; 
+		}
+	 .tw-fullpage-main>section:nth-child(n+2){
+		 
+		   height: auto !important;
+   
+		 
+	 }
+	
+	.tw-heading h2{
+		font-size:35px !important;
+		
+		
+	}
+    .fp-tableCell{
+        padding: 100px 0;
+    }
+	
+	
+	.uk-container>:last-child{
+		margin-top:30px;
+	}
+    .tw-fullpage-main-container{
+        overflow-y: auto !important;
+    }
+    #fp-nav{
+        /*display: none;*/
+    }
+    .big-images.owl-carousel.owl-theme .owl-stage-outer, .big-images.owl-carousel.owl-theme .owl-item{
+        width: auto !important;
+    }
+    .tw-fullpage-main>section>.fp-tableCell,
+    .tw-fullpage-main>section{
+        min-width: 100%;
+        width: 100%;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+    .isotope-container .portfolio-media img,
+    .isotope-container .portfolio-media,
+    .owl-carousel .shop-image-container,
+    .owl-carousel .portfolio-media{
+        width: 100%;
+    }
+    .tw-slider .slider-item{
+        height: 600px;
+    }
+    .tw-heading .tw-sub-title{
+        font-size: 10px;
+    }
+    .tw-heading h1{
+        font-size: 42px;
+    }
+    .tw-heading h2{
+        font-size: 36px;
+    }
+    .tw-carousel .owl-theme .owl-dots{
+        bottom: 50px;
+    }
+    .footer-area .copyright{
+        text-align: center;
+    }
+    .tw-process .tw-process-block .tw-process-circle:after {
+        display: none;
+    }
+    .tw-tablet-margin{
+        margin-top: 20px;
+    }
+    .sidebar-area{
+        width: 100%;
+    }
+    .sidebar-area .sidebar-inner{
+        padding-left: 0;
+        padding-right: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .content-area + .sidebar-area,
+    .sidebar-area + .content-area{
+        margin-top: 60px;
+    }
+    
+    .uk-section.tw-splitpage-section{
+        width: 200%;
+        z-index: 1;
+    }
+    .uk-section.tw-splitpage-section.tw-splitpage-section-nomob{
+        background: none !important;
+        z-index: 0;
+    }
+    .ms-right .uk-section.tw-splitpage-section{
+        left: -100%;
+    }
+    .uk-section.tw-splitpage-section .uk-container{
+        overflow-y: auto;
+    }
+    .tw-portfolio.promo .promo-text-container,
+    .tw-portfolio.promo .uk-first-column .promo-text-container,
+    .tw-portfolio.promo .promo-image-container,
+    .tw-portfolio.promo .uk-first-column .promo-image-container{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+@media (max-width: 639px) {
+    .uk-container{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .tw-slider .slider-item{
+        height: 400px;
+    }
+    .tw-pricing-table .pricing-title,
+    .tw-heading h1{
+        font-size: 36px;
+    }
+   
+	.tw-heading h2{
+		font-size:25px !important;
+		
+		
+	}
+    .fp-tableCell{
+        padding: 100px 0;
+    }
+	
+	.uk-container>:last-child{
+		margin-top:10px;
+	}
+    .tw-carousel-testimonial .testimonial-title{
+        font-size: 20px;
+    }
+    .tw-coming-soon .counter-item{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .tw-coming-soon .counter{
+        font-size: 24px;
+        width: 90px;
+        height: 90px;
+    }
+    .tw-page-title-container .tw-page-title{
+        font-size: 36px;
+    }
+    .metro-blog article .entry-content p:not(.more-link){
+        display: none;
+    }
+    .metro-blog article .entry-date,
+    .metro-blog article .entry-title{
+        top: 0 !important
+    }
+}
+/* Affects device widths of 639px and smaller. */
+@media (max-width: 480px) {
+    .uk-container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media (max-width: 639px) {
+    .uk-width-1-1\@xs,
+    .uk-child-width-1-2\@xs>.uk-width-1-1,
+    .uk-child-width-1-1\@xs>* {
+        width: 100%;
+    }
+    .uk-child-width-1-2\@xs>* {
+        width: 50%;
+    }
+    .tw-call-action{
+        padding: 40px 60px;
+    }
+}
+@media (max-width: 360px) {
+    .uk-width-1-1\@xxs,
+    .uk-child-width-1-2\@xxs>.uk-width-1-1,
+    .uk-child-width-1-1\@xxs>* {
+        width: 100%;
+    }
+    .uk-child-width-1-2\@xxs>* {
+        width: 50%;
+    }
+    .tw-heading h1, .tw-heading h2{
+        font-size: 24px;
+    }
+}

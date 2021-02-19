@@ -1,0 +1,133 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+
+	
+.lianxizong{
+			width:100%;
+	max-width:700px;
+	padding:0px 20px 0px 20px;
+	margin:auto;
+	
+	
+	}
+	
+	.lianxi{
+		width:100%;
+		}
+		
+		.biaodan{
+			width:100%;
+			float:left;
+			
+			
+			
+			
+			}
+			
+			
+					.biaodan1{
+			width:100%;
+			float:left;
+			text-align:center;
+			line-height:30px;
+			margin-bottom:50px;
+			color:#000;
+			
+			
+			
+			
+			
+			}
+				.biaodan1 p{
+					display:inline-block;
+			font-size: 24px;
+				width:100%;
+			float:left;
+				
+				}
+				.biaodan1 span{
+					display:inline-block;
+			
+				width:100%;
+			float:left;
+				
+				}
+			
+			.biaodan2{
+					width:100%;
+			float:left;
+			margin-bottom:20px;
+			
+			
+				
+				}
+				
+					.biaodan2-1{
+						
+							width:100%;
+			float:left;
+						
+						}
+						
+								.biaodan2-1 p{
+									display:none;
+									}
+									
+									.biaodan2-1 input{
+										width:100%;
+										
+										
+										
+										
+										}
+										
+										label{
+											display:inline;
+											
+											}
+											
+											
+											.biaodan3{
+												width:100%;
+												float:left;
+												
+												}
+												
+													.biaodan3-1{
+												width:50%;
+												float:left;
+												margin-bottom:20px;
+												}
+												
+												.biaodan3-1 p{
+													display:none;}
+													
+													
+													.biaodan4{
+														width:100%;float:left;
+														margin-bottom:20px;
+														}
+														
+														.biaodan4 p{
+															display:none;}
+															
+															
+															
+																.biaodan5{
+														width:100%;float:left;
+														text-align:center;
+														
+														
+														}
+														
+														.biaodan5 input{
+															width:110px;
+															height:30px;
+															display:inline-block;
+															    padding: 0 ;
+															
+															
+															}

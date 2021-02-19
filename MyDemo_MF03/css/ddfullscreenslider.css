@@ -1,0 +1,1551 @@
+
+
+.slide{
+
+	background-size:cover;
+
+	background-position:center;
+
+	
+
+	}
+
+.slide:before{
+
+	content:"";
+
+	left:0px;
+
+	top:0px;
+
+	width:100%;
+
+	height:100%;
+
+	position:absolute;
+
+	z-index:100;
+
+	
+
+	
+
+
+
+	
+
+	background: rgba(0,0,0,0.4);
+
+	}
+
+
+
+div.slidewrapper{ /* wrapper DIV that surrounds the ARTICLE elements inside .dd_fullscreenslider */
+
+	width: 100%;
+
+	height: 100%;
+
+	position: absolute;
+
+	top: 0;
+
+	left: 0;
+
+	-webkit-transform: translate3d(0, 0, 0); /* to prevent flickering in iOS */
+
+	-moz-transition: -moz-transform 0.5s; /* actual duration controlled by script */
+
+	-webkit-transition: -webkit-transform 0.5s;
+
+	transition: transform 0.5s;
+
+}
+
+
+
+ul.fssnav{ /* UL list dynamically added by script for Slider navigation */
+
+  list-style: none;
+
+  padding: 0;
+
+  margin: 0;
+
+	position: fixed;
+
+	top: 50%; /* vertically center menu */
+
+	right: 20px; /* distance from right edge of screen */
+
+	transform: translateY(-50%); /* vertically center menu */
+
+}
+
+
+
+ul.fssnav li{
+
+  margin-bottom: 15px;
+
+}
+
+
+
+ul.fssnav li a{
+
+  text-decoration: none;
+
+
+
+  border-radius: 50%;
+
+  width: 15px; /* dimensions of nav links */
+
+  height: 15px;
+
+  display: block;
+
+	position: relative;
+
+  text-indent: -500px;
+
+	outline: none;
+
+  overflow: hidden;
+
+  background:rgba(255,255,255,0.6)
+
+  
+
+}
+
+
+
+ul.fssnav li a::after{ /* create "fill" element inside A */
+
+  content: "";
+
+  position: absolute;
+
+  width: 100%;
+
+  height: 100%;
+
+  top: 100%;
+
+  left: 0;
+
+  background: white; /* color of "fill" element */
+
+  transition: top 0.5s; /* transition for "fill up" effect */
+
+}
+
+
+
+ul.fssnav li.selected a::after{
+
+  top: 0; /* fill up selected A element from bottom to top */
+
+}
+
+
+
+
+
+section.dd_fullscreenslider article.slide{ /* CSS for each slide */
+
+  width: 100%;
+
+  height: 100%;
+
+	display: block;
+
+
+
+	position:relative;
+
+	
+
+	overflow: hidden;
+
+  -webkit-box-sizing: border-box; /* include padding/ border as part of declared menu width */
+
+  -moz-box-sizing: border-box;
+
+	z-index: 1;
+
+  background: #000;
+
+	-webkit-transform: translate3d(0, 0, 0); /* to prevent flickering in iOS */
+
+}
+
+
+
+
+
+
+
+section.dd_fullscreenslider article.slide .scrollable{ /* Assign this class to elements within a slide that should be scrollable */
+
+	overflow: auto;
+
+}
+
+
+
+
+
+
+
+section.dd_fullscreenslider article.slide:nth-of-type(2){ /* 2nd demo slide bgcolor */
+
+	background: #22AFE2;
+
+}
+
+
+
+section.dd_fullscreenslider article.slide:nth-of-type(3){ /* 3rd demo slide bgcolor */
+
+	background: #88D332;
+
+}
+
+
+
+section.dd_fullscreenslider article.slide:nth-of-type(4){ /* 4th demo slide bgcolor */
+
+	background: #A36400;
+
+}
+
+
+
+section.dd_fullscreenslider div.closex{ /* Large x close button inside Slider */
+
+  width: 50px;
+
+  height: 50px;
+
+	overflow: hidden;
+
+  display: block;
+
+  position: fixed;
+
+  cursor: pointer;
+
+	text-indent: -1000px;
+
+	opacity: 0.8;
+
+  z-index: 1001;
+
+  top: 5px;
+
+  right: 3px;
+
+}
+
+
+
+section.dd_fullscreenslider div.closex::before, section.dd_fullscreenslider div.closex::after{ /* render large x inside close button */
+
+  content: "";
+
+  display: block;
+
+  position: absolute;
+
+  width: 100%;
+
+  height: 6px;
+
+  background: white; /* color of x button */
+
+  top: 50%;
+
+  margin-top: -3px;
+
+  -ms-transform: rotate(-45deg);
+
+  -webkit-transform: rotate(-45deg);
+
+  transform: rotate(-45deg);
+
+}
+
+
+
+section.dd_fullscreenslider div.closex::after{ /* render large cross inside close button */
+
+  -ms-transform: rotate(-135deg);
+
+  -webkit-transform: rotate(-135deg);
+
+  transform: rotate(-135deg);
+
+}
+
+
+
+
+
+
+
+.wenzizong{
+
+	display:inline-block;
+
+		position:absolute;
+
+	left:0px;
+
+	z-index:200;
+
+	width:100%;
+
+	top:50%;
+
+	transform:translateY(-50%);
+
+
+
+	}
+
+
+
+.wenzi{
+
+	width:100%;
+
+	float:left;
+
+
+
+	z-index:1;
+
+	color:#fff;
+
+
+
+	text-align:center;
+
+	
+
+	
+
+	}
+
+	
+
+	.wenzi1{
+
+		width:100%;    font-size: 12px;
+
+		float:left;
+
+		
+
+		
+
+		}
+
+		.wenzi2{
+
+		width:100%;   font-size: 45px;
+
+		float:left;
+
+		margin-top:25px;
+
+		margin-bottom:25px;
+
+		
+
+		
+
+		}
+
+		
+
+		
+
+		   .wenzi3{
+
+		width:100%;      font-size: 15px;
+
+		float:left;
+
+		
+
+		
+
+		} 
+
+		
+
+		
+
+		   .wenzi4{
+
+			   margin-top:25px;
+
+			   width:100%;      
+
+		float:left
+
+		   
+
+		   
+
+		   }
+
+		   
+
+		   	   .wenzi4 p{
+
+				   display:inline-block;
+
+				   width:110px;
+
+				   height:30px;
+
+				   
+
+				   
+
+				   
+
+				   }
+
+				   
+
+				     .wenzi4 p a{
+
+						 color:#fff;
+
+						 	   display:inline-block;
+
+							   width:100%;
+
+							   height:100%;
+
+							   line-height:30px;
+
+							   border:#fff solid 1px;
+
+							   border-radius:20px;
+
+							
+
+							   
+
+							   
+
+						 }
+
+						 
+
+						 .wenzi4 p a:hover{
+
+							 color:#333;
+
+							 background-color:#000;}
+
+							 
+
+							 
+
+							 
+
+							 
+
+							 
+
+							 
+
+							 
+
+							 
+
+							 
+
+							 
+
+							 .fanganzong{
+
+	display:inline-block;
+
+		position:absolute;
+
+	left:0px;
+
+	z-index:200;
+
+	width:100%;
+
+	top:50%;
+
+	transform:translateY(-50%);
+
+	text-align:center;
+
+
+
+	}
+
+	
+
+	.fangan{
+
+		
+
+		text-align:center;
+
+		display:inline-block;
+
+		}
+
+		
+
+		.fangan1{
+
+			width:280px;
+
+			display:inline-block;
+
+			line-height:25px;
+
+			color:#fff;
+
+			padding:0px 70px 0px 70px;
+
+			float:left;
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			}
+
+			
+
+			.fangan1-1{width:100%; float:left;
+
+			margin-bottom:10px;
+
+				
+
+				}	
+
+				.fangan1-2{width:100%;   font-size: 18px;
+
+    font-weight: 600;float:left;
+
+
+
+				
+
+				}
+
+					.fangan1-3{width:100%;
+
+				    color: #fff;
+
+					margin-top:20px;float:left;
+
+				}
+
+				
+
+				.fangan1-4{width:100%;
+
+				margin-top:25px;float:left;
+
+				
+
+				
+
+				}
+
+				
+
+				.fangan1-4 a {
+
+    color: #fff;
+
+    display: inline-block;
+
+    width: 110px;
+
+    height: 30px;
+
+    line-height: 30px;
+
+    border: #fff solid 1px;
+
+    border-radius: 20px;
+
+}	
+
+
+
+ .fangan1-4 a:hover{
+
+							 color:#333;
+
+							 background-color:#fff;}
+
+							 
+
+							 
+
+							 
+
+							 
+
+							 
+
+							 
+
+							 
+
+							 
+
+							 
+
+							 
+
+							 					 .leibiezong{
+
+	display:inline-block;
+
+		position:absolute;
+
+	left:0px;
+
+	z-index:100;
+
+	width:100%;
+
+	top:50%;
+
+	transform:translateY(-50%);
+
+	text-align:center;
+
+
+
+	}
+
+	
+
+	
+
+	
+
+	 .leibie{
+
+		 width:260px;
+
+		 height:115px;
+
+		 display:inline-block;
+
+		 
+
+		 color:#fff;font-size: 15px;
+
+		 
+
+		 
+
+		 
+
+		 
+
+		 }
+
+		 
+
+		 	 .leibie p{
+
+				 margin-bottom:10px;}
+
+				 
+
+				 
+
+				 
+
+				 
+
+				 
+
+				 .bannerzong{
+
+					 
+
+					 
+
+		position:absolute;
+
+	left:0px;
+
+	z-index:200;
+
+	width:100%;
+
+	height:100%;
+
+	display:table;
+
+
+
+	
+
+	text-align:center;
+
+					 }
+
+					 
+
+					 	  .bannerzong1{
+
+					  vertical-align:middle;
+
+  display:table-cell;
+
+  text-align:center;
+
+						  }
+
+					  .banner{
+
+						  width:700px;
+
+						  display:inline-block;
+
+						  line-height:25px;
+
+						  color:#fff;
+
+					
+
+						  
+
+						  
+
+						  
+
+						  }
+
+						  .banner .swiper-container{
+
+							  padding-bottom:80px;
+
+							  }
+
+							  
+
+							  
+
+							  .banner .swiper-pagination-bullet-active {background: #fff;
+
+								  
+
+								  }
+
+								  
+
+								  .banner .swiper-pagination-bullet{
+
+									  background: #fff;
+
+									  width:12px;
+
+									  height:12px;
+
+									  
+
+									  }
+
+						  .zhanshi1{
+
+							  width:100%;
+
+							  height:150px;
+
+							  }
+
+							  
+
+							   .zhanshi1 img{
+
+								   height:100%;
+
+								   width:auto;
+
+								  
+
+								   
+
+								 
+
+							  }
+
+							  
+
+							    .zhanshi2{
+
+									width:100%;    font-size: 24px;
+
+									
+
+										  margin-top:30px;
+
+						  margin-bottom:20px;
+
+									}
+
+									
+
+									   .zhanshi2 a{
+
+										   color:#fff;}
+
+									
+
+									 .zhanshi3{
+
+									width:100%;    font-size: 16px;
+
+									    color: #eee;
+
+										  margin-top:20px;
+
+						  margin-bottom:20px;
+
+									}
+
+									
+
+									 .zhanshi4{
+
+									width:100%;  
+
+									
+
+									
+
+									}
+
+									
+
+									
+
+									
+
+									
+
+									
+
+									
+
+									.liuyanzong{
+
+					 
+
+					 	display:inline-block;
+
+		position:absolute;
+
+	left:0px;
+
+	z-index:200;
+
+	width:100%;
+
+	top:50%;
+
+	transform:translateY(-50%);
+
+	text-align:center;
+
+	padding:0px 20px 0px 20px;
+
+	box-sizing:border-box;
+
+	
+
+					 }
+
+					 
+
+					  .liuyan{
+
+						  width:100%;
+
+						 
+
+						  max-width:900px;
+
+						  background:none!important;
+
+						  
+
+						 
+
+						  display:inline-block;
+
+						  line-height:25px;
+
+						  color:#000;
+
+					
+
+						  
+
+						  
+
+						  
+
+						  }
+
+						  
+
+						  
+
+						  .liuyan1{
+
+							  width:33.33333333%;
+
+							  float:left;
+
+							  text-align:left;
+
+							  margin-bottom:30px;
+
+							  
+
+							  
+
+							  
+
+							  
+
+							  }
+
+							  
+
+							   .liuyan1-1{
+
+								   width:50px;
+
+								   height:50px;
+
+								   float:left;
+
+								   background-color:rgba(170, 170, 170, 0.5);
+
+								   border-radius:100%;
+
+								   text-align:center;
+
+								   
+
+								   
+
+								   }
+
+		
+
+						   .liuyan1-1 img{
+
+							   width:25px;
+
+							   margin-top:13px;
+
+							   height:auto;}
+
+							   
+
+							   
+
+							     .liuyan1-2{
+
+								      width: calc(100% - 60px);
+
+							
+
+								   float:right;
+
+								   
+
+								   }
+
+			
+
+			
+
+			 .liuyan1-2 p{
+
+				 display:inline-block;
+
+				 width:100%;
+
+				 font-size:16px;
+
+				 font-weight:bold;
+
+				 opacity:0.8;
+
+				 margin-bottom:0px;
+
+				 
+
+				 
+
+				 
+
+				 }
+
+				 
+
+				 	 .liuyan1-2 span{
+
+				 display:inline-block;
+
+				 width:100%;
+
+				 
+
+				 
+
+				 
+
+				 }
+
+				 .liuyan1-2 span.mf98{
+
+				 display:inline-block;
+
+				 width:85%;
+
+				 height: 50px
+
+				 
+
+				 
+
+				 
+
+				 }
+
+				 
+
+				   .liuyan2{
+
+					   width:100%;
+
+					   float:left;}
+
+					   
+
+					   
+
+					   
+
+					   .liuyan2 ::-webkit-input-placeholder { /* WebKit browsers */
+
+    color: #333;
+
+}
+
+.liuyan2 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+
+    color:#333;
+
+}
+
+.liuyan2 ::-moz-placeholder { /* Mozilla Firefox 19+ */
+
+   color: #333;
+
+}
+
+.liuyan2 :-ms-input-placeholder { /* Internet Explorer 10+ */
+
+    color: #333;
+
+}
+
+
+				 .biaodan{
+
+					 width:100%;float:left;
+
+					 height:auto;
+
+					 
+
+					 }
+
+					 
+
+					  .biaodan input{    background:rgba(170, 170, 170, 0.4);
+
+						  	font-family: "Microsoft Yahei",Tahoma,Arial,sans-serif;
+
+							outline:none;
+
+							width:100%;
+
+							height:40px;
+
+							line-height:40px;
+
+							padding:0px 20px 0px 20px;
+
+							box-sizing:border-box;
+
+							color:#333;
+
+							
+
+							
+
+						  }
+
+						  
+
+						  .biaodan input:focus
+
+{
+
+background: rgba(170, 170, 170, 0.4);
+
+}
+
+					   .biaodan2{
+
+						  width:100%;
+
+						  float:left;
+
+						  
+
+						  
+
+						  }
+
+					  .biaodan2-1{
+
+						  width:100%;
+
+						  
+
+						  
+
+						  }
+
+						  
+
+						  .biaodan2-1 p{
+
+							  display:none;}
+
+						   
+
+						   
+
+						      .biaodan3{float:left;
+
+						  width:100%;
+
+						  margin-top:20px;
+
+						
+
+						  
+
+						  }
+
+						  
+
+						       .biaodan3 p{
+
+								   display:none;}
+
+						  
+
+						     .biaodan3-1{
+
+								 width:50%;box-sizing:border-box;
+
+								 margin-bottom:20px;
+
+								 float:left;}
+
+								 
+
+								 
+
+								       .biaodan4{
+
+						  width:100%;float:left;
+
+						  margin-bottom:20px;
+
+						  
+
+						  
+
+						  }
+
+						  
+
+						    .biaodan4 p{
+
+								   display:none;}
+
+								   
+
+								   
+
+								   #neirong{
+
+									   color:#333;
+
+									   padding:20px;
+
+									   width:100%;
+
+									   box-sizing:border-box;
+
+									   float:left;
+
+									   
+
+									   
+
+									    background: rgba(170, 170, 170, 0.4);
+
+						  	font-family: "Microsoft Yahei",Tahoma,Arial,sans-serif;
+
+							outline:none;
+
+							overflow:auto;
+
+									   
+
+									   }
+
+									   
+
+									   					  #neirong:focus
+
+{
+
+background: rgba(170, 170, 170, 0.4);
+
+}
+
+
+
+
+
+						  
+
+					.biaodan5{
+
+						  width:100%;
+
+						  cursor:pointer;
+
+						  
+
+						  float:left;
+
+						  
+
+						  
+
+						  
+
+						  }
+
+						  
+
+							  .section #form1{
+							  	margin-top: 0;
+							  }
+							  .testimonial-title a:hover{
+								color: #52b5cb;
+							  }
+
+
+						  
+
+						  #tijiao{  cursor:pointer;
+
+						  width:120px;
+
+						  border-radius:20px;
+
+						  transition:all 0.5s;
+
+							  
+
+							  }
+							    #tijiao:hover{
+
+									
+
+									 background: rgba(170, 170, 170, 0.4);
+
+									
+
+									
+
+									
+
+									} 
+
+									
+
+									
+
+									
+
+									
+
+									
+
+									
+
+										@media screen and (min-width:320px) and (max-width:399px) {
+
+	
+
+			body{
+
+				overflow:auto!important;}
+
+				
+
+				.liuyanzong{
+
+	position:relative;
+
+	    top: 0%;
+
+    transform: translateY(0%);
+
+}
+
+	
+
+			.liuyan1{
+
+			width:100%;
+
+	
+
+	}					
+
+			}
+
+			
+
+				
+
+				
+
+				
+
+				
+
+				@media screen and (min-width: 400px) and (max-width:499px){
+
+	body{
+
+				overflow:auto!important;}
+
+				
+
+				.liuyanzong{
+
+	position:relative;
+
+	    top: 0%;
+
+    transform: translateY(0%);
+
+}
+
+
+
+.liuyan1{
+
+			width:100%;
+
+	
+
+	}
+
+			
+
+			}
+
+		
+
+		@media screen and (min-width: 500px) and (max-width:639px){
+
+			body{
+
+				overflow:auto!important;}
+
+				
+
+				.liuyanzong{
+
+	position:relative;
+
+	    top: 0%;
+
+    transform: translateY(0%);
+
+}
+
+
+
+
+
+	.liuyan1{
+
+			width:50%;
+
+	
+
+	}	
+
+			}
+
+		
+
+		
+
+		
+
+		
+
+		
+
+		@media screen and (min-width: 640px) and (max-width:767px){
+
+			
+
+			body{
+
+				overflow:auto!important;}
+
+			
+
+			.liuyanzong{
+
+	position:relative;
+
+	    top: 0%;
+
+    transform: translateY(0%);
+
+}
+
+		.liuyan1{
+
+			width:50%;
+
+	
+
+	}	
+
+			}
+
+		
+
+		
+
+		
+
+		
+
+		@media screen and (min-width: 768px) and (max-width:991px){
+
+	body{
+
+				overflow:auto!important;}
+
+	
+
+.liuyanzong{
+
+	position:relative;
+
+	    top: 0%;
+
+    transform: translateY(0%);
+
+}
+
+
+
+
+
+
+
+
+
+	}
+
+		
+
+		@media screen and (min-width: 992px)and (max-width:1199px){
+
+			body{
+
+				overflow:auto!important;}
+
+
+
+						
+
+			
+
+			}
+
+
+
+	@media screen and (min-width: 1200px)and (max-width:1400px){
+
+				}
+
+	
+
+					@media screen and (min-width: 1401px){
+
+					
+
+					
+
+					}

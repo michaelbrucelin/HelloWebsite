@@ -1,5 +1,8 @@
 body {
     background-image: url(../img/AABday_ZH-CN8551609592_1920x1080.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
 }
 
 h1 {

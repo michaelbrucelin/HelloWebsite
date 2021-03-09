@@ -1,10 +1,10 @@
 .boxed-btn {
-	background: #fff;
-	color: #131313;
-	display: inline-block;
-	padding: 18px 44px;
-	font-family: $font1;
-	font-size: 14px;
+    background: #fff;
+    color: #131313;
+    display: inline-block;
+    padding: 18px 44px;
+    font-family: $font1;
+    font-size: 14px;
     font-weight: 400;
     border: 0;
     border: 1px solid #131313;
@@ -13,35 +13,41 @@
     text-align: center;
     color: #131313 !important;
     text-transform: uppercase;
-    &:hover{
+
+    &:hover {
         background: #131313;
         color: #fff !important;
         border: 1px solid #131313;
     }
-    &:focus{
+
+    &:focus {
         outline: none;
     }
-    &.large-width{
+
+    &.large-width {
         width: 220px;
     }
 }
+
 .boxed-btn2 {
-	background: transparent;
-	color: #fff;
-	display: inline-block;
-	padding: 18px 24px;
-	font-family: $font1;
-	font-size: 14px;
+    background: transparent;
+    color: #fff;
+    display: inline-block;
+    padding: 18px 24px;
+    font-family: $font1;
+    font-size: 14px;
     font-weight: 400;
     border: 0;
     border: 1px solid #fff;
     letter-spacing: 2px;
     text-transform: uppercase;
-    &:hover{
+
+    &:hover {
         background: #fff;
         color: #131313 !important;
     }
-    &:focus{
+
+    &:focus {
         outline: none;
     }
 }

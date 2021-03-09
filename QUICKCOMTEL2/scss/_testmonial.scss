@@ -1,62 +1,73 @@
-.testimonial_bg{
+.testimonial_bg {
     background-image: url(../img/banner/testmonial-bg.png);
 }
-.testmonial_area{
+
+.testmonial_area {
     padding: 150px 150px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+
     @media #{$mobile_device} {
         padding: 100px 0;
     }
-    .testmonial_info{
-        .author{
-            img{
+
+    .testmonial_info {
+        .author {
+            img {
                 width: auto;
                 margin: auto;
             }
         }
-        p{
+
+        p {
             font-size: 22px;
             font-weight: 400;
             color: #fff;
             line-height: 36px;
             margin-top: 57px;
             margin-bottom: 52px;
+
             @media #{$mobile_device} {
-               font-size: 15px;
-               margin-bottom: 30px;
-               margin-top: 20px; 
-               line-height: 26px;
+                font-size: 15px;
+                margin-bottom: 30px;
+                margin-top: 20px;
+                line-height: 26px;
             }
+
             @media #{$tablet_device} {
-               font-size: 15px;
-               margin-bottom: 30px;
-               margin-top: 20px; 
-               line-height: 26px;
+                font-size: 15px;
+                margin-bottom: 30px;
+                margin-top: 20px;
+                line-height: 26px;
             }
+
             @media #{$mid_device} {
-               font-size: 15px;
+                font-size: 15px;
             }
-            br{
+
+            br {
                 @media #{$mobile_device} {
                     display: none;
-                 }
+                }
+
                 @media #{$tablet_device} {
                     display: none;
-                 } 
+                }
+
                 @media #{$mid_device} {
                     display: none;
-                 } 
+                }
             }
         }
-        .author_name{
-            h4{
+
+        .author_name {
+            h4 {
                 color: #ffffff;
                 font-size: 16px;
-
             }
-            span{
+
+            span {
                 color: #fff;
                 font-size: 14px;
                 font-family: $font2;
@@ -64,39 +75,47 @@
         }
     }
 }
-.messege_area{
+
+.messege_area {
     padding-top: 200px;
     padding-bottom: 200px;
+
     @media #{$mobile_device} {
         padding-top: 30px;
         padding-bottom: 30px;
     }
+
     @media #{$tablet_device} {
         padding-top: 100px;
         padding-bottom: 100px;
     }
-    .messege_thumb{
+
+    .messege_thumb {
         @media #{$mobile_device} {
             margin-bottom: 30px;
         }
-        img{
+
+        img {
             width: 100%;
         }
     }
-    .messege{
-        input{
+
+    .messege {
+        input {
             width: 100%;
             height: 60px;
             border: 1px solid #c9c9c9;
             padding-left: 25px;
             font-size: 16px;
             margin-bottom: 30px;
-            &::placeholder{
+
+            &::placeholder {
                 font-size: 16px;
                 font-weight: 400;
             }
         }
-        textarea{
+
+        textarea {
             width: 100%;
             height: 120px;
             border: 1px solid #c9c9c9;
@@ -104,12 +123,14 @@
             font-size: 16px;
             margin-bottom: 30px;
             padding-top: 25px;
-            &::placeholder{
+
+            &::placeholder {
                 font-size: 16px;
                 font-weight: 400;
             }
         }
-        button{
+
+        button {
             cursor: pointer;
         }
     }

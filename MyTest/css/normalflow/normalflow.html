@@ -5,15 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>normalflow</title>
-    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+    <link rel="stylesheet" href="./normalflow.css" type="text/css">
 </head>
 
 <body>
     <div id="f1"></div>
     <div id="f2">
-        <div id="d1">absolute</div>
-        <div id="d2">relative</div>
-        <div id="d3">fixed</div>
+        <div id="d0">static<br>
+            <p>static是position属性的默认值。如果省略position属性，浏览器就认为该元素是static定位。</p>
+        </div>
+        <div id="d1">relative<br>
+            <p>relative表示，相对于默认位置（即static时的位置）进行偏移，即定位基点是元素的默认位置。</p>
+        </div>
+        <div id="d2">absolute<br>
+            <p>absolute表示，相对于上级元素（一般是父元素）进行偏移，即定位基点是父元素。</p>
+        </div>
+        <div id="d3">fixed<br>
+            <p>fixed表示，相对于视口（viewport，浏览器窗口）进行偏移，即定位基点是浏览器窗口。这会导致元素的位置不随页面滚动而变化，好像固定在网页上一样。</p>
+        </div>
     </div>
     <div id="f3"></div>
     <br><br><br><br><br><br><br><br><br><br>

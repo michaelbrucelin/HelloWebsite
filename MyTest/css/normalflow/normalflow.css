@@ -1,0 +1,46 @@
+#f1, #f2, #f3 {
+    border: 3px solid #000000;
+    width: 800px;
+    height: 300px;
+    margin-bottom: 3px;
+    background-color: #aaaaaa;
+}
+
+#d0, #d1, #d2, #d3 {
+    width: 400px;
+    height: 100px;
+    left: 100px;
+    top: 100px;
+    text-align: center;
+    font-size: xx-large;
+}
+
+#d0 {
+    border: 8px solid #000000;
+    color: #000000;
+    position: static;
+}
+
+#d1 {
+    border: 8px solid #00ff00;
+    color: #00ff00;
+    position: relative;
+}
+
+#d2 {
+    border: 8px solid #ff0000;
+    color: #ff0000;
+    position: absolute;
+}
+
+#d3 {
+    border: 8px solid #0000ff;
+    color: #0000ff;
+    position: fixed;
+}
+
+p {
+    font-size: small;
+    margin: 8px;
+    text-align: left;
+}

@@ -1,8 +1,10 @@
 body {
-    background-image: url(../img/AABday_ZH-CN8551609592_1920x1080.jpg);
+    background-image: url(../img/village.jpg);
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: cover;
+
+    object-fit: contain;
 }
 
 h1 {

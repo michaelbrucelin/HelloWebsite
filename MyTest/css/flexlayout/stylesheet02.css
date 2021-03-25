@@ -13,8 +13,8 @@
     padding: 8px;
     
     background-color: #e7e7e7;
-    width: 160px;
-    height: 160px;
+    width: 100px;
+    height: 100px;
     /*object-fit: contain;*/
     
     box-shadow:
@@ -73,15 +73,130 @@
     clear: left;
     float: left;
     display: flex;
+    justify-content: space-between;
 }
 .box2-2-1-face>.item:nth-child(2) {
-    width: 32px;
-    height: 32px;
-    background-color: #f00;
     align-self: center;
+}
+.box2-2-1-face>.item:nth-child(3) {
+    visibility: hidden;
 }
 
 .box2-2-2-face {
     float: left;
     display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.box2-2-2-face>.item:nth-child(2) {
+    align-self: center;
+}
+.box2-2-2-face>.item:nth-child(3) {
+    visibility: hidden;
+}
+
+.box2-2-3-face {
+    float: left;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.box2-2-3-face>.item:nth-child(2) {
+    align-self: center;
+}
+.box2-2-3-face>.item:nth-child(3) {
+    visibility: hidden;
+}
+
+.box2-2-4-face {
+    float: left;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.box2-2-4-face>.item:nth-child(2) {
+    align-self: center;
+}
+.box2-2-4-face>.item:nth-child(3) {
+    visibility: hidden;
+}
+
+.box2-2-5-face {
+    float: left;
+    display: flex;
+    justify-content: space-between;
+}
+.box2-2-5-face>.item:nth-child(2) {
+    align-self: flex-end;
+}
+
+.box2-2-6-face {
+    float: left;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.box2-2-6-face>.item:nth-child(2) {
+    align-self: flex-end;
+}
+
+.box2-3-1-face {
+    clear: left;
+    float: left;
+    display: flex;
+    justify-content: space-between;
+}
+.box2-3-1-face>.item:nth-child(2) {
+    align-self: center;
+}
+
+.box2-3-2-face {
+    float: left;
+    display: flex;
+    justify-content: space-between;
+}
+.box2-3-2-face>.item:nth-child(1) {
+    align-self: center;
+}
+
+.box2-3-3-face {
+    float: left;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.box2-3-3-face>.item:nth-child(1) {
+    align-self: center;
+}
+
+.box2-3-4-face {
+    float: left;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.box2-3-4-face>.item:nth-child(2) {
+    align-self: center;
+}
+
+.box2-3-5-face {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.box2-3-5-face>.item:nth-child(2) {
+    align-self: center;
+}
+
+.box2-3-6-face {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.box2-3-6-face>.item:nth-child(2) {
+    align-self: center;
 }

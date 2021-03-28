@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图像映射</title>
+</head>
+
+<body>
+    <img src="./imgmap.png" alt="图像映射示例图片" usemap="#imgmap">
+    <map name="imgmap">
+        <!-- circle需要提供圆心的坐标以及园的半径 -->
+        <area shape="circle" coords="583,533,133" alt="圆形" href="https://www.baidu.com/s?wd=%E5%9C%86%E5%BD%A2"
+            target="_blank">
+        <!-- rect需要提供矩形左上角和右下角的坐标 -->
+        <area shape="rect" coords="108,108,383,308" alt="矩形" href="https://www.baidu.com/s?wd=%E7%9F%A9%E5%BD%A2"
+            target="_blank">
+        <!-- poly需要提供多边形每个点的坐标 -->
+        <area shape="poly" coords="948,57,1171,261,883,353" alt="多边形"
+            href="https://www.baidu.com/s?wd=%E5%A4%9A%E8%BE%B9%E5%BD%A2" target="_blank">
+    </map>
+</body>
+
+</html>

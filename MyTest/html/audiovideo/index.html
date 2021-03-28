@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio&Video</title>
+</head>
+
+<body>
+    <audio width="1280" controls>
+        <!-- width属性无效 -->
+        <source src="./HotelCalifornia.mp3" type="audio/mpeg">
+        <source src="./HotelCalifornia.ogg" type="audio/ogg">
+        您的浏览器不支持 audio 标签。
+    </audio>
+    <video width="1280" height="720" controls poster="./RonnieOSullivan.png">
+        <source src="./RonnieOSullivanTop10GeniusMoments.mp4" type="video/mp4">
+        <source src="./RonnieOSullivanTop10GeniusMoments.ogg" type="video/ogg">
+        <source src="./RonnieOSullivanTop10GeniusMoments.webm" type="video/webm">
+        <track kind="subtitles" src="./track-enus.vtt" srclang="en-us" label="English (US)" default>
+        <track kind="subtitles" src="./track-zhcn.vtt" srclang="zh-cn" label="简体中文">
+        您的浏览器不支持 video 标签。
+    </video>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GridLayout03</title>
+
+    <link rel="stylesheet" type="text/css" href="./stylesheet03.css">
+</head>
+
+<body>
+    <section>row-gap: 8px; column-gap: 8px;</section>
+    <div class="div" id="container01">
+        <div class="item item-1">1</div>
+        <div class="item item-2">2</div>
+        <div class="item item-3">3</div>
+        <div class="item item-4">4</div>
+        <div class="item item-5">5</div>
+        <div class="item item-6">6</div>
+        <div class="item item-7">7</div>
+        <div class="item item-8">8</div>
+        <div class="item item-9">9</div>
+    </div>
+    <section>grid-template-areas:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;"header header header"<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;"main main sidebar"<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;"footer footer footer";</section>
+    <div class="div" id="container02">
+        <div class="item item-1">header</div>
+        <div class="item item-2">header</div>
+        <div class="item item-3">header</div>
+        <div class="item item-4">main</div>
+        <div class="item item-5">main</div>
+        <div class="item item-6">sidebar</div>
+        <div class="item item-7">footer</div>
+        <div class="item item-8">footer</div>
+        <div class="item item-9">footer</div>
+    </div>
+    <section>grid-auto-flow: column;</section>
+    <div class="div" id="container03">
+        <div class="item item-1">1</div>
+        <div class="item item-2">2</div>
+        <div class="item item-3">3</div>
+        <div class="item item-4">4</div>
+        <div class="item item-5">5</div>
+        <div class="item item-6">6</div>
+        <div class="item item-7">7</div>
+        <div class="item item-8">8</div>
+        <div class="item item-9">9</div>
+    </div>
+</body>
+
+</html>

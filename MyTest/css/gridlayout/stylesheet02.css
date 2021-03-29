@@ -81,3 +81,19 @@ span {
     display: grid;
     grid-template-columns: 256px auto 128px auto;
 }
+
+#container07 {
+    display: grid;
+    grid-template-columns: [c1] 256px [c2] 256px [c3] auto [c4];
+    grid-template-rows: [r1] auto [r2] auto [r3] auto [r4];
+}
+
+#container08 {
+    display: grid;
+    grid-template-columns: 20% 50% 30%;
+}
+
+#container09 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}

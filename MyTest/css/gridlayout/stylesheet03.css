@@ -1,0 +1,78 @@
+.div {
+    margin-bottom: 16px;
+}
+
+span {
+    font-size: 2em;
+}
+
+.item {
+    font-size: 2em;
+    text-align: center;
+    border: 1px solid #e5e4e9;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.item-1 {
+    background-color: #ef342a;
+}
+
+.item-2 {
+    background-color: #f68f26;
+}
+
+.item-3 {
+    background-color: #4ba946;
+}
+
+.item-4 {
+    background-color: #0376c2;
+}
+
+.item-5 {
+    background-color: #c077af;
+}
+
+.item-6 {
+    background-color: #f8d29d;
+}
+
+.item-7 {
+    background-color: #b5a87f;
+}
+
+.item-8 {
+    background-color: #d0e4a9;
+}
+
+.item-9 {
+    background-color: #4dc7ec;
+}
+
+#container01 {
+    display: grid;
+    grid-template-columns: repeat(3, 128px);
+    grid-template-rows: repeat(3, 64px);
+    row-gap: 8px;
+    column-gap: 8px;
+}
+
+#container02 {
+    display: grid;
+    grid-template-columns: 30% 50% 20%;
+    grid-template-rows: 32px 128px 32px;
+    grid-template-areas:
+        "header header header"
+        "main main sidebar"
+        "footer footer footer";
+}
+
+#container03 {
+    display: grid;
+    grid-template-columns: repeat(3, 128px);
+    grid-template-rows: repeat(3, 64px);
+    grid-auto-flow: column;
+}

@@ -2,7 +2,18 @@ h2 {
     clear: left;
 }
 
+body>ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body>ul>li {
+    margin: 0px 16px;
+}
+
+/*
 body>ul>li {
     width: 256px;
     float: left;
 }
+*/

@@ -22,7 +22,7 @@ function prepareGallery() {
     for (var i = 0; i < allatags.length; i++) {
         //allatags[i].setAttribute("onclick", "showPic(this); return false;");
         allatags[i].onclick = function () {
-            return showPic(this) ? false : true;
+            return showPic(this) ? false : true;  //图片打开成功，禁用a标签默认跳转功能，否则，a标签自动跳转
         }
     }
 }

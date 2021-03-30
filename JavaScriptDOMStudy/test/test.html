@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Just a test</title>
+
     <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+
 <body>
     <h3 id="myh3" class="testAttribute">Hello World.</h3>
     <h3 class="myh3">Hello World.</h3>
@@ -19,7 +22,10 @@
 
     <button id="btnPopUp">button</button>
     <br>
-    <a href="javascript:popUp2('http://www.pinger.cc');">Example</a>
+    <!--伪协议-->
+    <a href="javascript:popUp2('https://www.403found.cn/');">Example</a>
+    <a href="#" onclick="popUp2('https://www.403found.cn/'); return false;">Example2</a>
+    <a href="https://www.403found.cn/" onclick="popUp2(this.href); return false;">Example3</a>
 
     <script>document.write("<p>This is inserted.</p>")</script>
     <footer>This is footer.</footer>

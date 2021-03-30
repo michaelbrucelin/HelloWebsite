@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 4px;
+    row-gap: 4px;
+}
+
+section {
+    border: 2px solid #888888;
+    border-radius: 4px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+body>main>section>a {
+    margin-left: 4px;
+    margin-top: 4px;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文字排版2</title>
+
+    <link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../node_modules/popper.js/dist/popper.min.js"></script>
+    <script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./003-stylesheet.css">
+</head>
+
+<body>
+    <div class="container">
+        <ol>
+            <li class="myli">加粗文本</li>
+            <p class="font-weight-bold">Bold text: .font-weight-bold</p>
+            <li class="myli">普通文本</li>
+            <p class="font-weight-normal">Normal weight text: .font-weight-normal</p>
+            <li class="myli">更细的文本</li>
+            <p class="font-weight-light">Light weight text: .font-weight-light</p>
+            <li class="myli">斜体文本</li>
+            <p class="font-italic">Italic text: .font-italic</p>
+            <li class="myli">让段落更突出</li>
+            <p class="lead">This paragraph stands out: .lead</p>
+            <p>This is a regular paragraph.</p>
+            <li class="myli">指定更小文本 (为父元素的 85% )</li>
+            <p class="small">This paragraph is smaller: .small</p>
+            <p>This is a regular paragraph.</p>
+            <li class="myli">左对齐</li>
+            <p class="text-left">左对齐: .text-left</p>
+            <li class="myli">居中</li>
+            <p class="text-center">居中对齐文本: .text-center</p>
+            <li class="myli">右对齐</li>
+            <p class="text-right">右对齐: .text-right</p>
+            <li class="myli">设定文本对齐，段落中超出屏幕部分文字自动换行</li>
+            <p class="text-justify">设定文本对齐，段落中超出屏幕部分文字自动换行: .text-justify</p>
+            <li class="myli">段落中超出屏幕部分不换行</li>
+            <p class="text-nowrap">段落中超出屏幕部分不换行: .text-nowrap</p>
+            <li class="myli">设定文本小写</li>
+            <p class="text-lowercase">Lowercased text: .text-lowercase</p>
+            <li class="myli">设定文本大写</li>
+            <p class="text-uppercase">Uppercased text: .text-uppercase</p>
+            <li class="myli">设定单词首字母大写</li>
+            <p class="text-capitalize">Capitalized text: .text-capitalize</p>
+            <li class="myli">显示在 &lt;abbr&gt; 元素中的文本以小号字体展示，且可以将小写字母转换为大写字母</li>
+            <p class="text-lowercase">Lowercased text.</p>
+            <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948. (normal abbr)</p>
+            <p>The <abbr title="World Health Organization" class="initialism">WHO</abbr> was founded in 1948. (slightly
+                smaller abbr)</p>
+            <li class="myli">移除默认的列表样式，列表项中左对齐 ( &lt;ul&gt; 和 &lt;ol&gt; 中)。 这个类仅适用于直接子列表项 (如果需要移除嵌套的列表项，你需要在嵌套的列表中使用该样式)</li>
+            <p>The class .list-unstyled removes the default list-style and left margin on list items (immediate children
+                only):</p>
+            <ul class="list-unstyled">
+                <li>Coffee</li>
+                <li>Tea
+                    <ul>
+                        <li>Black tea</li>
+                        <li>Green tea</li>
+                    </ul>
+                </li>
+                <li>Milk</li>
+            </ul>
+            <li class="myli">将所有列表项放置同一行</li>
+            <p>The class .list-inline places all list items on a single line, when used together with the
+                .list-inline-item:</p>
+            <ul class="list-inline">
+                <li class="list-inline-item">Coffee</li>
+                <li class="list-inline-item">Tea</li>
+                <li class="list-inline-item">Milk</li>
+            </ul>
+            <li class="myli">使 &lt;pre&gt; 元素可滚动，代码块区域最大高度为340px,一旦超出这个高度,就会在Y轴出现滚动条</li>
+            <p>For multiple lines of code, use the pre element:</p>
+            <pre>Text in a pre element
+is displayed in a fixed-width
+font, and it preserves
+both      spaces and
+line breaks.</pre>
+
+            <p>If you add the .pre-scrollable class, the pre element gets a max-height of 350px and provides a y-axis
+                scrollbar:</p>
+            <pre class="pre-scrollable">Text in a pre element
+is displayed in a fixed-width
+font, and it preserves
+both      spaces and
+line breaks.</pre>
+        </ol>
+    </div>
+</body>
+
+</html>

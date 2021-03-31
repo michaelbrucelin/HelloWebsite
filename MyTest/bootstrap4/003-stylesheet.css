@@ -1,9 +1,4 @@
-ol {
-    font-size: 0.85rem;
-    font-weight: bold;
-}
-
-li {
+.myli {
     margin-top: 16px;
 
     font-family: Arial, Helvetica, sans-serif;
@@ -11,7 +6,7 @@ li {
     font-weight: bold;
 }
 
-p {
+.myp {
     margin-top: 0;
     margin-bottom: 0;
 

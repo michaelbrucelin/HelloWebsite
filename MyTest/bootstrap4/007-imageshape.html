@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图像形状</title>
+
+    <link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../node_modules/popper.js/dist/popper.min.js"></script>
+    <script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./stylesheet.css">
+</head>
+
+<body>
+    <div class="container">
+        <ol>
+            <li class="myli">圆角图片</li>
+            <p class="myp">.rounded 类可以让图片显示圆角效果：</p>
+            <img src="./007-cinqueterre.jpg" class="rounded" alt="Cinque Terre" width="304" height="236">
+
+            <li class="myli">椭圆图片</li>
+            <p class="myp">.rounded-circle 类可以设置椭圆形图片:</p>
+            <img src="./007-cinqueterre.jpg" class="rounded-circle" alt="Cinque Terre">
+
+            <li class="myli">缩略图</li>
+            <p class="myp">.img-thumbnail 类用于设置图片缩略图(图片有边框):</p>
+            <img src="./007-cinqueterre.jpg" class="img-thumbnail" alt="Cinque Terre">
+
+            <li class="myli">图片对齐方式</li>
+            <p class="myp">使用 .float-right 类来设置图片右对齐，使用 .float-left 类设置图片左对齐:</p>
+            <img src="./007-paris.jpg" class="float-left">
+            <img src="./007-cinqueterre.jpg" class="float-right">
+
+            <li class="myli">响应式图片</li>
+            <p class="myp">.img-fluid 类可以设置响应式图片，重置浏览器大小查看效果:</p>
+            <img src="./007-paris.jpg" class="img-fluid">
+        </ol>
+    </div>
+</body>
+
+</html>

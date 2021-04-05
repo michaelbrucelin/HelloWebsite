@@ -9,7 +9,8 @@
 
     <link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="../node_modules/popper.js/dist/popper.min.js"></script>
+    <!--<script type="text/javascript" src="../node_modules/popper.js/dist/popper.min.js"></script>-->
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
     <script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" type="text/css" href="./stylesheet.css">
@@ -18,9 +19,51 @@
 <body>
     <div class="container">
         <ol>
-            <li class="myli"></li>
+            <li class="myli">如何创建提示框</li>
+            <a href="#" data-toggle="tooltip" title="我是提示内容!">鼠标移动到我这</a>
+
+            <li class="myli">指定提示框的位置</li>
+            <a href="#" data-toggle="tooltip" data-placement="top" title="我是提示内容!">鼠标移动到我这</a>
+            <a href="#" data-toggle="tooltip" data-placement="bottom" title="我是提示内容!">鼠标移动到我这</a>
+            <a href="#" data-toggle="tooltip" data-placement="left" title="我是提示内容!">鼠标移动到我这</a>
+            <a href="#" data-toggle="tooltip" data-placement="right" title="我是提示内容!">鼠标移动到我这</a>
+
+            <li class="myli">在按钮中使用</li>
+            <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top"
+                title="Tooltip on top">
+                Tooltip on top
+            </button>
+            <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right"
+                title="Tooltip on right">
+                Tooltip on right
+            </button>
+            <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom"
+                title="Tooltip on bottom">
+                Tooltip on bottom
+            </button>
+            <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left"
+                title="Tooltip on left">
+                Tooltip on left
+            </button>
+
+            <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true"
+                title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">
+                Tooltip with HTML
+            </button>
+
+            <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Disabled tooltip">
+                <button class="btn btn-primary" style="pointer-events: none;" type="button" disabled>
+                    Disabled button
+                </button>
+            </span>
         </ol>
     </div>
+
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
 </body>
 
 </html>

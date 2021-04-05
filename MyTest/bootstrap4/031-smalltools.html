@@ -13,12 +13,95 @@
     <script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" type="text/css" href="./stylesheet.css">
+    <style>
+        .border {
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            margin: 6px;
+        }
+
+        .myspan {
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            margin: 6px;
+            background-color: #555;
+        }
+    </style>
 </head>
 
 <body>
     <div class="container">
         <ol>
-            <li class="myli"></li>
+            <li class="myli">边框</li>
+            <p class="myp">使用 border 类可以添加或移除边框:</p>
+            <span class="border"></span>
+            <span class="border border-0"></span>
+            <span class="border border-top-0"></span>
+            <span class="border border-right-0"></span>
+            <span class="border border-bottom-0"></span>
+            <span class="border border-left-0"></span>
+
+            <li class="myli">边框颜色</li>
+            <p class="myp">Bootstrap4 提供了一些类来设置边框颜色:</p>
+            <span class="border border-primary"></span>
+            <span class="border border-secondary"></span>
+            <span class="border border-success"></span>
+            <span class="border border-danger"></span>
+            <span class="border border-warning"></span>
+            <span class="border border-info"></span>
+            <span class="border border-light"></span>
+            <span class="border border-dark"></span>
+            <span class="border border-white"></span>
+
+            <li class="myli">边框圆角设置</li>
+            <p class="myp">使用rounded 类可以添加圆角边框:</p>
+            <span class="rounded myspan"></span>
+            <span class="rounded-top myspan"></span>
+            <span class="rounded-right myspan"></span>
+            <span class="rounded-bottom myspan"></span>
+            <span class="rounded-left myspan"></span>
+            <span class="rounded-circle myspan"></span>
+            <span class="rounded-0 myspan"></span>
+
+            <li class="myli">浮动</li>
+            <p class="myp">.float-right 类用于设置元素右浮动， .float-left 设置元素左浮动, .clearfix 类用于清除浮动:</p>
+            <div class="clearfix">
+                <span class="float-left">左浮动</span>
+                <span class="float-right">右浮动</span>
+            </div>
+
+            <li class="myli">响应式浮动</li>
+            <p class="myp">重置浏览器大小查看效果。</p>
+            <p class="myp">我们看可以设置浮动 (.float-*-left|right - * 为 sm, md, lg 或 xl)的方向依赖于屏幕的大小:</p>
+            <div class="float-sm-right">在大于小屏幕尺寸上右浮动</div><br>
+            <div class="float-md-right">在大于中等屏幕尺寸上右浮动</div><br>
+            <div class="float-lg-right">在大于大屏幕尺寸上右浮动</div><br>
+            <div class="float-xl-right">在大于超大屏幕尺寸上右浮动</div><br>
+            <div class="float-none">没有浮动</div>
+
+            <li class="myli">居中对齐</li>
+            <p class="myp">使用 .mx-auto 类来设置居中对齐::</p>
+            <div class="mx-auto bg-warning" style="width:150px">居中</div>
+
+            <li class="myli">宽度</li>
+            <p class="myp">元素上使用 w-* 类 (.w-25, .w-50, .w-75, .w-100, .mw-100) 来设置宽度:</p>
+            <div class="w-25 bg-warning">宽度 25%</div>
+            <div class="w-50 bg-warning">宽度 50%</div>
+            <div class="w-75 bg-warning">宽度 75%</div>
+            <div class="w-100 bg-warning">宽度 100%</div>
+            <div class="mw-100 bg-warning">最大宽度 100%</div>
+
+            <li class="myli">高度</li>
+            <p class="myp">元素上使用 h-* 类 (.h-25, .h-50, .h-75, .h-100, .mh-100) 来设置高度:</p>
+            <div style="height:200px;background-color:#ddd">
+                <div class="h-25 d-inline-block p-2 bg-warning">高度 25%</div>
+                <div class="h-50 d-inline-block p-2 bg-warning">高度 50%</div>
+                <div class="h-75 d-inline-block p-2 bg-warning">高度 75%</div>
+                <div class="h-100 d-inline-block p-2 bg-warning">高度 100%</div>
+                <div class="mh-100 d-inline-block p-2 bg-warning" style="height:500px">最大高度 100%</div>
+            </div>
         </ol>
     </div>
 </body>

@@ -16,9 +16,447 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container mt-3">
         <ol>
-            <li class="myli"></li>
+            <li class="myli">弹性盒子(flexbox)</li>
+            <p class="myp">使用 d-flex 类创建一个弹性盒子容器，并设置三个弹性子元素：</p>
+            <div class="d-flex p-3 bg-secondary text-white">
+                <div class="p-2 bg-info">Flex item 1</div>
+                <div class="p-2 bg-warning">Flex item 2</div>
+                <div class="p-2 bg-primary">Flex item 3</div>
+            </div>
+            <p class="myp">创建显示在同一行上的弹性盒子容器可以使用 d-inline-flex 类:</p>
+            <div class="d-inline-flex p-3 bg-secondary text-white">
+                <div class="p-2 bg-info">Flex item 1</div>
+                <div class="p-2 bg-warning">Flex item 2</div>
+                <div class="p-2 bg-primary">Flex item 3</div>
+            </div>
+
+            <li class="myli">水平方向</li>
+            <p class="myp">使用 .flex-row 类设置弹性子元素水平显示：</p>
+            <div class="d-flex flex-row bg-secondary mb-3">
+                <div class="p-2 bg-info">Flex item 1</div>
+                <div class="p-2 bg-warning">Flex item 2</div>
+                <div class="p-2 bg-primary">Flex item 3</div>
+            </div>
+            <p class="myp">.flex-row-reverse 设置右对齐方向:</p>
+            <div class="d-flex flex-row-reverse bg-secondary">
+                <div class="p-2 bg-info">Flex item 1</div>
+                <div class="p-2 bg-warning">Flex item 2</div>
+                <div class="p-2 bg-primary">Flex item 3</div>
+            </div>
+
+            <li class="myli">垂直方向</li>
+            <p class="myp">.flex-column 类用于设置弹性子元素垂直方向显示：</p>
+            <div class="d-flex flex-column mb-3">
+                <div class="p-2 bg-info">Flex item 1</div>
+                <div class="p-2 bg-warning">Flex item 2</div>
+                <div class="p-2 bg-primary">Flex item 3</div>
+            </div>
+            <p class="myp">.flex-column-reverse 类用于设置弹性子元素垂直方向翻转显示：</p>
+            <div class="d-flex flex-column-reverse">
+                <div class="p-2 bg-info">Flex item 1</div>
+                <div class="p-2 bg-warning">Flex item 2</div>
+                <div class="p-2 bg-primary">Flex item 3</div>
+            </div>
+
+            <li class="myli">内容排列</li>
+            <p class="myp"> .justify-content-* 类用于修改弹性子元素的排列方式，* 号允许的值有：start (默认), end, center, between 或 around:</p>
+            <div class="d-flex justify-content-start bg-secondary mb-3">
+                <div class="p-2 bg-info">Flex item 1</div>
+                <div class="p-2 bg-warning">Flex item 2</div>
+                <div class="p-2 bg-primary">Flex item 3</div>
+            </div>
+            <div class="d-flex justify-content-end bg-secondary mb-3">
+                <div class="p-2 bg-info">Flex item 1</div>
+                <div class="p-2 bg-warning">Flex item 2</div>
+                <div class="p-2 bg-primary">Flex item 3</div>
+            </div>
+            <div class="d-flex justify-content-center bg-secondary mb-3">
+                <div class="p-2 bg-info">Flex item 1</div>
+                <div class="p-2 bg-warning">Flex item 2</div>
+                <div class="p-2 bg-primary">Flex item 3</div>
+            </div>
+            <div class="d-flex justify-content-between bg-secondary mb-3">
+                <div class="p-2 bg-info">Flex item 1</div>
+                <div class="p-2 bg-warning">Flex item 2</div>
+                <div class="p-2 bg-primary">Flex item 3</div>
+            </div>
+            <div class="d-flex justify-content-around bg-secondary mb-3">
+                <div class="p-2 bg-info">Flex item 1</div>
+                <div class="p-2 bg-warning">Flex item 2</div>
+                <div class="p-2 bg-primary">Flex item 3</div>
+            </div>
+
+            <li class="myli">等宽</li>
+            <p class="myp">.flex-fill 类强制设置各个弹性子元素的宽度是一样的:</p>
+            <div class="d-flex mb-3">
+                <div class="p-2 flex-fill bg-info">Flex item 1</div>
+                <div class="p-2 flex-fill bg-warning">Flex item 2</div>
+                <div class="p-2 flex-fill bg-primary">Flex item 3</div>
+            </div>
+            <p class="myp">不使用 .flex-fill 类实例:</p>
+            <div class="d-flex mb-3 bg-secondary">
+                <div class="p-2 bg-info">Flex item 1</div>
+                <div class="p-2 bg-warning">Flex item 2</div>
+                <div class="p-2 bg-primary">Flex item 3</div>
+            </div>
+
+            <li class="myli">扩展</li>
+            <p class="myp">.flex-grow-1 用于设置子元素使用剩下的空间：</p>
+            <div class="d-flex mb-3">
+                <div class="p-2 bg-info">Flex item 1</div>
+                <div class="p-2 bg-warning">Flex item 2</div>
+                <div class="p-2 flex-grow-1 bg-primary">Flex item 3</div>
+            </div>
+            <p class="myp">不使用 .flex-grow-1 实例:</p>
+            <div class="d-flex mb-3 bg-secondary">
+                <div class="p-2 bg-info">Flex item 1</div>
+                <div class="p-2 bg-warning">Flex item 2</div>
+                <div class="p-2 bg-primary">Flex item 3</div>
+            </div>
+
+            <li class="myli">排序</li>
+            <p class="myp">.order 类可以设置弹性子元素的排序，从 .order-1 到 .order-12，数字越低权重越高:</p>
+            <div class="d-flex mb-3">
+                <div class="p-2 order-3 bg-info">Flex item 1</div>
+                <div class="p-2 order-2 bg-warning">Flex item 2</div>
+                <div class="p-2 order-1 bg-primary">Flex item 3</div>
+            </div>
+
+            <li class="myli">外边距</li>
+            <p class="myp">.mr-auto 类可以设置子元素右外边距为 auto，.ml-auto 类可以设置子元素左外边距为 auto，</p>
+            <div class="d-flex mb-3 bg-secondary">
+                <div class="p-2 mr-auto bg-info">Flex item 1</div>
+                <div class="p-2 bg-warning">Flex item 2</div>
+                <div class="p-2 bg-primary">Flex item 3</div>
+            </div>
+            <div class="d-flex mb-3 bg-secondary">
+                <div class="p-2  bg-info">Flex item 1</div>
+                <div class="p-2 bg-warning">Flex item 2</div>
+                <div class="p-2 ml-auto bg-primary">Flex item 3</div>
+            </div>
+
+            <li class="myli">包裹</li>
+            <p class="myp">弹性容器中包裹弹性子元素可以使用以下三个类： .flex-nowrap (默认), .flex-wrap 或 .flex-wrap-reverse:</p>
+            <p class="myp"><code>.flex-wrap:</code></p>
+            <div class="d-flex flex-wrap bg-light">
+                <div class="p-2 border">Flex item 1</div>
+                <div class="p-2 border">Flex item 2</div>
+                <div class="p-2 border">Flex item 3</div>
+                <div class="p-2 border">Flex item 4</div>
+                <div class="p-2 border">Flex item 5</div>
+                <div class="p-2 border">Flex item 6</div>
+                <div class="p-2 border">Flex item 7</div>
+                <div class="p-2 border">Flex item 8</div>
+                <div class="p-2 border">Flex item 9</div>
+                <div class="p-2 border">Flex item 10</div>
+                <div class="p-2 border">Flex item 11</div>
+                <div class="p-2 border">Flex item 12</div>
+                <div class="p-2 border">Flex item 13 </div>
+                <div class="p-2 border">Flex item 14</div>
+                <div class="p-2 border">Flex item 15</div>
+                <div class="p-2 border">Flex item 16</div>
+                <div class="p-2 border">Flex item 17</div>
+                <div class="p-2 border">Flex item 18</div>
+                <div class="p-2 border">Flex item 19</div>
+                <div class="p-2 border">Flex item 20</div>
+                <div class="p-2 border">Flex item 21</div>
+                <div class="p-2 border">Flex item 22</div>
+                <div class="p-2 border">Flex item 23</div>
+                <div class="p-2 border">Flex item 24</div>
+                <div class="p-2 border">Flex item 25</div>
+            </div>
+            <br>
+            <p class="myp"><code>.flex-wrap-reverse:</code></p>
+            <div class="d-flex flex-wrap-reverse bg-light">
+                <div class="p-2 border">Flex item 1</div>
+                <div class="p-2 border">Flex item 2</div>
+                <div class="p-2 border">Flex item 3</div>
+                <div class="p-2 border">Flex item 4</div>
+                <div class="p-2 border">Flex item 5</div>
+                <div class="p-2 border">Flex item 6</div>
+                <div class="p-2 border">Flex item 7</div>
+                <div class="p-2 border">Flex item 8</div>
+                <div class="p-2 border">Flex item 9</div>
+                <div class="p-2 border">Flex item 10</div>
+                <div class="p-2 border">Flex item 11</div>
+                <div class="p-2 border">Flex item 12</div>
+                <div class="p-2 border">Flex item 13 </div>
+                <div class="p-2 border">Flex item 14</div>
+                <div class="p-2 border">Flex item 15</div>
+                <div class="p-2 border">Flex item 16</div>
+                <div class="p-2 border">Flex item 17</div>
+                <div class="p-2 border">Flex item 18</div>
+                <div class="p-2 border">Flex item 19</div>
+                <div class="p-2 border">Flex item 20</div>
+                <div class="p-2 border">Flex item 21</div>
+                <div class="p-2 border">Flex item 22</div>
+                <div class="p-2 border">Flex item 23</div>
+                <div class="p-2 border">Flex item 24</div>
+                <div class="p-2 border">Flex item 25</div>
+            </div>
+            <br>
+            <p class="myp"><code>.flex-nowrap:</code></p>
+            <div class="d-flex flex-nowrap bg-light">
+                <div class="p-2 border">Flex item 1</div>
+                <div class="p-2 border">Flex item 2</div>
+                <div class="p-2 border">Flex item 3</div>
+                <div class="p-2 border">Flex item 4</div>
+                <div class="p-2 border">Flex item 5</div>
+                <div class="p-2 border">Flex item 6</div>
+                <div class="p-2 border">Flex item 7</div>
+                <div class="p-2 border">Flex item 8</div>
+                <div class="p-2 border">Flex item 9</div>
+                <div class="p-2 border">Flex item 10</div>
+                <div class="p-2 border">Flex item 11</div>
+                <div class="p-2 border">Flex item 12</div>
+                <div class="p-2 border">Flex item 13 </div>
+                <div class="p-2 border">Flex item 14</div>
+                <div class="p-2 border">Flex item 15</div>
+                <div class="p-2 border">Flex item 16</div>
+                <div class="p-2 border">Flex item 17</div>
+                <div class="p-2 border">Flex item 18</div>
+                <div class="p-2 border">Flex item 19</div>
+                <div class="p-2 border">Flex item 20</div>
+                <div class="p-2 border">Flex item 21</div>
+                <div class="p-2 border">Flex item 22</div>
+                <div class="p-2 border">Flex item 23</div>
+                <div class="p-2 border">Flex item 24</div>
+                <div class="p-2 border">Flex item 25</div>
+                <div class="p-2 border">Flex item 26</div>
+                <div class="p-2 border">Flex item 27</div>
+                <div class="p-2 border">Flex item 28</div>
+                <div class="p-2 border">Flex item 29</div>
+                <div class="p-2 border">Flex item 30</div>
+                <div class="p-2 border">Flex item 31</div>
+                <div class="p-2 border">Flex item 32</div>
+                <div class="p-2 border">Flex item 33</div>
+                <div class="p-2 border">Flex item 34</div>
+                <div class="p-2 border">Flex item 35</div>
+            </div>
+
+            <li class="myli">内容对齐</li>
+            <p class="myp">我们可以使用 .align-content-* 来控制子元素在垂直方向的对齐方式。</p>
+            <p class="myp"><strong>注意:</strong> 这个实例在小型设备上效果不好。这些类在只有一行的弹性子元素中是无效的。</p>
+            <p class="myp">.align-content-start (默认):</p>
+            <div class="d-flex flex-wrap align-content-start bg-light" style="height:300px">
+                <div class="p-2 border">Flex item 1</div>
+                <div class="p-2 border">Flex item 2</div>
+                <div class="p-2 border">Flex item 3</div>
+                <div class="p-2 border">Flex item 4</div>
+                <div class="p-2 border">Flex item 5</div>
+                <div class="p-2 border">Flex item 6</div>
+                <div class="p-2 border">Flex item 7</div>
+                <div class="p-2 border">Flex item 8</div>
+                <div class="p-2 border">Flex item 9</div>
+                <div class="p-2 border">Flex item 10</div>
+                <div class="p-2 border">Flex item 11</div>
+                <div class="p-2 border">Flex item 12</div>
+                <div class="p-2 border">Flex item 13 </div>
+                <div class="p-2 border">Flex item 14</div>
+                <div class="p-2 border">Flex item 15</div>
+                <div class="p-2 border">Flex item 16</div>
+                <div class="p-2 border">Flex item 17</div>
+                <div class="p-2 border">Flex item 18</div>
+                <div class="p-2 border">Flex item 19</div>
+                <div class="p-2 border">Flex item 20</div>
+                <div class="p-2 border">Flex item 21</div>
+                <div class="p-2 border">Flex item 22</div>
+                <div class="p-2 border">Flex item 23</div>
+                <div class="p-2 border">Flex item 24</div>
+                <div class="p-2 border">Flex item 25</div>
+            </div>
+            <br>
+            <p class="myp">.align-content-end:</p>
+            <div class="d-flex flex-wrap align-content-end bg-light" style="height:300px">
+                <div class="p-2 border">Flex item 1</div>
+                <div class="p-2 border">Flex item 2</div>
+                <div class="p-2 border">Flex item 3</div>
+                <div class="p-2 border">Flex item 4</div>
+                <div class="p-2 border">Flex item 5</div>
+                <div class="p-2 border">Flex item 6</div>
+                <div class="p-2 border">Flex item 7</div>
+                <div class="p-2 border">Flex item 8</div>
+                <div class="p-2 border">Flex item 9</div>
+                <div class="p-2 border">Flex item 10</div>
+                <div class="p-2 border">Flex item 11</div>
+                <div class="p-2 border">Flex item 12</div>
+                <div class="p-2 border">Flex item 13 </div>
+                <div class="p-2 border">Flex item 14</div>
+                <div class="p-2 border">Flex item 15</div>
+                <div class="p-2 border">Flex item 16</div>
+                <div class="p-2 border">Flex item 17</div>
+                <div class="p-2 border">Flex item 18</div>
+                <div class="p-2 border">Flex item 19</div>
+                <div class="p-2 border">Flex item 20</div>
+                <div class="p-2 border">Flex item 21</div>
+                <div class="p-2 border">Flex item 22</div>
+                <div class="p-2 border">Flex item 23</div>
+                <div class="p-2 border">Flex item 24</div>
+                <div class="p-2 border">Flex item 25</div>
+            </div>
+            <br>
+            <p class="myp">.align-content-center:</p>
+            <div class="d-flex flex-wrap align-content-center bg-light" style="height:300px">
+                <div class="p-2 border">Flex item 1</div>
+                <div class="p-2 border">Flex item 2</div>
+                <div class="p-2 border">Flex item 3</div>
+                <div class="p-2 border">Flex item 4</div>
+                <div class="p-2 border">Flex item 5</div>
+                <div class="p-2 border">Flex item 6</div>
+                <div class="p-2 border">Flex item 7</div>
+                <div class="p-2 border">Flex item 8</div>
+                <div class="p-2 border">Flex item 9</div>
+                <div class="p-2 border">Flex item 10</div>
+                <div class="p-2 border">Flex item 11</div>
+                <div class="p-2 border">Flex item 12</div>
+                <div class="p-2 border">Flex item 13 </div>
+                <div class="p-2 border">Flex item 14</div>
+                <div class="p-2 border">Flex item 15</div>
+                <div class="p-2 border">Flex item 16</div>
+                <div class="p-2 border">Flex item 17</div>
+                <div class="p-2 border">Flex item 18</div>
+                <div class="p-2 border">Flex item 19</div>
+                <div class="p-2 border">Flex item 20</div>
+                <div class="p-2 border">Flex item 21</div>
+                <div class="p-2 border">Flex item 22</div>
+                <div class="p-2 border">Flex item 23</div>
+                <div class="p-2 border">Flex item 24</div>
+                <div class="p-2 border">Flex item 25</div>
+            </div>
+            <br>
+            <p class="myp">.align-content-around:</p>
+            <div class="d-flex flex-wrap align-content-around bg-light" style="height:300px">
+                <div class="p-2 border">Flex item 1</div>
+                <div class="p-2 border">Flex item 2</div>
+                <div class="p-2 border">Flex item 3</div>
+                <div class="p-2 border">Flex item 4</div>
+                <div class="p-2 border">Flex item 5</div>
+                <div class="p-2 border">Flex item 6</div>
+                <div class="p-2 border">Flex item 7</div>
+                <div class="p-2 border">Flex item 8</div>
+                <div class="p-2 border">Flex item 9</div>
+                <div class="p-2 border">Flex item 10</div>
+                <div class="p-2 border">Flex item 11</div>
+                <div class="p-2 border">Flex item 12</div>
+                <div class="p-2 border">Flex item 13 </div>
+                <div class="p-2 border">Flex item 14</div>
+                <div class="p-2 border">Flex item 15</div>
+                <div class="p-2 border">Flex item 16</div>
+                <div class="p-2 border">Flex item 17</div>
+                <div class="p-2 border">Flex item 18</div>
+                <div class="p-2 border">Flex item 19</div>
+                <div class="p-2 border">Flex item 20</div>
+                <div class="p-2 border">Flex item 21</div>
+                <div class="p-2 border">Flex item 22</div>
+                <div class="p-2 border">Flex item 23</div>
+                <div class="p-2 border">Flex item 24</div>
+                <div class="p-2 border">Flex item 25</div>
+            </div>
+            <br>
+            <p class="myp">.align-content-stretch:</p>
+            <div class="d-flex flex-wrap align-content-stretch bg-light" style="height:300px">
+                <div class="p-2 border">Flex item 1</div>
+                <div class="p-2 border">Flex item 2</div>
+                <div class="p-2 border">Flex item 3</div>
+                <div class="p-2 border">Flex item 4</div>
+                <div class="p-2 border">Flex item 5</div>
+                <div class="p-2 border">Flex item 6</div>
+                <div class="p-2 border">Flex item 7</div>
+                <div class="p-2 border">Flex item 8</div>
+                <div class="p-2 border">Flex item 9</div>
+                <div class="p-2 border">Flex item 10</div>
+                <div class="p-2 border">Flex item 11</div>
+                <div class="p-2 border">Flex item 12</div>
+                <div class="p-2 border">Flex item 13 </div>
+                <div class="p-2 border">Flex item 14</div>
+                <div class="p-2 border">Flex item 15</div>
+                <div class="p-2 border">Flex item 16</div>
+                <div class="p-2 border">Flex item 17</div>
+                <div class="p-2 border">Flex item 18</div>
+                <div class="p-2 border">Flex item 19</div>
+                <div class="p-2 border">Flex item 20</div>
+                <div class="p-2 border">Flex item 21</div>
+                <div class="p-2 border">Flex item 22</div>
+                <div class="p-2 border">Flex item 23</div>
+                <div class="p-2 border">Flex item 24</div>
+                <div class="p-2 border">Flex item 25</div>
+            </div>
+
+            <li class="myli">子元素对齐</li>
+            <p class="myp">如果要设置单行的子元素对齐可以使用 .align-content-* 类来控制。</p>
+            <p class="myp">.align-items-start:</p>
+            <div class="d-flex align-items-start bg-light" style="height:150px">
+                <div class="p-2 border">Flex item 1</div>
+                <div class="p-2 border">Flex item 2</div>
+                <div class="p-2 border">Flex item 3</div>
+            </div>
+            <br>
+            <p class="myp">.align-items-end:</p>
+            <div class="d-flex align-items-end bg-light" style="height:150px">
+                <div class="p-2 border">Flex item 1</div>
+                <div class="p-2 border">Flex item 2</div>
+                <div class="p-2 border">Flex item 3</div>
+            </div>
+            <br>
+            <p class="myp">.align-items-center:</p>
+            <div class="d-flex align-items-center bg-light" style="height:150px">
+                <div class="p-2 border">Flex item 1</div>
+                <div class="p-2 border">Flex item 2</div>
+                <div class="p-2 border">Flex item 3</div>
+            </div>
+            <br>
+            <p class="myp">.align-items-baseline:</p>
+            <div class="d-flex align-items-baseline bg-light" style="height:150px">
+                <div class="p-2 border">Flex item 1</div>
+                <div class="p-2 border">Flex item 2</div>
+                <div class="p-2 border">Flex item 3</div>
+            </div>
+            <br>
+            <p class="myp">.align-items-stretch (默认):</p>
+            <div class="d-flex align-items-stretch bg-light" style="height:150px">
+                <div class="p-2 border">Flex item 1</div>
+                <div class="p-2 border">Flex item 2</div>
+                <div class="p-2 border">Flex item 3</div>
+            </div>
+
+            <li class="myli">指定子元素对齐</li>
+            <p class="myp">如果要设置指定子元素对齐对齐可以使用 .align-self-* 类来控制。</p>
+            <p class="myp">.align-self-start:</p>
+            <div class="d-flex bg-light" style="height:150px">
+                <div class="p-2 border">Flex item 1</div>
+                <div class="p-2 border align-self-start">Flex item 2</div>
+                <div class="p-2 border">Flex item 3</div>
+            </div>
+            <br>
+            <p class="myp">.align-self-end:</p>
+            <div class="d-flex bg-light" style="height:150px">
+                <div class="p-2 border">Flex item 1</div>
+                <div class="p-2 border align-self-end">Flex item 2</div>
+                <div class="p-2 border">Flex item 3</div>
+            </div>
+            <br>
+            <p class="myp">.align-self-center:</p>
+            <div class="d-flex bg-light" style="height:150px">
+                <div class="p-2 border">Flex item 1</div>
+                <div class="p-2 border align-self-center">Flex item 2</div>
+                <div class="p-2 border">Flex item 3</div>
+            </div>
+            <br>
+            <p class="myp">.align-self-baseline:</p>
+            <div class="d-flex bg-light" style="height:150px">
+                <div class="p-2 border">Flex item 1</div>
+                <div class="p-2 border align-self-baseline">Flex item 2</div>
+                <div class="p-2 border">Flex item 3</div>
+            </div>
+            <br>
+            <p class="myp">.align-self-stretch (默认):</p>
+            <div class="d-flex bg-light" style="height:150px">
+                <div class="p-2 border">Flex item 1</div>
+                <div class="p-2 border align-self-stretch">Flex item 2</div>
+                <div class="p-2 border">Flex item 3</div>
+            </div>
         </ol>
     </div>
 </body>

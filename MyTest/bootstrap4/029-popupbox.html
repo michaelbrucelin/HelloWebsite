@@ -9,7 +9,8 @@
 
     <link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="../node_modules/popper.js/dist/popper.min.js"></script>
+    <!--<script type="text/javascript" src="../node_modules/popper.js/dist/popper.min.js"></script>-->
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
     <script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" type="text/css" href="./stylesheet.css">
@@ -18,9 +19,47 @@
 <body>
     <div class="container">
         <ol>
-            <li class="myli"></li>
+            <li class="myli">如何创建弹出框</li>
+            <a href="#" data-toggle="popover" title="弹出框标题" data-content="弹出框内容">多次点我</a>
+
+            <li class="myli">指定弹出框的位置</li>
+            <a href="#" title="Header" data-toggle="popover" data-placement="top" data-content="Content">点我</a>
+            <a href="#" title="Header" data-toggle="popover" data-placement="bottom" data-content="Content">点我</a>
+            <a href="#" title="Header" data-toggle="popover" data-placement="left" data-content="Content">点我</a>
+            <a href="#" title="Header" data-toggle="popover" data-placement="right" data-content="Content">点我</a>
+
+            <li class="myli">按钮中使用</li>
+            <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover"
+                data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                Popover on top
+            </button>
+
+            <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover"
+                data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                Popover on right
+            </button>
+
+            <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover"
+                data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                Popover on bottom
+            </button>
+
+            <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover"
+                data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                Popover on left
+            </button>
+
+            <li class="myli">关闭弹出框</li>
+            <a href="#" title="取消弹出框" data-toggle="popover" data-trigger="focus" data-content="点击文档的其他地方关闭我">点我</a>
+            <a href="#" title="Header" data-toggle="popover" data-trigger="hover" data-content="一些内容">鼠标移动到我这</a>
         </ol>
     </div>
+
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
 </body>
 
 </html>

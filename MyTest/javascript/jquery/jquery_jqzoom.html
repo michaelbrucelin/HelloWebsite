@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../manual_modules/node_jqzoom/css/jquery.jqzoom.css">
+    <script src="../../manual_modules/node_jqzoom/js/jquery-1.5.js"></script>
+    <script src="../../manual_modules/node_jqzoom/js/jquery.jqzoom-core.js"></script>
+    <script type="text/javascript">
+        function selectManyImgs() {
+            var x = document.getElementById("locationX").value;
+            var y = document.getElementById("locationY").value;
+            var w = document.getElementById("sizeWidth").value;
+            var h = document.getElementById("sizeHeight").value;
+            console.log("{" + x + "," + y + "} [" + w + "," + h + "]");
+
+            var imgbox = document.getElementById("imgsmall");
+            var imgBoxStyle = "background: url('./manyImgs_1024x1024.jpg');";
+            imgBoxStyle = imgBoxStyle + " background-position: -" + x + "px -" + y + "px;";
+            imgBoxStyle = imgBoxStyle + " width: " + w + "px; height: " + h + "px;";
+            imgbox.style = imgBoxStyle;
+        }
+
+        $(document).ready(function () {
+            $('.jqzoom').jqzoom({
+                zoomType: 'standard',
+                lens: true,
+                preloadImages: false,
+                alwaysOn: false
+            });
+
+        });
+    </script>
+    <title>JQuery Zoom</title>
+</head>
+
+<body>
+    <div id="div01">
+        <label for="locationX">Location</label>
+        <input id="locationX" type="number" value="0" style="width: 40px;" onchange="selectManyImgs()">
+        <input id="locationY" type="number" value="0" style="width: 40px;" onchange="selectManyImgs()">
+        <label for="sizeWidth">Size</label>
+        <input id="sizeWidth" type="number" value="178" style="width: 40px;" onchange="selectManyImgs()">
+        <input id="sizeHeight" type="number" value="178" style="width: 40px;" onchange="selectManyImgs()">
+        <br>
+        <img id="imgbig" src="./manyImgs_256x256.jpg">
+        <img id="imgsmall"
+            style="background: url('./manyImgs_1024x1024.jpg'); background-position: 0px 0px; width: 178px; height: 178px;">
+    </div>
+    <div id="div02">
+        <a href="./manyImgs_1024x1024.jpg" class="jqzoom" rel='gal1' title="triumph">
+            <img src="./manyImgs_256x256.jpg" title="triumph" style="border: 4px solid #666;">
+        </a>
+    </div>
+</body>
+
+</html>

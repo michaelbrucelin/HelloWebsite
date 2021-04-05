@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="stylesheet.css" type="text/css">
-    <script src="./javascriptA.js"></script>
 </head>
 
 <body>
@@ -202,13 +201,6 @@
     </div>
 
     <div id="div002">
-        <div id="div1">
-            <input type="text" id="txt1">
-        </div>
-        <div id="div2">
-            <input type="button" value="创建表格" onclick="CreateTableDynamic()">
-            <input type="button" value="创建表格2" onclick="CreateTableDynamic2()">
-        </div>
         <div id="div3" style="position: absolute; background-color: aqua; width: 40px; height: 40px;"></div>
         <div>
             <dl>
@@ -265,12 +257,7 @@
                 </tr>
             </table>
         </div>
-        <div id="testinnerHTML">
-            <input type="button" value="innerHTML" onclick="
-                var div = document.getElementById('testinnerHTML');
-                div.innerHTML = div.innerHTML + '<p>Hello, this is created by modify innerHTML property.</p>';
-                div.innerHTML = div.innerHTML + '<input type=\'button\' value=\'new button\' onclick=\'console.log(this.value)\'>';
-            ">
+        <div>
             <input type="button" value="getwidth" onclick="
                 var div1 = document.getElementById('testdiv1');
                 console.log('div1 witdh:\t'+div1.style.width);
@@ -322,19 +309,6 @@
         </div>
         <div id="testdiv1"></div>
         <div id="testdiv2" style="width: 400px;"></div>
-    </div>
-
-    <div id="div003">
-        <label for="locationX">Location</label>
-        <input id="locationX" type="number" value="0" style="width: 40px;" onchange="selectManyImgs()">
-        <input id="locationY" type="number" value="0" style="width: 40px;" onchange="selectManyImgs()">
-        <label for="sizeWidth">Size</label>
-        <input id="sizeWidth" type="number" value="178" style="width: 40px;" onchange="selectManyImgs()">
-        <input id="sizeHeight" type="number" value="178" style="width: 40px;" onchange="selectManyImgs()">
-        <br>
-        <img id="imgbig" src="./manyImgs.jpg" style="width: 49%;">
-        <img id="imgSmall"
-            style="background: url('./manyImgs.jpg'); background-position: 0px 0px; width: 178px; height: 178px;">
     </div>
 
     <script src="../../node_modules/jquery/dist/jquery.js"></script>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动态创建元素</title>
+
+    <link rel="stylesheet" type="text/css" href="./stylesheet.css">
+</head>
+
+<body>
+    <p>location 01.</p>
+    <button onclick="DomWriteTable()">Document.Write()</button>
+    <p>location 02.</p>
+    <script src="./script01.js"></script>
+    <p>location 03.</p>
+    <p>location 04.</p>
+    <div id="div01">
+        <div id="div011">
+            <input type="text" id="txt1">
+        </div>
+        <div id="div012">
+            <input type="button" value="创建表格" onclick="CreateTableDynamic()">
+            <input type="button" value="创建表格2" onclick="CreateTableDynamic2()">
+        </div>
+    </div>
+    <p>location 05.</p>
+    <p>location 06.</p>
+    <p>location 07.</p>
+    <div id="div02">
+        <input type="button" value="innerHTML" onclick="DomInnerHTML()">
+    </div>
+    <p>location 08.</p>
+    <p>location 09.</p>
+    <p>location 10.</p>
+
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./script02.js"></script>
+</body>
+
+</html>

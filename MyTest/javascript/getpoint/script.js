@@ -1,3 +1,22 @@
+window.onload = () => {
+    var tdpoints = document.getElementsByName("tdpoint");
+    for (let i = 0; i < tdpoints.length; i++) {
+        tdpoints[i].style.cursor = "pointer";
+        tdpoints[i].id = i;
+        tdpoints[i].onmouseover = () => {
+            var index = parseInt(event.srcElement.id);
+            for (let j = 0; j < tdpoints.length; j++) {
+                if (j <= index) {
+                    tdpoints[j].innerText = "★";
+                }
+                else {
+                    tdpoints[j].innerText = "☆";
+                }
+            }
+        }
+    }
+}
+
 $(function () {
     $("#div-li1 li").mouseover(function () {
         $(this).prevAll().addBack().text("★");

@@ -1,0 +1,27 @@
+p::first-line {
+    background-color: green;
+    color: red;
+}
+
+div::first-letter {
+    background-color: green;
+    color: red;
+}
+
+a::before {
+    content: "This is insert by ::before.    [";
+}
+
+a::after {
+    content: "]    This is insert by ::after.";
+}
+
+span::after {
+    content: url(./debian-logo-1024x576.png);
+}
+
+::selection {
+    background-color: red;
+    color: green;
+    font-weight: bold;
+}

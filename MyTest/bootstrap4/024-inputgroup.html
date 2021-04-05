@@ -9,16 +9,139 @@
 
     <link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="../node_modules/popper.js/dist/popper.min.js"></script>
+    <!--<script type="text/javascript" src="../node_modules/popper.js/dist/popper.min.js"></script>-->
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
     <script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" type="text/css" href="./stylesheet.css">
 </head>
 
 <body>
-    <div class="container">
+    <div class="container mt-3">
         <ol>
+            <li class="myli">输入框组</li>
+            <p class="myp"> .input-group .input-group 类来向表单输入框中添加更多的样式，如图标、文本或者按钮，.input-group-prepend
+                类添加在前面，.input-group-append 添加在后面。</p>
+            <p class="myp">使用 .input-group-text 类来设置文本的样式。</p>
+            <form action="/action_page.php">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend"><span class="input-group-text">@</span></div>
+                    <input type="text" class="form-control" placeholder="Username" id="usr" name="username">
+                </div>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Your Email" id="mail" name="email">
+                    <div class="input-group-append"><span class="input-group-text">@runoob.com</span></div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
 
+            <li class="myli">输入框大小</li>
+            <p class="myp">使用 .input-group-sm 类来设置小的输入框， .input-group-lg 类设置大的输入框：</p>
+            <form>
+                <div class="input-group mb-3 input-group-sm">
+                    <div class="input-group-prepend"><span class="input-group-text">Small</span></div>
+                    <input type="text" class="form-control">
+                </div>
+            </form>
+            <form>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend"><span class="input-group-text">Default</span></div>
+                    <input type="text" class="form-control">
+                </div>
+            </form>
+            <form>
+                <div class="input-group mb-3 input-group-lg">
+                    <div class="input-group-prepend"><span class="input-group-text">Large</span></div>
+                    <input type="text" class="form-control">
+                </div>
+            </form>
+
+            <li class="myli">多个输入框和文本</li>
+            <form>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend"><span class="input-group-text">Person</span></div>
+                    <input type="text" class="form-control" placeholder="First Name">
+                    <input type="text" class="form-control" placeholder="Last Name">
+                </div>
+            </form>
+            <form>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">One</span>
+                        <span class="input-group-text">Two</span>
+                        <span class="input-group-text">Three</span>
+                    </div>
+                    <input type="text" class="form-control">
+                </div>
+            </form>
+
+            <li class="myli">复选框与单选框</li>
+            <p class="myp">文本信息可以使用复选框与单选框替代：</p>
+            <form>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text"><input type="checkbox"></div>
+                    </div>
+                    <input type="text" class="form-control" placeholder="RUNOOB">
+                </div>
+            </form>
+            <form>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text"><input type="radio"></div>
+                    </div>
+                    <input type="text" class="form-control" placeholder="GOOGLE">
+                </div>
+            </form>
+
+            <li class="myli">输入框添加按钮组</li>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <button class="btn btn-outline-secondary" type="button">Basic Button</button>
+                </div>
+                <input type="text" class="form-control" placeholder="Some text">
+            </div>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Search">
+                <div class="input-group-append">
+                    <button class="btn btn-success" type="submit">Go</button>
+                </div>
+            </div>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Something clever..">
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="button">OK</button>
+                    <button class="btn btn-danger" type="button">Cancel</button>
+                </div>
+            </div>
+
+            <li class="myli">设置下拉菜单</li>
+            <p class="myp">输入框中添加下拉菜单不需要使用 .dropdown 类。</p>
+            <form>
+                <div class="input-group mt-3 mb-3">
+                    <div class="input-group-prepend">
+                        <button type="button" class="btn btn-outline-secondary dropdown-toggle"
+                            data-toggle="dropdown">选择网站</button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="https://www.google.com">GOOGLE</a>
+                            <a class="dropdown-item" href="https://www.runoob.com">RUNOOB</a>
+                            <a class="dropdown-item" href="https://www.taobao.com">TAOBAO</a>
+                        </div>
+                    </div>
+                    <input type="text" class="form-control" placeholder="网站地址">
+                </div>
+            </form>
+
+            <li class="myli">输入框组标签</li>
+            <p class="myp">在输入框组通过在输入框组外围的 label 来设置标签，标签的 for 属性需要与输入框组的 id 对应。</p>
+            <p class="myp">点击标签后可以聚焦输入框：</p>
+            <form>
+                <label for="demo">这里输入您的邮箱:</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Email" id="demo" name="email">
+                    <div class="input-group-append"><span class="input-group-text">@runoob.com</span></div>
+                </div>
+            </form>
         </ol>
     </div>
 </body>

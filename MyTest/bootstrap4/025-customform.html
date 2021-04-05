@@ -16,9 +16,108 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container mt-3">
         <ol>
+            <li class="myli">自定义复选框</li>
+            <p class="myp">如果要自定义一个复选框，可以设置 &lt;div&gt; 为父元素，类为 .custom-control 和 .custom-checkbox，复选框作为子元素放在该
+                &lt;div&gt;里头，然后复选框设置为 type="checkbox"，类为 .custom-control-input。</p>
+            <p class="myp">复选框的文本使用 label 标签，标签使用 .custom-control-label 类，label 的 for 属性值需要匹配复选框的 id。</p>
+            <form action="/action_page.php">
+                <div class="custom-control custom-checkbox mb-3">
+                    <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+                    <label class="custom-control-label" for="customCheck">自定义复选框</label>
+                </div>
+                <input type="checkbox" id="defaultCheck" name="example2">
+                <label for="defaultCheck">默认复选框</label>
+                <br>
+                <button type="submit" class="btn btn-primary">提交</button>
+            </form>
 
+            <li class="myli">自定义单选框</li>
+            <p class="myp">如果要自定义一个单选框，可以设置 div 为父元素，类为 .custom-control 和 .custom-radio，复选框作为子元素放在该 div 里头，然后单选框设置为
+                type="radio"，类为
+                .custom-control-input。</p>
+            <p class="myp">单选框的文本使用 label 标签，标签使用 .custom-control-label 类，label 的 for 属性值需要匹配单选框的 id。</p>
+            <form action="/action_page.php">
+                <div class="custom-control custom-radio">
+                    <input type="radio" class="custom-control-input" id="customRadio" name="example1">
+                    <label class="custom-control-label" for="customRadio">自定义单选框</label>
+                </div>
+                <input type="radio" id="defaultRadio" name="example2">
+                <label for="defaultRadio">默认单选框</label>
+                <br>
+                <button type="submit" class="btn btn-primary">提交</button>
+            </form>
+
+            <li class="myli">自定义控件显示在同一行</li>
+            <p class="myp">我们可以在外部元素上使用 .custom-control-inline 类来包裹自定义表单控件，这样自定义表单控件就能显示在同一行：</p>
+            <form action="/action_page.php">
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="customRadio1" name="example1">
+                    <label class="custom-control-label" for="customRadio1">自定义单选框 1</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="customRadio2" name="example2">
+                    <label class="custom-control-label" for="customRadio2">自定义单选框 2</label>
+                </div>
+                <button type="submit" class="btn btn-primary">提交</button>
+            </form>
+
+            <li class="myli">自定义选择菜单</li>
+            <p class="myp">创建自定义选择菜单可以在 select 元素上添加 .custom-select 类:</p>
+            <form>
+                <select name="cars" class="custom-select-sm">
+                    <option selected>自定义选择菜单</option>
+                    <option value="Google">Google</option>
+                    <option value="Runoob">Runoob</option>
+                    <option value="Taobao">Taobao</option>
+                </select>
+            </form>
+
+            <p class="myp">如果我们要设置自定义选择菜单大小，可以使用 .custom-select-sm、.custom-select-lg 来设置它们的大小:</p>
+            <form>
+                <!-- 小 -->
+                <select name="cars" class="custom-select-sm">
+                    <option selected>比较小的自定义选择菜单</option>
+                    <option value="Google">Google</option>
+                    <option value="Runoob">Runoob</option>
+                    <option value="Taobao">Taobao</option>
+                </select>
+                <!-- 大 -->
+                <select name="cars" class="custom-select-lg">
+                    <option selected>比较大的自定义选择菜单</option>
+                    <option value="Google">Google</option>
+                    <option value="Runoob">Runoob</option>
+                    <option value="Taobao">Taobao</option>
+                </select>
+            </form>
+
+            <li class="myli">自定义滑块控件</li>
+            <p class="myp">我们可以在 input 为 type="range" 的输入框中添加 .custom-range 类来设置自定义滑块控件:</p>
+            <form action="/action_page.php">
+                <label for="customRange">自定义滑块控件</label>
+                <input type="range" class="custom-range" id="customRange" name="points1">
+                <label for="defaultRange">默认滑块控件</label>
+                <input type="range" id="defaultRange" name="points2">
+                <p><button type="submit" class="btn btn-primary">提交</button></p>
+            </form>
+
+            <li class="myli">自定义文件上传控件</li>
+            <p class="myp">我们可以在父元素添加 .custom-file 类，然后在 input 设置为 type="file" 并添加 .custom-control-label:</p>
+            <form action="/action_page.php">
+                <p>自定义上传文件样式:</p>
+                <div class="custom-file mb-3">
+                    <input type="file" class="custom-file-input" id="customFile" name="filename">
+                    <label class="custom-file-label" for="customFile">选择文件</label>
+                </div>
+
+                <p>默认上传文件样式:</p>
+                <input type="file" id="myFile" name="filename2">
+
+                <div class="mt-3">
+                    <button type="submit" class="btn btn-primary">提交</button>
+                </div>
+            </form>
         </ol>
     </div>
 </body>

@@ -18,7 +18,224 @@
 <body>
     <div class="container">
         <ol>
+            <li class="myli">简单的导航栏实例</li>
+            <nav class="navbar navbar-expand-sm bg-light">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Link 1</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Link 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Link 3</a></li>
+                </ul>
+            </nav>
+            <br>
+            <div class="container-fluid">
+                <h3>简单的导航栏实例</h3>
+                <p>导航栏一般放在页面的顶部。</p>
+                <p>我们可以使用 .navbar 类来创建一个标准的导航栏，后面紧跟: .navbar-expand-xl|lg|md|sm 类来创建响应式的导航栏 (大屏幕水平铺开，小屏幕垂直堆叠)。</p>
+            </div>
 
+            <li class="myli">垂直导航栏</li>
+            <nav class="navbar bg-light">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Link 1</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Link 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Link 3</a></li>
+                </ul>
+            </nav>
+            <br>
+            <div class="container-fluid">
+                <h3>垂直导航栏</h3>
+                <p>导航栏一般在页面头部。</p>
+            </div>
+
+            <li class="myli">不同颜色导航栏</li>
+            <div class="container">
+                <h3>不同颜色导航栏</h3>
+                <p>对于暗色背景需要设置文本颜色为浅色的，对于浅色背景需要设置文本颜色为深色的。</p>
+            </div>
+            <nav class="navbar navbar-expand-sm bg-light navbar-light">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"><a class="nav-link" href="#">Active</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                    <li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>
+                </ul>
+            </nav>
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"><a class="nav-link" href="#">Active</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                    <li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>
+                </ul>
+            </nav>
+            <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"><a class="nav-link" href="#">Active</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                    <li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>
+                </ul>
+            </nav>
+            <nav class="navbar navbar-expand-sm bg-success navbar-dark">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"><a class="nav-link" href="#">Active</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                    <li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>
+                </ul>
+            </nav>
+            <nav class="navbar navbar-expand-sm bg-info navbar-dark">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"><a class="nav-link" href="#">Active</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                    <li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>
+                </ul>
+            </nav>
+            <nav class="navbar navbar-expand-sm bg-warning navbar-dark">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"><a class="nav-link" href="#">Active</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                    <li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>
+                </ul>
+            </nav>
+            <nav class="navbar navbar-expand-sm bg-danger navbar-dark">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"><a class="nav-link" href="#">Active</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                    <li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>
+                </ul>
+            </nav>
+            <nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"><a class="nav-link" href="#">Active</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                    <li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>
+                </ul>
+            </nav>
+
+            <li class="myli">品牌/Logo</li>
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <!-- Brand/logo -->
+                <a class="navbar-brand" href="#">Logo</a>
+                <!-- Links -->
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Link 1</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Link 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Link 3</a></li>
+                </ul>
+            </nav>
+            <div class="container-fluid">
+                <h3>品牌/Logo</h3>
+                <p>.navbar-brand 类用于高亮显示品牌/Logo:</p>
+            </div>
+
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <!-- Brand/logo -->
+                <a class="navbar-brand" href="#"><img src="./020-bird.jpg" alt="logo" style="width:40px;"></a>
+                <!-- Links -->
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Link 1</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Link 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Link 3</a></li>
+                </ul>
+            </nav>
+            <div class="container-fluid">
+                <h3>品牌 / Logo</h3>
+                <p>果使用图片，可以使用 .navbar-brand 类来设置图片自适应导航栏。</p>
+            </div>
+
+            <li class="myli">折叠导航栏</li>
+            <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="container">
+                <h3>折叠导航栏</h3>
+                <p>通常，小屏幕上我们都会折叠导航栏，通过点击来显示导航选项。</p>
+                <p>提示: 如果你删除 .navbar-expand-md 类，导航链接会一直隐藏，且切换按钮会一直显示。</p>
+            </div>
+
+            <li class="myli">导航栏使用下拉菜单</li>
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <!-- Brand -->
+                <a class="navbar-brand" href="#">Logo</a>
+                <!-- Links -->
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Link 1</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Link 2</a></li>
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Dropdown
+                            link</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Link 1</a>
+                            <a class="dropdown-item" href="#">Link 2</a>
+                            <a class="dropdown-item" href="#">Link 3</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <br>
+            <div class="container">
+                <h3>导航栏使用下拉菜单</h3>
+                <p>导航栏上可以设置下拉菜单。</p>
+            </div>
+
+            <li class="myli">导航栏的表单与按钮</li>
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <form class="form-inline">
+                    <input class="form-control" type="text" placeholder="Search">
+                    <button class="btn btn-success" type="button">Search</button>
+                </form>
+            </nav>
+            <br>
+            <div class="container">
+                <h3>导航栏的表单</h3>
+                <p>导航栏的表单 form 元素使用 class="form-inline" 类来排版输入框与按钮：</p>
+            </div>
+
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <form class="form-inline">
+                    <div class="input-group">
+                        <span class="input-group-addon">@</span>
+                        <input type="text" class="form-control" placeholder="Username">
+                    </div>
+                </form>
+            </nav>
+            <br>
+            <div class="container">
+                <h3>导航表单</h3>
+                <p> .input-group-addon 类用于在输入框前添加小标签。</p>
+            </div>
+
+            <li class="myli">导航栏文本</li>
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <!-- Links -->
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Link 1</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Link 2</a></li>
+                </ul>
+                <!-- Navbar text-->
+                <span class="navbar-text">Navbar text</span>
+            </nav>
+            <br>
+            <div class="container">
+                <h3>导航栏文本</h3>
+                <p>使用 .navbar-text 类来设置导航栏上非链接文本，可以保证水平对齐，颜色与内边距一样。</p>
+            </div>
         </ol>
     </div>
 </body>

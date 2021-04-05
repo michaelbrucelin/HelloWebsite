@@ -19,7 +19,8 @@ window.onload = () => {
 
 $(function () {
     $("#div-li1 li").mouseover(function () {
-        $(this).prevAll().addBack().text("★");
+        //$(this).prevAll().addBack().text("★");  //这样也行，addBack()是什么意思？
+        $(this).prevAll().text("★");
         $(this).nextAll().text("☆");
     })
 })

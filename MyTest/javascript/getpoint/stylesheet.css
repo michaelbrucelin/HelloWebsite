@@ -1,11 +1,24 @@
-div {
-    margin-top: 1px;
-    margin-bottom: 1px;
+* {
+    margin: 0rem;
+    padding: 0rem;
+}
 
+div {
+    margin-top: 1rem 0.5rem;
     font-size: xx-large;
 }
 
-div li {
-    display: inline;
+td {
+    width: 2rem;
+}
+
+ul {
+    display: table;
+    list-style: none;
+}
+
+li {
+    display: table-cell;
+    width: 2rem;
     font-size: xx-large;
 }

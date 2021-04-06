@@ -213,49 +213,10 @@
             </dl>
         </div>
         <div>
-            <input id="btn00" type="button" value="button00" onclick="document.onclick = DynamicRegister">
-            <input id="btn01" type="button" value="button01" onclick="StaticRegister()">
-            <input id="btn02" type="button" value="button02">
-        </div>
-        <div>
-            <input id="btn10" type="button" value="regularRegister" onclick="regularRegister()">
-            <input id="btn11" type="button" value="csharpRegister" onclick="csharpRegister()">
-            <input id="btn12" type="button" value="attachEvent" onclick="attachRegister()">
-            <input id="btn13" type="button" value="addEventListener" onclick="listenerRegister()">
-            <input id="btn14" type="button" value="button">
-        </div>
-        <div>
             <input type="button" value="test"
                 onclick="if(event.altKey){console.log('ALT Key')} else{console.log('Not ALT Key')}">
             <a href="http://www.baidu.com" onclick="event.returnValue=false">Baidu</a>
             <input type="button" value="mousebutton" onclick="console.log(event.button); event.returnValue=false">
-        </div>
-        <div><input type="button" value="DocWriteTable" onclick="DocWriteTable()"></div>
-        <div>
-            <input type="button" value="srcElement" onclick="console.log(event.srcElement.value)">
-            <input type="button" value="this" onclick="console.log(this.value)">
-        </div>
-        <div>
-            <input type="button" value="this" onclick="testThis()">
-            <input type="button" value="srcElement" onclick="testSrcElement()">
-            <input type="button" value="this2" onclick="testThis(this)">
-            <input type="button" value="srcElement2" onclick="testSrcElement(this)">
-        </div>
-        <div>
-            <table onclick="console.log('This table:\t'+this.innerHTML)" style="float: left;">
-                <tr onclick="console.log('This tr:\t'+this.innerHTML)">
-                    <td onclick="console.log('This td:\t'+this.innerHTML)">
-                        <p onclick="console.log('This p:\t'+this.innerHTML)">This</p>
-                    </td>
-                </tr>
-            </table>
-            <table onclick="console.log('srcElement table:\t'+event.srcElement.innerHTML)">
-                <tr onclick="console.log('srcElement tr:\t'+event.srcElement.innerHTML)">
-                    <td onclick="console.log('srcElement td:\t'+event.srcElement.innerHTML)">
-                        <p onclick="console.log('srcElement p:\t'+event.srcElement.innerHTML)">srcElement</p>
-                    </td>
-                </tr>
-            </table>
         </div>
         <div>
             <input type="button" value="getwidth" onclick="

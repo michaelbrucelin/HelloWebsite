@@ -1,9 +1,24 @@
-p::first-line {
+body {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0rem;
+    padding: 0rem;
+}
+
+.sidebar {
+    margin: 0.2rem;
+    height: 100vh;
+    border: .1rem solid blue;
+    border-radius: 0.3rem;
+}
+
+p.cls03::first-line {
     background-color: green;
     color: red;
 }
 
-div::first-letter {
+div.cls04::first-letter {
     background-color: green;
     color: red;
 }
@@ -16,12 +31,121 @@ a::after {
     content: "]    This is insert by ::after.";
 }
 
-span::after {
-    content: url(./debian-logo-1024x576.png);
+span#withimg::after {
+    content: url(./debian-logo-256x144.png);
 }
 
 ::selection {
     background-color: red;
     color: green;
     font-weight: bold;
+}
+
+/* 下面4个伪类选择器，是有先后顺序的，“爱恨原则”，LoVe & HAte，link>visited>hover>active */
+a:link {
+    color: pink;
+}
+
+a:visited {
+    color: blue;
+}
+
+a:hover {
+    color: black;
+}
+
+a:active {
+    color: green;
+}
+
+/* 上面4个伪类选择器，是有先后顺序的，“爱恨原则”，LoVe & HAte，link>visited>hover>active */
+
+div:hover {
+    background-color: pink;
+}
+
+input#boy:focus {
+    background-color: cyan;
+}
+
+input#girl:focus {
+    background-color: deeppink;
+}
+
+button.cls02:enabled {
+    margin: 0.1rem;
+    ;
+    outline: 0.1rem solid green;
+}
+
+button.cls02:disabled {
+    margin: 0.1rem;
+    background-color: #888;
+}
+
+:checked {
+    width: 2rem;
+    height: 2rem;
+}
+
+:checked+span {
+    background-color: rebeccapurple;
+    color: greenyellow;
+    font-size: 2rem;
+}
+
+input.cls01:required {
+    margin: 0.2rem;
+    outline: 0.2rem solid red;
+}
+
+input.cls01:optional {
+    margin: 0.2rem;
+    outline: 0.2rem solid green;
+}
+
+:default {
+    outline: 0.2rem solid rebeccapurple;
+}
+
+input:valid {
+    background-color: green;
+}
+
+input:invalid {
+    background-color: red;
+}
+
+input:in-range {
+    background-color: green;
+}
+
+input:out-of-range {
+    background-color: red;
+}
+
+input:read-only {
+    background-color: yellow;
+}
+
+input:read-write {
+    background-color: aliceblue;
+}
+
+:root {
+    background-color: #888;
+}
+
+p:empty {
+    width: 16rem;
+    height: 1rem;
+    background-color: chocolate;
+}
+
+#ps>p:first-child {
+    border: 0.1rem solid green;
+}
+
+#ps>p:last-child {
+    border: 0.1rem solid yellow;
 }

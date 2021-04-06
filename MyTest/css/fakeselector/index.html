@@ -11,15 +11,83 @@
 </head>
 
 <body>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum minima perspiciatis dolore ad. Facilis, sequi
-        eveniet numquam explicabo hic molestiae maxime recusandae quidem beatae mollitia animi? Ipsum placeat rerum ut?
-    </p>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quisquam ea, nisi laboriosam cumque odit non fugiat
-        aperiam omnis impedit odio accusamus ullam vitae consequuntur veniam quod commodi cum. Debitis!</div>
-    <br>
-    <a href="https://helloblog.cn">Micha Blog</a>
-    <br><br>
-    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ut illum porro exercitationem beatae quos doloribus sint cum at. Tenetur sint aliquid fuga ullam quos libero incidunt aliquam nostrum repudiandae!</span>
+    <div class="sidebar">
+        <p class="cls03">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum minima perspiciatis dolore ad.
+            Facilis, sequi
+            eveniet numquam explicabo hic molestiae maxime recusandae quidem beatae mollitia animi? Ipsum placeat rerum
+            ut?
+        </p>
+        <div class="cls04">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quisquam ea, nisi laboriosam
+            cumque odit non
+            fugiat
+            aperiam omnis impedit odio accusamus ullam vitae consequuntur veniam quod commodi cum. Debitis!</div>
+        <br>
+        <a href="https://helloblog.cn">Micha Blog</a>
+        <br><br>
+        <span id="withimg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ut illum porro exercitationem
+            beatae quos
+            doloribus sint cum at. Tenetur sint aliquid fuga ullam quos libero incidunt aliquam nostrum
+            repudiandae!</span>
+        <p></p>
+        <p>前后各有一个空的p标签。</p>
+        <p></p>
+    </div>
+    <div class="sidebar">
+        <form>
+            <label>他的名字：</label>
+            <input type="text" name="name" id="boy">
+            <br>
+            <label>她的名字：</label>
+            <input type="text" name="name" id="girl">
+            <br>
+            <hr>
+            <label>年龄：</label>
+            <input type="number" min="0" max="120" value="66">
+            <br>
+            <label>邮箱：</label>
+            <input type="email" placeholder="please input your email.">
+            <br>
+            <hr>
+            <label>普通的input输入框：</label>
+            <input type="text"><br>
+            <label>只读的input输入框：</label>
+            <input type="text" readonly>
+            <br>
+            <hr>
+            <label>必填：</label>
+            <input type="text" class="cls01" required>
+            <br>
+            <label>选填：</label>
+            <input type="text" class="cls01">
+            <br>
+            <hr>
+            <button class="cls02">enabled</button>
+            <button class="cls02" disabled>disabled</button>
+            <button type="submit">提交</button>
+            <br>
+            <hr>
+            <input type="radio" name="gender" value="male"><span>男人</span><br>
+            <input type="radio" name="gender" value="female"><span>女人</span><br>
+            <hr>
+            <input type="checkbox" name="fruit" value="banana"><span>香蕉</span><br>
+            <input type="checkbox" name="fruit" value="sugarcane"><span>甘蔗</span><br>
+            <input type="checkbox" name="fruit" value="mango"><span>芒果</span><br>
+            <input type="checkbox" name="fruit" value="peach"><span>水蜜桃</span><br>
+        </form>
+    </div>
+    <div class="sidebar">
+        <div id="ps">
+            <p>尾崎八项：</p>
+            <p>1、<span>emerging force</span>力之涌现</p>
+            <p>2、<span>birth of sky</span>天之降诞</p>
+            <p>3、<span>awakening earth</span>地之觉醒</p>
+            <p>4、<span>life of water</span>水之生灵</p>
+            <p>5、<span>life of wind</span>风之涌动</p>
+            <p>6、<span>life of ice</span>冰之固结</p>
+            <p>7、<span>master of six lives</span>命之主宰</p>
+            <p>8、<span>act of ultimate trust</span>终极信任</p>
+        </div>
+    </div>
 </body>
 
 </html>

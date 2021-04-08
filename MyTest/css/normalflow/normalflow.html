@@ -12,13 +12,17 @@
     <div id="f1"></div>
     <div id="f2">
         <div id="d0">static<br>
-            <p>static是position属性的默认值。如果省略position属性，浏览器就认为该元素是static定位。</p>
+            <p>static是position属性的默认值。如果省略position属性，浏览器就认为该元素是static定位。<br>表示有关元素按照它们在标记里出现的先后顺序出现在浏览器的窗口里。</p>
         </div>
         <div id="d1">relative<br>
-            <p>relative表示，相对于默认位置（即static时的位置）进行偏移，即定位基点是元素的默认位置。</p>
+            <p>relative表示，相对于默认位置（即static时的位置）进行偏移，即定位基点是元素的默认位置。<br>有关元素还可以通过应用float属性从文档的正常显示顺序里脱离出来。</p>
         </div>
         <div id="d2">absolute<br>
-            <p>absolute表示，相对于上级元素（一般是父元素）进行偏移，即定位基点是父元素。</p>
+            <p>absolute表示，相对于上级元素（一般是父元素）进行偏移，即定位基点是父元素。<br>
+                对应的元素摆放在一个容纳它的“容器”中，与该元素在原始标记中出现的位置无关；<br>
+                该容器要么是文档本身，要么是一个有fixed或absolute属性的父元素；<br>
+                显示位置由top、left、right和bottom等属性决定；<br>
+            </p>
         </div>
         <div id="d3">fixed<br>
             <p>fixed表示，相对于视口（viewport，浏览器窗口）进行偏移，即定位基点是浏览器窗口。这会导致元素的位置不随页面滚动而变化，好像固定在网页上一样。</p>

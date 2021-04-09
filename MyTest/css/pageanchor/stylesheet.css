@@ -1,0 +1,21 @@
+span {
+    margin-right: 2rem;
+    font-size: 2rem;
+    color: red;
+}
+
+:target {
+    border: 0.2rem solid red;
+}
+
+:lang(zh) {
+    background-color: #DE2910;
+}
+
+:lang(en) {
+    background-color: #FFDE00;
+}
+
+:not(span) {
+    background-color: #888;
+}

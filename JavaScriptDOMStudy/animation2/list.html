@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Design</title>
+
+    <link rel="stylesheet" href="./stylesheets/layout.css">
 </head>
 
 <body>
@@ -16,7 +18,15 @@
         <li><a href="./presentation.html">Presentation</a></li>
         <li><a href="./behavior.html">Behavior</a></li>
     </ol>
-    <img src="./topics.gif" alt="building blocks of web design" id="preview">
+    <!--如果浏览器没有启用javascript，下面的html毫无用处，所以将下面的html直接放到javascript中去动态生成
+    <div id="slideshow">
+        <img src="./images/topics.gif" alt="building blocks of web design" id="preview">
+    </div>
+    -->
+
+    <script src="./javascripts/addLoadEvent.js"></script>
+    <script src="./javascripts/moveElement.js"></script>
+    <script src="./javascripts/prepareSlideshow2.js"></script>
 </body>
 
 </html>

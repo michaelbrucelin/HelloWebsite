@@ -1,0 +1,23 @@
+span[class="Wood"] {
+    background-color: red;
+}
+
+li[class^="Wood"] {
+    background-color: red;
+}
+
+li[class$="Wood"] {
+    background-color: green;
+}
+
+li[class~="Water"] {
+    background-color: seagreen;
+}
+
+li[class*="tal"] {
+    background-color: gold;
+}
+
+[class|="Wood"] {
+    color: green;
+}

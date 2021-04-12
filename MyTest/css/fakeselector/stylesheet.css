@@ -1,7 +1,7 @@
 body {
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     margin: 0rem;
     padding: 0rem;
 }
@@ -133,6 +133,9 @@ input:read-write {
 }
 
 :root {
+    box-sizing: border-box;
+    margin: 0rem;
+    padding: 0rem;
     background-color: #888;
 }
 
@@ -148,4 +151,36 @@ p:empty {
 
 #ps>p:last-child {
     border: 0.1rem solid yellow;
+}
+
+#ps2 span:only-child {
+    background-color: blueviolet;
+}
+
+#ps2 strong:only-of-type {
+    background-color: brown;
+}
+
+#ps3 span:first-of-type {
+    background-color: yellow;
+}
+
+#ps3 span:last-of-type {
+    background-color: yellowgreen;
+}
+
+#ps4 p:nth-child(2) {
+    background-color: darkgreen;
+}
+
+#ps4 span:nth-last-child(3) {
+    background-color: darkgreen;
+}
+
+#ps4 span:nth-of-type(2) {
+    background-color: rebeccapurple;
+}
+
+#ps4 p:nth-last-of-type(2) {
+    background-color: rebeccapurple;
 }

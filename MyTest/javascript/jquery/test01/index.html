@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <div id="div1">Hello World.</div>
+        <input type="button" value="DOM" onclick="showDOMObject()">
+        <input type="button" value="JQuery" onclick="showJQueryObject()">
+        <br>
+        <input type="button" value="JQuery use DOM" onclick="showJqueryUseDOMObject()">
+        <br>
+        <input type="button" value="DOM use JQuery" onclick="showDOMUseJQueryObject()">
+        <br>
+        <select id="select01">
+            <option>添加到div内部，结束标签之前</option>
+            <option>添加到div内部，开始标签之后</option>
+            <option>添加到div外部，结束标签之后</option>
+            <option>添加到div外部，开始标签之前</option>
+            <option>添加到div内部，结束标签之前 另一种写法</option>
+            <option>添加到div内部，结束标签之前 另一种写法</option>
+        </select>
+        <input type="button" value="创建元素" onclick="createLinkTag()">
+        <div id="div01">hello div01</div>
+        <div id="div02">hello div02</div>
+        <div id="div03">hello div03</div>
+
+        <table id="tb01">
+            <tr>
+                <th>COL01</th>
+                <th>COL02</th>
+                <th>COL03</th>
+                <th>COL04</th>
+            </tr>
+            <tr>
+                <td>0101</td>
+                <td>0102</td>
+                <td>0103</td>
+                <td>0104</td>
+            </tr>
+            <tr>
+                <td>0201</td>
+                <td>0202</td>
+                <td>0203</td>
+                <td>0204</td>
+            </tr>
+            <tr>
+                <td>0301</td>
+                <td>0302</td>
+                <td>0303</td>
+                <td>0304</td>
+            </tr>
+            <tr>
+                <td>0401</td>
+                <td>0402</td>
+                <td>0403</td>
+                <td>0404</td>
+            </tr>
+            <tr>
+                <td>0501</td>
+                <td>0502</td>
+                <td>0503</td>
+                <td>0504</td>
+            </tr>
+            <tr>
+                <td>0601</td>
+                <td>0602</td>
+                <td>0603</td>
+                <td>0604</td>
+            </tr>
+            <tr>
+                <td>0701</td>
+                <td>0702</td>
+                <td>0703</td>
+                <td>0704</td>
+            </tr>
+            <tr>
+                <td>0801</td>
+                <td>0802</td>
+                <td>0803</td>
+                <td>0804</td>
+            </tr>
+            <tr>
+                <th>END01</th>
+                <th>END02</th>
+                <th>END03</th>
+                <th>END04</th>
+            </tr>
+        </table>
+
+        <br>
+        <input type="button" value="Animate" onclick="animateSample01()">
+        <div id="div04"></div>
+
+        <br>
+        <input type="button" value="Animate" onclick="animateSample02()">
+        <div id="div05"></div>
+
+        <br>
+        <input type="button" value="Animate" onclick="animateSample03()">
+        <div id="div06"></div>
+
+        <input type="button" value="AD" onclick="animateAD()">
+        <div id="divAD">广告</div>
+
+        <br>
+        <input id="int01" type="text" style="width: 32px;">
+        <input id="int02" type="text" style="width: 32px;">
+        <input id="jqbtn01" type="button" value="max"
+            onclick="console.log($.myMax($('#int01').val(), $('#int02').val()))">
+        <input id="jqbtn02" type="button" value="min"
+            onclick="console.log($.myMin($('#int01').val(), $('#int02').val()))">
+        <input id="chk01" type="checkbox">
+        <input id="jqbtn03" type="button" value="chk" onclick="$('#chk01').myChecked()">
+        <input id="jqbtn04" type="button" value="unchk" onclick="$('#chk01').myUnChecked()">
+    </div>
+    <div class="sidebar">
+        <p>如果你点我，我就会消失。</p>
+        <p>继续点我!</p>
+        <p>接着点我!</p>
+        <button id="hide">隐藏</button>
+        <button id="show">显示</button>
+        <div id="hidediv" style="width: 128px;height: 128px;padding: 8px;margin: 8px;background-color: green;">
+            隐藏及设置回调函数</div>
+        <button class="hidebtn">隐藏(More)</button>
+        <button id="hideshow">隐藏/显示</button><br>
+
+        <div id="flip1">点我滑下面板</div>
+        <div id="panel1">Hello world!</div><br>
+        <div id="flip2">点我拉起面板</div>
+        <div id="panel2">Hello world!</div><br>
+        <div id="flip3">点我，显示或隐藏面板。</div>
+        <div id="panel3">Hello world!</div><br>
+    </div>
+    <div class="sidebar"></div>
+    <div class="sidebar"></div>
+
+    <script src="../../../manual_modules/node_dists2release/jquery/jquery.min.js"></script>
+    <script src="./javascript.js"></script>
+    <script src="./jq_javascripts01.js"></script>
+    <script src="./jq_javascripts02.js"></script>
+    <script src="./jq_pluginInside.js"></script>
+</body>
+
+</html>

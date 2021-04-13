@@ -29,21 +29,21 @@ function createLinkTag() {
 }
 
 function animateSample01() {
-    $("#div04").animate({ "width": 600, "height": 50, "background-color": "#FF0000" }, 2000);
-    $("#div04").animate({ "width": 400, "height": 10, "background-color": "#00FF00" }, 2000);
+    $("#div04").animate({ "width": 256, "height": 64, "background-color": "#FF0000" }, 2000);
+    $("#div04").animate({ "width": 128, "height": 8, "background-color": "#00FF00" }, 2000);
 }
 
 //这样会先将div的背景色改为蓝色，然后执行width和height的过渡动画
 function animateSample02() {
-    $("#div05").animate({ "width": 600, "height": 50 }, 2000);
-    $("#div05").animate({ "width": 400, "height": 10 }, 2000);
+    $("#div05").animate({ "width": 256, "height": 64 }, 2000);
+    $("#div05").animate({ "width": 128, "height": 8 }, 2000);
     $("#div05").css("background-color", "#0000FF");
 }
 
 //这样可以先执行width和height的过渡动画，然后再将div的背景色改为蓝色
 function animateSample03() {
-    $("#div06").animate({ "width": 600, "height": 50 }, 2000);
-    $("#div06").animate({ "width": 400, "height": 10 }, 2000, () => {
+    $("#div06").animate({ "width": 256, "height": 64 }, 2000);
+    $("#div06").animate({ "width": 128, "height": 8 }, 2000, () => {
         $("#div06").css("background-color", "#0000FF");
     });
 }

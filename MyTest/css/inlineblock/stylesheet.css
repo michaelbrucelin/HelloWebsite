@@ -1,0 +1,28 @@
+div {
+    border: 2px solid lightblue;
+    margin: 1em;
+}
+
+span {
+    background-color: rebeccapurple;
+    color: cornsilk;
+}
+
+p {
+    border: 2px dotted pink;
+}
+
+#block p {
+    width: 6em;
+    display: block;
+}
+
+#inline p {
+    width: 6em;
+    display: inline;
+}
+
+#inline-block p {
+    width: 6em;
+    display: inline-block;
+}

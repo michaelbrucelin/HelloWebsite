@@ -53,3 +53,15 @@ p {
     text-align: left;
     font-size: small;
 }
+
+#description {
+    position: fixed;
+    top: 2rem;
+    left: 919px;
+    width: 512px;
+    z-index: 100;
+    float: right;
+
+    border: .2rem solid #888;
+    border-radius: .4rem;
+}

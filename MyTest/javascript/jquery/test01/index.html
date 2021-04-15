@@ -121,6 +121,7 @@
         <input id="jqbtn04" type="button" value="unchk" onclick="$('#chk01').myUnChecked()">
     </div>
     <div class="sidebar">
+        <h3>隐藏/显示</h3>
         <p>如果你点我，我就会消失。</p>
         <p>继续点我!</p>
         <p>接着点我!</p>
@@ -130,15 +131,59 @@
             隐藏及设置回调函数</div>
         <button class="hidebtn">隐藏(More)</button>
         <button id="hideshow">隐藏/显示</button><br>
+        <hr>
 
-        <div id="flip1">点我滑下面板</div>
-        <div id="panel1">Hello world!</div><br>
-        <div id="flip2">点我拉起面板</div>
-        <div id="panel2">Hello world!</div><br>
-        <div id="flip3">点我，显示或隐藏面板。</div>
-        <div id="panel3">Hello world!</div><br>
+        <h3>淡入/淡出</h3>
+        <button id="fadein">淡入</button>
+        <button id="fadeout">淡出</button>
+        <button id="fadetoggle">淡入/淡出</button>
+        <button id="fadeto">颜色变淡</button>
+        <br><br>
+        <div id="fadediv1" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
+        <div id="fadediv2" style="width:80px;height:80px;display:none;background-color:green;"></div><br>
+        <div id="fadediv3" style="width:80px;height:80px;display:none;background-color:blue;"></div>
+        <hr>
+
+        <h3>滑动</h3>
+        <div id="flipup">拉起面板</div>
+        <div id="flipdown">滑下面板</div>
+        <div id="fliptoggle">拉起/滑下面板</div>
+        <div id="panel">Hello world!</div>
+        <hr>
     </div>
-    <div class="sidebar"></div>
+    <div class="sidebar">
+        <h3>动画</h3>
+        <p class="myp">默认情况下，所有的HTML元素有一个静态的位置，且是不可移动的。
+            如果需要改变为，我们需要将元素的position属性设置为relative,fixed或absolute!</p>
+        <button id="animate1">动画1</button>
+        <button id="animate2">动画2</button>
+        <button id="animate3">动画3</button>
+        <button id="animate4">动画4</button>
+        <button id="animate5">动画5</button>
+        <div style="position:relative;">
+            <div id="animatediv" style="background:#98bf21;height:100px;width:100px;position:relative;"></div>
+        </div>
+        <hr>
+
+        <h3>停止动画</h3>
+        <button id="stopanimate">停止滑动</button>
+        <div id="fliptoggle2">滑动面板</div>
+        <div id="panel2">Hello world!<br>Hello world!<br>Hello world!<br>Hello world!<br>Hello world!<br>Hello world!
+        </div>
+        <hr>
+
+        <h3>Callback方法</h3>
+        <button id="callback">Callback</button>
+        <button id="nocallback">No Callback</button>
+        <p id="callbackp">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, in vero id fugit
+            numquam fugiat repellendus voluptates natus tempora et architecto blanditiis quia unde maxime consequuntur
+            quibusdam ipsa voluptatem incidunt?</p>
+        <hr>
+
+        <h3>方法链</h3>
+        <button id="funchain">点我</button>
+        <p id="funchainp">Hello World!!!</p>
+    </div>
     <div class="sidebar"></div>
 
     <script src="../../../manual_modules/node_dists2release/jquery/jquery.min.js"></script>

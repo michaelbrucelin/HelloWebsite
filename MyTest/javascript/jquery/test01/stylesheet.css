@@ -12,6 +12,10 @@ body {
     border-radius: 0.3rem;
 }
 
+.myp {
+    font-size: x-small;
+}
+
 #div1 {
     width: 160px;
     height: 20px;
@@ -50,24 +54,20 @@ body {
     opacity: 0;
 }
 
-#panel1,
-#flip1,
-#panel2,
-#flip2,
-#panel3,
-#flip3 {
+#flipup,
+#flipdown,
+#fliptoggle,
+#fliptoggle2,
+#panel,
+#panel2 {
     padding: 5px;
     text-align: center;
     background-color: #e5eecc;
     border: solid 1px #c3c3c3;
 }
 
-#panel1,
-#panel3 {
-    padding: 50px;
-    display: none;
-}
-
+#panel,
 #panel2 {
     padding: 50px;
+    display: none;
 }

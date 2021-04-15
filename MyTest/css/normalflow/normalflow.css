@@ -57,8 +57,8 @@ p {
 #description {
     position: fixed;
     top: 2rem;
-    left: 919px;
-    width: 512px;
+    left: 910px;
+    width: calc(100%-888px);
     z-index: 100;
     float: right;
 

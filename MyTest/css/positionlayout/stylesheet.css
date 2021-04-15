@@ -1,0 +1,87 @@
+div.container {
+    position: relative;
+    top: 0%;
+    left: 0%;
+    border: 5px solid blue;
+}
+
+div.left1 {
+    width: 50%;
+    background-color: pink;
+    position: absolute;
+    left: 0%;
+    box-sizing: border-box;
+    padding: 1.6rem;
+}
+
+div.right1 {
+    width: 50%;
+    background-color: lightblue;
+    position: absolute;
+    left: 50%;
+    box-sizing: border-box;
+    padding: 1.6rem;
+}
+
+div.left2 {
+    background-color: pink;
+    width: 33.33%;
+    position: absolute;
+    left: 0%;
+    box-sizing: border-box;
+    padding: 1.6rem;
+}
+
+div.middle2 {
+    background-color: cornsilk;
+    width: 33.33%;
+    position: absolute;
+    left: 33.33%;
+    box-sizing: border-box;
+    padding: 1.6rem;
+}
+
+div.right2 {
+    background-color: lightblue;
+    width: 33.33%;
+    position: absolute;
+    left: 66.66%;
+    box-sizing: border-box;
+    padding: 1.6rem;
+}
+
+div.left31 {
+    background-color: pink;
+    width: 25%;
+    position: absolute;
+    left: 0%;
+    box-sizing: border-box;
+    padding: 1.6rem;
+}
+
+div.left32 {
+    background-color: lightblue;
+    width: 25%;
+    position: absolute;
+    left: 25%;
+    box-sizing: border-box;
+    padding: 1.6rem;
+}
+
+div.right32 {
+    background-color: lightyellow;
+    width: 25%;
+    position: absolute;
+    left: 50%;
+    box-sizing: border-box;
+    padding: 1.6rem;
+}
+
+div.right31 {
+    background-color: lightgreen;
+    width: 25%;
+    position: absolute;
+    left: 75%;
+    box-sizing: border-box;
+    padding: 1.6rem;
+}

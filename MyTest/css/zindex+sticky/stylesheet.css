@@ -1,0 +1,35 @@
+article {
+    max-width: 600px;
+    margin: 1em auto;
+}
+
+article h4,
+article footer {
+    position: -webkit-sticky;
+    /* for Safari */
+    position: sticky;
+}
+
+article h4 {
+    margin: 2em 0 0;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    top: 0;
+    z-index: 1;
+}
+
+article content {
+    display: block;
+    background-color: #ffffe0;
+    position: relative;
+    padding: 1px 10px;
+}
+
+article footer {
+    /*background-color: #f0f3f9;*/
+    background-color: #F00;
+    padding: 10px;
+    bottom: 50vh;
+    z-index: -1;
+}

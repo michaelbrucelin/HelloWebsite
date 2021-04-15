@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Video</title>
+
+    <link rel="stylesheet" href="./stylesheets/player.css" />
+</head>
+
+<body>
+    <div class="video-wrapper">
+        <video id="movie" controls>
+            <source src="./videos/trailer.mp4" />
+            <source src="./videos/trailer.webm" type='video/webm; codecs="vp8, vorbis"' />
+            <source src="./videos/trailer.ogv" type='video/ogg; codecs="theora, vorbis"' />
+            <p>Download movie as
+                <a href="./videos/trailer.mp4">MP4</a>,
+                <a href="./videos/trailer.webm">WebM</a>,
+                or <a href="./videos/trailer.ogv">Ogg</a>.
+            </p>
+        </video>
+        <!--
+        <video id="movie" controls>
+            <source src="http://media.w3.org/2010/05/sintel/trailer.mp4" />
+            <source src="http://media.w3.org/2010/05/sintel/trailer.webm" type='video/webm; codecs="vp8, vorbis"' />
+            <source src="http://media.w3.org/2010/05/sintel/trailer.ogv" type='video/ogg; codecs="theora, vorbis"' />
+            <p>Download movie as
+                <a href="http://media.w3.org/2010/05/sintel/trailer.mp4">MP4</a>,
+                <a href="http://media.w3.org/2010/05/sintel/trailer.webm">WebM</a>,
+                or <a href="http://media.w3.org/2010/05/sintel/trailer.ogv">Ogg</a>.
+            </p>
+        </video>
+        -->
+    </div>
+    <script src="./javascripts/player.js"></script>
+</body>
+
+</html>

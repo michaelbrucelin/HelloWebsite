@@ -1,6 +1,6 @@
 //将所有p元素的单击事件注册为隐藏自身
 $(document).ready(function () {
-    $("p").click(function () {
+    $("p.hideshow").click(function () {
         $(this).hide();
     });
 });
@@ -8,10 +8,10 @@ $(document).ready(function () {
 //为安装注册单击事件
 $(document).ready(function () {
     $("#hide").click(function () {
-        $("p").hide();
+        $("p.hideshow").hide();
     });
     $("#show").click(function () {
-        $("p").show();
+        $("p.hideshow").show();
     });
 });
 
@@ -27,7 +27,7 @@ $(document).ready(function () {
 //显示隐藏切换
 $(document).ready(function () {
     $("#hideshow").click(function () {
-        $("p").toggle(1000, "swing");
+        $("p.hideshow").toggle(1000, "swing");
     });
 });
 
@@ -154,5 +154,82 @@ $(document).ready(function () {
             .css("color", "red")
             .slideUp(2000)
             .slideDown(2000);
+    });
+});
+
+//获取内容
+$(document).ready(function () {
+    $("#showinfo1").click(function () {
+        alert("Text: " + $("#showinfop1").text());
+    });
+    $("#showinfo2").click(function () {
+        alert("HTML: " + $("#showinfop1").html());
+    });
+});
+
+//获取值
+$(document).ready(function () {
+    $("#showinfo3").click(function () {
+        alert("值为: " + $("#showinfop3").val());
+    });
+});
+
+//获取属性
+$(document).ready(function () {
+    $("#showinfo4").click(function () {
+        alert("href: " + $("#showinfop4").attr("href"));
+    });
+});
+
+//设置内容
+$(document).ready(function () {
+    $("#setinfo1").click(function () {
+        $("#setinfop1").text("Hello world!");
+    });
+    $("#setinfo2").click(function () {
+        $("#setinfop1").html("<b>Hello world!</b>");
+    });
+});
+
+//设置值
+$(document).ready(function () {
+    $("#setinfo3").click(function () {
+        $("#setinfop3").val("hello you.");
+    });
+});
+
+$(document).ready(function () {
+    $("#setinfo4").click(function () {
+        $("#setinfop4").text(function (i, origText) {
+            return "旧文本: " + origText + " 新文本: Hello World! (index: " + i + ")";
+        });
+    });
+
+    $("#setinfo5").click(function () {
+        $("#setinfop5").html(function (i, origText) {
+            return "旧 html: " + origText + " 新html: Hello <b>World!</b> (index: " + i + ")";
+        });
+    });
+
+});
+
+//设置属性
+$(document).ready(function () {
+    $("#setinfo6").click(function () {
+        $("#setinfop6").attr({
+            "href": "https://byteswitch.cn",
+            "title": "ByteSwitch"
+        });
+        // 通过修改的title值来修改链接名称
+        title = $("#setinfop6").attr('title');
+        $("#setinfop6").html(title);
+    });
+});
+
+$(document).ready(function () {
+    $("#setinfo7").click(function () {
+        $("#setinfop6").attr("href", function (i, origValue) {
+            return origValue + "/mlin";
+        });
     });
 });

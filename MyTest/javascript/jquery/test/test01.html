@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JQuery</title>
+    <title>JQuery Test01</title>
+
     <link rel="stylesheet" href="stylesheet.css" type="text/css">
 </head>
 
@@ -122,9 +123,9 @@
     </div>
     <div class="sidebar">
         <h3>隐藏/显示</h3>
-        <p>如果你点我，我就会消失。</p>
-        <p>继续点我!</p>
-        <p>接着点我!</p>
+        <p class="hideshow">如果你点我，我就会消失。</p>
+        <p class="hideshow">继续点我!</p>
+        <p class="hideshow">接着点我!</p>
         <button id="hide">隐藏</button>
         <button id="show">显示</button>
         <div id="hidediv" style="width: 128px;height: 128px;padding: 8px;margin: 8px;background-color: green;">
@@ -184,12 +185,36 @@
         <button id="funchain">点我</button>
         <p id="funchainp">Hello World!!!</p>
     </div>
-    <div class="sidebar"></div>
+    <div class="sidebar">
+        <h3>获取内容和属性</h3>
+        <button id="showinfo1">显示文本</button>
+        <button id="showinfo2">显示HTML</button>
+        <button id="showinfo3">显示值</button>
+        <button id="showinfo4">显示href属性</button>
+        <p id="showinfop1">这是段落中的<b>粗体</b>文本。</p>
+        <p>名称: <input type="text" id="showinfop3" value="Hello World."></p>
+        <p><a href="https://403found.cn" id="showinfop4">403FOUND</a></p>
+        <hr>
+
+        <h3>设置内容和属性</h3>
+        <button id="setinfo1">设置文本</button>
+        <button id="setinfo2">设置HTML</button>
+        <button id="setinfo3">设置值</button>
+        <p id="setinfop1">这是一个段落。</p>
+        <p>名称: <input type="text" id="setinfop3" value="Hello World."></p>
+        <button id="setinfo4">显示 新/旧 文本</button>
+        <button id="setinfo5">显示 新/旧 HTML</button>
+        <p id="setinfop4">这是一个有<b>粗体</b>字的段落。</p>
+        <p id="setinfop5">这是另外一个有<b>粗体</b>字的段落。</p>
+        <button id="setinfo6">修改href和title</button>
+        <button id="setinfo7">修改href和title</button>
+        <p><a href="https://403found.cn" id="setinfop6">403FOUND</a></p>
+    </div>
 
     <script src="../../../manual_modules/node_dists2release/jquery/jquery.min.js"></script>
-    <script src="./javascript.js"></script>
-    <script src="./jq_javascripts01.js"></script>
-    <script src="./jq_javascripts02.js"></script>
+    <script src="./others01.js"></script>
+    <script src="./others02.js"></script>
+    <script src="./test01.js"></script>
     <script src="./jq_pluginInside.js"></script>
 </body>
 

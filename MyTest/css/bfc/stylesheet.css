@@ -1,0 +1,31 @@
+.container {
+    background-color: pink;
+    overflow: hidden;
+    /*习惯使用overflow: hidden来触发BFC是因为这样副作用比较小*/
+}
+
+p {
+    background-color: lightblue;
+    margin: .8rem 0;
+}
+
+.box1 {
+    width: 16rem;
+    height: 16rem;
+    background-color: pink;
+}
+
+.box2 {
+    width: 8rem;
+    height: 8rem;
+    background-color: lightblue;
+    margin-top: 4rem;
+}
+
+.box1bfc {
+    width: 16rem;
+    height: 16rem;
+    background-color: pink;
+    overflow: hidden;
+    /*习惯使用overflow: hidden来触发BFC是因为这样副作用比较小*/
+}

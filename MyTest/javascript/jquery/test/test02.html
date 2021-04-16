@@ -8,14 +8,173 @@
     <title>JQuery Test02</title>
 
     <link rel="stylesheet" href="./stylesheet.css">
+    <style type="text/css">
+        .class01 {
+            margin-top: .1rem;
+            margin-bottom: .1rem;
+            font-weight: bold;
+            font-size: xx-large;
+            color: brown;
+            background-color: lightblue;
+        }
+
+        .class02 {
+            margin-top: .1rem;
+            margin-bottom: .1rem;
+            color: blue;
+            background-color: pink;
+        }
+
+        .ancestors * {
+            display: block;
+            border: 2px solid lightgrey;
+            color: lightgrey;
+            padding: 4px;
+            margin: 12px;
+            font-size: small;
+        }
+
+        .descendants * {
+            display: block;
+            border: 2px solid lightgrey;
+            color: lightgrey;
+            padding: 4px;
+            margin: 12px;
+            font-size: small;
+        }
+
+        .siblings * {
+            display: block;
+            border: 2px solid lightgrey;
+            color: lightgrey;
+            padding: 4px;
+            margin: 12px;
+            font-size: small;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="sidebar"></div>
-    <div class="sidebar"></div>
-    <div class="sidebar"></div>
-    <div class="sidebar"></div>
+    <div class="sidebar">
+        <h3>添加元素</h3>
+        <button id="addele1">追加文本</button>
+        <button id="addele2">追加列表项</button>
+        <button id="addele3">插入文本</button>
+        <button id="addele4">插入列表项</button>
+        <p id="addelep1">这是一个段落。</p>
+        <ol id="addelep2">
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+        </ol>
+        <button onclick="appendText()">追加多个文本</button>
+        <p id="addelep3">这是一个段落。</p>
+        <button id="addele5">之前插入</button>
+        <button id="addele6">之后插入</button>
+        <button onclick="afterText()">之后插入多个元素</button>
+        <br>
+        <img id="addelep5" src="./debian-logo-128x72.png">
+        <hr>
 
+        <h3>删除元素</h3>
+        <button id="delele1">移除div元素</button>
+        <button id="delele2">清空div元素</button>
+        <button id="delele3">移除所有class="italic"的p元素</button>
+        <div id="delelediv1" style="height:100px;width:300px;border:1px solid black;background-color:yellow;">
+            这是div中的一些文本。
+            <p class="myp">这是在div中的一个段落。</p>
+            <p class="italic myp"><i>这是另外一个段落。</i></p>
+            <p class="italic myp"><i>这是另外一个段落。</i></p>
+        </div>
+    </div>
+    <div class="sidebar">
+        <h3>获取并设置CSS类</h3>
+        <button id="opcss1">添加class</button>
+        <button id="opcss2">移除class</button>
+        <button id="opcss3">切换class</button>
+        <p id="opcssp1" class="class01">这是一个段落。</p>
+        <p id="opcssp2" class="class02">这是另外一个段落。</p>
+        <hr>
+
+        <h3>css()方法</h3>
+        <button id="funcss1">获取元素的background-color</button>
+        <button id="funcss2">设置元素的background-color</button>
+        <button id="funcss3">为元素设置多个样式</button>
+        <p id="funcssp1" style="background-color:#ff0000">这是一个段落。</p>
+        <hr>
+
+        <h3>尺寸</h3>
+        <p class="myp">width() - 返回元素的宽度</p>
+        <p class="myp">height() - 返回元素的高度</p>
+        <p class="myp">innerWidth() - 返回元素的宽度 (包含内边距)</p>
+        <p class="myp">innerHeight() - 返回元素的高度 (包含内边距)</p>
+        <p class="myp">outerWidth() - 返回元素的宽度 (包含内边距和边框)</p>
+        <p class="myp">outerHeight() - 返回元素的高度 (包含内边距和边框)</p>
+        <button id="showsize1">显示div元素的尺寸</button>
+        <div id="showsizediv1"
+            style="height:128px;width:300px;padding:10px;margin:10px;border:1px solid blue;background-color:lightblue;font-size: x-small;">
+        </div>
+    </div>
+    <div class="sidebar">
+        <h3>遍历 - 祖先</h3>
+        <button id="looparent1">直接父元素</button>
+        <button id="looparent2">所有祖先元素</button>
+        <button id="looparent3">指定的祖先元素(ul元素)</button>
+        <button id="looparent4">两个给定元素之间的所有祖先元素</button>
+        <div class="ancestors">
+            <div style="width:360px;">div (曾曾祖父元素)
+                <div>div (曾祖父元素)
+                    <ul>ul (祖父元素)
+                        <li>li (父元素)
+                            <span id="looparentp1">span (当前元素)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h3>遍历 - 后代</h3>
+        <button id="loopchild1">直接子元素</button>
+        <button id="loopchild2">指定的直接子元素(p.class=1)</button>
+        <button id="loopchild3">指定的子元素(span元素)</button>
+        <button id="loopchild4">所有子元素</button>
+        <div class="descendants">
+            <div id="loopchildp1" style="width:360px;">div (当前元素)
+                <p class="1">p (儿子元素)
+                    <span>span (孙子元素)</span>
+                </p>
+                <p class="2">p (儿子元素)
+                    <span>span (孙子元素)</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <h3>遍历 - 同胞/兄弟</h3>
+        <button class="loopsibling1">所有同胞元素</button>
+        <button class="loopsibling2">指定的同胞元素(p)</button>
+        <button class="loopsibling3">下一个同胞元素</button>
+        <button class="loopsibling4">所有跟随的同胞元素</button>
+        <button class="loopsibling5">介于两个给定参数之间的所有跟随的同胞元素</button>
+        <div class="siblings">
+            <div style="width:360px;">div (父元素)
+                <p>p</p>
+                <span>span</span>
+                <h2>h2</h2>
+                <h3>h3</h3>
+                <h4>h4</h4>
+                <h5>h5</h5>
+                <h6>h6</h6>
+                <p>p</p>
+            </div>
+        </div>
+        <hr>
+
+        <h3>遍历- 过滤</h3>
+    </div>
+
+    <script src="../../../manual_modules/node_dists2release/jquery/jquery.min.js"></script>
     <script src="./test02.js"></script>
 </body>
 

@@ -1,6 +1,47 @@
+body {
+    box-sizing: border-box;
+    margin: 0%;
+    display: grid;
+    grid-template-columns: 1.6fr repeat(2, 1fr);
+}
+
+.container {
+    box-sizing: border-box;
+    border: .1rem solid#888;
+    border-radius: .2rem;
+    margin: .1rem;
+    height: calc(100vh - .2rem);
+    overflow-y: scroll;
+}
+
+.imgsticky {
+    position: sticky;
+    top: 0;
+    margin: 0%;
+    width: auto;
+    max-width: 100%;
+}
+
 th {
     position: sticky;
     background-color: black;
     color: white;
     top: 0;
+}
+
+.testp {
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    background-color: pink;
+}
+
+.teststicky {
+    position: sticky;
+    top: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    font-weight: bold;
+    background-color: lightblue;
 }

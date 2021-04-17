@@ -1,0 +1,26 @@
+body {
+    background: #AAFFEE;
+    margin: .8rem;
+}
+
+#page {
+    width: 888px;
+    margin: 0 auto;
+}
+
+.col {
+    column-count: 3;
+    column-gap: .8rem;
+    column-fill: balance;
+}
+
+.pic {
+    background: #FFF;
+    padding: 1rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 1rem;
+}
+
+.pic img {
+    width: 16rem;
+}

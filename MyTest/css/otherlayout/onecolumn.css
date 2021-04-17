@@ -1,0 +1,28 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container {
+    max-width: 64rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header {
+    height: 3rem;
+    line-height: 3rem;
+    background-color: pink;
+}
+
+footer {
+    height: 3rem;
+    line-height: 3rem;
+    background-color: pink;
+}
+
+main {
+    height: calc(100vh - 6rem);
+    line-height: calc(100vh - 6rem);
+    background-color: lightblue;
+}

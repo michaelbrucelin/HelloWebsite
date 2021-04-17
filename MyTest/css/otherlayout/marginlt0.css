@@ -1,0 +1,31 @@
+body {
+    box-sizing: border-box;
+    margin: 0%;
+}
+
+.container {
+    width: 100%;
+    float: left;
+}
+
+.center {
+    height: 100vh;
+    margin: 0 16rem;
+    background-color: cornsilk;
+}
+
+.left {
+    width: 16rem;
+    height: 100vh;
+    float: left;
+    margin-left: -100%;
+    background-color: pink;
+}
+
+.right {
+    width: 16rem;
+    height: 100vh;
+    float: left;
+    margin-left: -16rem;
+    background-color: lightblue;
+}

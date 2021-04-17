@@ -1,0 +1,48 @@
+div.center {
+    width: 16rem;
+    height: 16rem;
+    border-radius: .4rem;
+
+    text-align: center;
+    /*margin: auto可实现水平居中*/
+    margin: auto;
+    /*position: absolute让其脱离文档流，四边为0即占据整个页面，
+    由于其没有设置了position属性的父元素再配合上面的margin: auto即实现了垂直居中*/
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+
+    background-color: pink;
+}
+
+span {
+    /*与父元素同高度，文字垂直居中*/
+    line-height: 16rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.container {
+    width: 24rem;
+    height: 24rem;
+    border-radius: .6rem;
+    position: absolute;
+    background-color: lightblue;
+}
+
+div.center2 {
+    width: 16rem;
+    height: 16rem;
+    border-radius: .4rem;
+
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+
+    background-color: pink;
+}

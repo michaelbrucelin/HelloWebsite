@@ -1,0 +1,42 @@
+div.two {
+    column-count: 2;
+    column-gap: .8rem;
+    column-rule: .4rem solid lightgray;
+}
+
+div.left1 {
+    box-sizing: border-box;
+    background-color: pink;
+    padding: 1.6rem;
+}
+
+div.right1 {
+    box-sizing: border-box;
+    background-color: lightblue;
+    padding: 1.6rem;
+}
+
+div.five {
+    columns: 5 16rem;
+    column-gap: .4rem;
+    column-rule: .2rem solid lightgrey;
+    background-color: lightcyan;
+}
+
+div.two2balance {
+    columns: 2 16rem;
+    column-fill: balance;
+    background-color: pink;
+    height: 20rem;
+}
+
+div.two2auto {
+    columns: 2 16rem;
+    column-fill: auto;
+    background-color: lightblue;
+    height: 20rem;
+}
+
+.columnall {
+    column-span: all;
+}

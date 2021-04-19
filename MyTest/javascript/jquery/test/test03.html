@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JQuery Test03</title>
 
+    <script src="../../../manual_modules/node_dists2release/jquery/jquery.min.js"></script>
     <link rel="stylesheet" href="./stylesheet.css">
 </head>
 
@@ -24,12 +25,51 @@
         <h3>ajax get()和post()</h3>
         <button id="ajaxget1">发送一个HTTP GET请求并获取返回结果</button>
         <button id="ajaxpost1">发送一个HTTP POST请求页面并获取返回内容</button>
+        <hr>
+
+        <h3>noConflict()</h3>
+        <button id="noconflict1">点我</button>
+        <button id="noconflict2">点我</button>
+        <button id="noconflict3">点我</button>
+        <button id="noconflict4">重置</button>
+        <p id="noconflictp1">这是一个段落。</p>
+        <hr>
+
+        <h3>Javascript JSONP</h3>
+        <div id="divCustomers-js"></div>
+        <script type="text/javascript">
+            function callbackFunction(result, methodName) {
+                var html = '<ul>';
+                for (var i = 0; i < result.length; i++) {
+                    html += '<li>' + result[i] + '</li>';
+                }
+                html += '</ul>';
+                document.getElementById('divCustomers-js').innerHTML = html;
+            }
+        </script>
+        <script type="text/javascript"
+            src="https://www.runoob.com/try/ajax/jsonp.php?jsoncallback=callbackFunction"></script>
+        <hr>
+
+        <h3>JQuery JSONP</h3>
+        <div id="divCustomers-jq"></div>
+        <script>
+            $.getJSON("https://www.runoob.com/try/ajax/jsonp.php?jsoncallback=?", function (data) {
+
+                var html = '<ul>';
+                for (var i = 0; i < data.length; i++) {
+                    html += '<li>' + data[i] + '</li>';
+                }
+                html += '</ul>';
+
+                $('#divCustomers-jq').html(html);
+            });
+        </script>
     </div>
     <div class="sidebar"></div>
     <div class="sidebar"></div>
     <div class="sidebar"></div>
 
-    <script src="../../../manual_modules/node_dists2release/jquery/jquery.min.js"></script>
     <script src="./test03.js"></script>
 </body>
 

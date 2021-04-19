@@ -240,3 +240,46 @@ $(document).ready(function () {
         $(".siblings").find("*").css({ "color": "", "border": "" });
     });
 });
+
+//first()方法返回被选元素的首个元素
+$(document).ready(function () {
+    $("#loopfilter1").click(function () {
+        $(".jqfilterdiv p").first().css("background-color", "yellow");
+    });
+});
+
+//last()方法返回被选元素的最后一个元素
+$(document).ready(function () {
+    $("#loopfilter2").click(function () {
+        $(".jqfilterdiv p").last().css("background-color", "yellow");
+    });
+});
+
+//eq()方法返回被选元素中带有指定索引号的元素
+$(document).ready(function () {
+    $("#loopfilter3").click(function () {
+        $(".jqfilterdiv p").eq(2).css("background-color", "yellow");
+    });
+});
+
+//filter()方法允许您规定一个标准，不匹配这个标准的元素会被从集合中删除，匹配的元素会被返回
+$(document).ready(function () {
+    $("#loopfilter4").click(function () {
+        $(".jqfilterdiv p").filter(".url").css("background-color", "yellow");
+    });
+});
+
+//not()方法返回不匹配标准的所有元素
+$(document).ready(function () {
+    $("#loopfilter5").click(function () {
+        $(".jqfilterdiv p").not(".url").css("background-color", "yellow");
+    });
+});
+
+//重置
+$(document).ready(function () {
+    $("#loopfilter6").click(function () {
+        $(".jqfilterdiv p").css("background-color", "");
+        $(".jqfilterdiv").first().nextUntil(".jqfilterdiv").css("background-color", "");
+    });
+});

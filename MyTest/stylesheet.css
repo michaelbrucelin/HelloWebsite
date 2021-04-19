@@ -1,19 +1,54 @@
-h2 {
-    clear: left;
+body {
+    box-sizing: border-box;
+    margin: 0%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: lightgray;
 }
 
-body>ul {
-    display: flex;
-    flex-wrap: wrap;
+.mainpage {
+    display: block;
+    max-width: 88rem;
+    margin: .2rem auto;
+    padding: .2rem 1rem;
 }
 
-body>ul>li {
-    margin: 0px 16px;
+.waterfall {
+    columns: 5 16rem;
+    column-gap: .8rem;
+    column-fill: balance;
 }
 
-/*
-body>ul>li {
-    width: 256px;
-    float: left;
+.waterfall>section {
+    page-break-inside: avoid;
+
+    margin-bottom: .8rem;
+    padding: .2rem .4rem;
+
+    border: .1rem solid #888;
+    border-radius: .2rem;
+    box-shadow:
+        0 .1rem rgba(136, 136, 136, 0.8),
+        0 -.1rem rgba(136, 136, 136, 0.8),
+        .1rem 0 rgba(136, 136, 136, 0.8),
+        -.1rem 0 rgba(136, 136, 136, 0.8);
+
+    font-weight: bold;
 }
-*/
+
+.waterfall>section>* {
+    font-weight: normal;
+}
+
+.waterfall>section>ul a:link {
+    color: #222;
+}
+
+.waterfall>section>ul a:visited {
+    color: #800;
+}
+
+.waterfall>section>ul a:hover {
+    color: #00f;
+    font-weight: bold;
+}

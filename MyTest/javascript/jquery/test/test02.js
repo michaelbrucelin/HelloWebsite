@@ -138,7 +138,8 @@ $(document).ready(function () {
 //所有祖先元素
 $(document).ready(function () {
     $("#looparent2").click(function () {
-        $("#looparentp1").parents().css({ "color": "red", "border": "2px solid red" });
+        //$("#looparentp1").parents().css({ "color": "red", "border": "2px solid red" });  //这个是所有祖先的意思，但是演示效果不好
+        $("#looparentp1").parentsUntil(".ancestors").css({ "color": "red", "border": "2px solid red" });  //这个并不是所有祖先的意思，但是演示效果好
     });
 });
 
@@ -153,6 +154,13 @@ $(document).ready(function () {
 $(document).ready(function () {
     $("#looparent4").click(function () {
         $("#looparentp1").parentsUntil("div").css({ "color": "red", "border": "2px solid red" });
+    });
+});
+
+//重置
+$(document).ready(function () {
+    $("#looparent5").click(function () {
+        $(".ancestors").parent().find("*").css({ "color": "", "border": "" });
     });
 });
 
@@ -184,12 +192,51 @@ $(document).ready(function () {
     });
 });
 
+//重置
+$(document).ready(function () {
+    $("#loopchild5").click(function () {
+        $(".descendants").find("*").css({ "color": "", "border": "" });
+    });
+});
+
 //所有同胞元素
+$(document).ready(function () {
+    $("#loopsibling1").click(function () {
+        $("#loopsiblingp1").siblings().css({ "color": "red", "border": "2px solid red" });
+    });
+});
 
 //指定的同胞元素(p)
+$(document).ready(function () {
+    $("#loopsibling2").click(function () {
+        $("#loopsiblingp1").siblings("p").css({ "color": "red", "border": "2px solid red" });
+    });
+});
 
 //下一个同胞元素
+$(document).ready(function () {
+    $("#loopsibling3").click(function () {
+        $("#loopsiblingp1").next().css({ "color": "red", "border": "2px solid red" });
+    });
+});
 
 //所有跟随的同胞元素
+$(document).ready(function () {
+    $("#loopsibling4").click(function () {
+        $("#loopsiblingp1").nextAll().css({ "color": "red", "border": "2px solid red" });
+    });
+});
 
 //两个给定元素之间的所有跟随的同胞元素
+$(document).ready(function () {
+    $("#loopsibling5").click(function () {
+        $("#loopsiblingp1").nextUntil("h6").css({ "color": "red", "border": "2px solid red" });
+    });
+});
+
+//重置
+$(document).ready(function () {
+    $("#loopsibling6").click(function () {
+        $(".siblings").find("*").css({ "color": "", "border": "" });
+    });
+});

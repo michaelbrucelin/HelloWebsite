@@ -494,7 +494,6 @@ function echart0505() {
 
     // 指定图表的配置项和数据
     $.get('./data/life-expectancy-table.json', function (data) {
-
         var sizeValue = '57%';
         var symbolSize = 2.5;
         option = {

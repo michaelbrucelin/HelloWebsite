@@ -1,0 +1,18 @@
+body {
+    box-sizing: border-box;
+    margin: 0%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.sidebar {
+    box-sizing: border-box;
+    margin: .2rem;
+    height: calc(100vh - .4rem);
+    border: .1rem solid #888;
+    border-radius: .3rem;
+}
+
+.myp {
+    font-size: x-small;
+}

@@ -31,7 +31,7 @@ function echart0101() {
 //饼图
 function echart0201() {
     var myChart = echarts.init(document.getElementById('echart02'));
-    myChart.clear();  //先清空原有数据，这样就可以重复点击了
+    myChart.clear();
 
     myChart.setOption({
         series: [
@@ -54,7 +54,7 @@ function echart0201() {
 //南丁格尔图
 function echart0202() {
     var myChart = echarts.init(document.getElementById('echart02'));
-    myChart.clear();  //先清空原有数据，这样就可以重复点击了
+    myChart.clear();
 
     var option = {
         series: [
@@ -80,7 +80,7 @@ function echart0202() {
 //饼图阴影
 function echart0203() {
     var myChart = echarts.init(document.getElementById('echart02'));
-    myChart.clear();  //先清空原有数据，这样就可以重复点击了
+    myChart.clear();
 
     var option = {
         series: [
@@ -160,7 +160,7 @@ function echart0302() {
 //颜色主题，调色盘
 function echart0303() {
     var myChart = echarts.init(document.getElementById('echart03'));
-    myChart.clear();  //先清空原有数据，这样就可以重复点击了
+    myChart.clear();
 
     myChart.setOption({
         // 全局调色盘。
@@ -172,7 +172,7 @@ function echart0303() {
                 name: '访问来源',
                 type: 'pie',    // 设置图表类型为饼图
                 radius: '55%',  // 饼图的半径，外半径为可视区尺寸（容器高宽中较小一项）的 55% 长度。
-                data: [          // 数据数组，name 为数据项名称，value 为数据项值
+                data: [         // 数据数组，name 为数据项名称，value 为数据项值
                     { value: 235, name: '视频广告' },
                     { value: 274, name: '联盟广告' },
                     { value: 310, name: '邮件营销' },
@@ -187,7 +187,7 @@ function echart0303() {
 //颜色主题，高亮样式
 function echart0304() {
     var myChart = echarts.init(document.getElementById('echart03'));
-    myChart.clear();  //先清空原有数据，这样就可以重复点击了
+    myChart.clear();
 
     myChart.setOption({
         series: [
@@ -222,7 +222,7 @@ function echart0304() {
 //异步加载数据
 function echart0401() {
     var myChart = echarts.init(document.getElementById('echart04'));
-    myChart.clear();  //先清空原有数据，这样就可以重复点击了
+    myChart.clear();
 
     $.get('./data/echarts_test_data.json', function (data) {
         myChart.setOption({
@@ -241,7 +241,7 @@ function echart0401() {
 //异步加载数据，Loading
 function echart0402() {
     var myChart = echarts.init(document.getElementById('echart04'));
-    myChart.clear();  //先清空原有数据，这样就可以重复点击了
+    myChart.clear();
     myChart.showLoading();  // 开启 loading 效果
 
     $.get('./data/echarts_test_data.json', function (data) {
@@ -263,7 +263,7 @@ function echart0402() {
 //异步加载数据，动态更新
 function echart0403() {
     var myChart = echarts.init(document.getElementById('echart04'));
-    myChart.clear();  //先清空原有数据，这样就可以重复点击了
+    myChart.clear();
 
     var base = +new Date(2014, 9, 3);
     var oneDay = 24 * 3600 * 1000;
@@ -335,9 +335,8 @@ function echart0403() {
 //数组数组
 function echart0501() {
     var myChart = echarts.init(document.getElementById('echart05'));
-    myChart.clear();  //先清空原有数据，这样就可以重复点击了
+    myChart.clear();
 
-    // 指定图表的配置项和数据
     var option = {
         legend: {},
         tooltip: {},
@@ -370,9 +369,8 @@ function echart0501() {
 //对象数组
 function echart0502() {
     var myChart = echarts.init(document.getElementById('echart05'));
-    myChart.clear();  //先清空原有数据，这样就可以重复点击了
+    myChart.clear();
 
-    // 指定图表的配置项和数据
     var option = {
         legend: {},
         tooltip: {},
@@ -396,16 +394,14 @@ function echart0502() {
         ]
     };
 
-    // 使用刚指定的配置项和数据显示图表。
     myChart.setOption(option);
 }
 
 //数据到图形的行列映射
 function echart0503() {
     var myChart = echarts.init(document.getElementById('echart05'));
-    myChart.clear();  //先清空原有数据，这样就可以重复点击了
+    myChart.clear();
 
-    // 指定图表的配置项和数据
     var option = {
         legend: {},
         tooltip: {},
@@ -442,16 +438,14 @@ function echart0503() {
         ]
     }
 
-    // 使用刚指定的配置项和数据显示图表。
     myChart.setOption(option);
 }
 
 //数据到图形的行列映射2
 function echart0504() {
     var myChart = echarts.init(document.getElementById('echart05'));
-    myChart.clear();  //先清空原有数据，这样就可以重复点击了
+    myChart.clear();
 
-    // 指定图表的配置项和数据
     var option = {
         dataset: {
             source: [
@@ -483,16 +477,14 @@ function echart0504() {
         ]
     };
 
-    // 使用刚指定的配置项和数据显示图表。
     myChart.setOption(option);
 }
 
 //数据到图形的行列映射3
 function echart0505() {
     var myChart = echarts.init(document.getElementById('echart05'));
-    myChart.clear();  //先清空原有数据，这样就可以重复点击了
+    myChart.clear();
 
-    // 指定图表的配置项和数据
     $.get('./data/life-expectancy-table.json', function (data) {
         var sizeValue = '57%';
         var symbolSize = 2.5;
@@ -588,7 +580,7 @@ function echart0505() {
 //视觉映射
 function echart0506() {
     var myChart = echarts.init(document.getElementById('echart05'));
-    myChart.clear();  //先清空原有数据，这样就可以重复点击了
+    myChart.clear();
 
     var option = {
         dataset: {
@@ -639,7 +631,7 @@ function echart0506() {
 //交互联动
 function echart0507() {
     var myChart = echarts.init(document.getElementById('echart05'));
-    myChart.clear();  //先清空原有数据，这样就可以重复点击了
+    myChart.clear();
 
     setTimeout(function () {
         option = {
@@ -705,6 +697,201 @@ function echart0507() {
     });
 }
 
+//图表缩放
+function echart0601() {
+    var myChart = echarts.init(document.getElementById('echart06'));
+    myChart.clear();
+
+    var option = {
+        xAxis: {
+            type: 'value'
+        },
+        yAxis: {
+            type: 'value'
+        },
+        dataZoom: [
+            {   // 这个dataZoom组件，默认控制x轴。
+                type: 'slider', // 这个 dataZoom 组件是 slider 型 dataZoom 组件
+                start: 10,      // 左边在 10% 的位置。
+                end: 60         // 右边在 60% 的位置。
+            }
+        ],
+        series: [
+            {
+                type: 'scatter', // 这是个『散点图』
+                itemStyle: {
+                    opacity: 0.8
+                },
+                symbolSize: function (val) {
+                    return val[2] * 40;
+                },
+                data: [["14.616", "7.241", "0.896"], ["3.958", "5.701", "0.955"], ["2.768", "8.971", "0.669"], ["9.051", "9.710", "0.171"], ["14.046", "4.182", "0.536"], ["12.295", "1.429", "0.962"], ["4.417", "8.167", "0.113"], ["0.492", "4.771", "0.785"], ["7.632", "2.605", "0.645"], ["14.242", "5.042", "0.368"]]
+            }
+        ]
+    }
+
+    myChart.setOption(option);
+}
+
+//图表缩放，支持鼠标滚轮与触屏手势
+function echart0602() {
+    var myChart = echarts.init(document.getElementById('echart06'));
+    myChart.clear();
+
+    var option = {
+        xAxis: {
+            type: 'value'
+        },
+        yAxis: {
+            type: 'value'
+        },
+        dataZoom: [
+            {   // 这个dataZoom组件，默认控制x轴。
+                type: 'slider', // 这个 dataZoom 组件是 slider 型 dataZoom 组件
+                start: 10,      // 左边在 10% 的位置。
+                end: 60         // 右边在 60% 的位置。
+            },
+            {   // 这个dataZoom组件，也控制x轴。
+                type: 'inside', // 这个 dataZoom 组件是 inside 型 dataZoom 组件
+                start: 10,      // 左边在 10% 的位置。
+                end: 60         // 右边在 60% 的位置。
+            }
+
+        ],
+        series: [
+            {
+                type: 'scatter', // 这是个『散点图』
+                itemStyle: {
+                    opacity: 0.8
+                },
+                symbolSize: function (val) {
+                    return val[2] * 40;
+                },
+                data: [["14.616", "7.241", "0.896"], ["3.958", "5.701", "0.955"], ["2.768", "8.971", "0.669"], ["9.051", "9.710", "0.171"], ["14.046", "4.182", "0.536"], ["12.295", "1.429", "0.962"], ["4.417", "8.167", "0.113"], ["0.492", "4.771", "0.785"], ["7.632", "2.605", "0.645"], ["14.242", "5.042", "0.368"]]
+            }
+        ]
+    }
+
+    myChart.setOption(option);
+}
+
+//图表缩放，x轴与y轴
+function echart0603() {
+    var myChart = echarts.init(document.getElementById('echart06'));
+    myChart.clear();
+
+    var data1 = [];
+    var data2 = [];
+    var data3 = [];
+
+    var random = function (max) {
+        return (Math.random() * max).toFixed(3);
+    };
+
+    for (var i = 0; i < 500; i++) {
+        data1.push([random(15), random(10), random(1)]);
+        data2.push([random(10), random(10), random(1)]);
+        data3.push([random(15), random(10), random(1)]);
+    }
+
+    option = {
+        animation: false,
+        legend: {
+            data: ['scatter', 'scatter2', 'scatter3']
+        },
+        tooltip: {
+        },
+        xAxis: {
+            type: 'value',
+            min: 'dataMin',
+            max: 'dataMax',
+            splitLine: {
+                show: true
+            }
+        },
+        yAxis: {
+            type: 'value',
+            min: 'dataMin',
+            max: 'dataMax',
+            splitLine: {
+                show: true
+            }
+        },
+        dataZoom: [
+            {
+                type: 'slider',
+                show: true,
+                xAxisIndex: [0],
+                start: 1,
+                end: 35
+            },
+            {
+                type: 'slider',
+                show: true,
+                yAxisIndex: [0],
+                left: '93%',
+                start: 29,
+                end: 36
+            },
+            {
+                type: 'inside',
+                xAxisIndex: [0],
+                start: 1,
+                end: 35
+            },
+            {
+                type: 'inside',
+                yAxisIndex: [0],
+                start: 29,
+                end: 36
+            }
+        ],
+        series: [
+            {
+                name: 'scatter',
+                type: 'scatter',
+                itemStyle: {
+                    normal: {
+                        opacity: 0.8
+                    }
+                },
+                symbolSize: function (val) {
+                    return val[2] * 40;
+                },
+                data: data1
+            },
+            {
+                name: 'scatter2',
+                type: 'scatter',
+                itemStyle: {
+                    normal: {
+                        opacity: 0.8
+                    }
+                },
+                symbolSize: function (val) {
+                    return val[2] * 40;
+                },
+                data: data2
+            },
+            {
+                name: 'scatter3',
+                type: 'scatter',
+                itemStyle: {
+                    normal: {
+                        opacity: 0.8,
+                    }
+                },
+                symbolSize: function (val) {
+                    return val[2] * 40;
+                },
+                data: data3
+            }
+        ]
+    }
+
+    myChart.setOption(option);
+}
+
 window.onload = () => {
     document.getElementById('echartbtn0101').onclick = echart0101;
 
@@ -729,9 +916,14 @@ window.onload = () => {
     document.getElementById('echartbtn0506').onclick = echart0506;
     document.getElementById('echartbtn0507').onclick = echart0507;
 
+    document.getElementById('echartbtn0601').onclick = echart0601;
+    document.getElementById('echartbtn0602').onclick = echart0602;
+    document.getElementById('echartbtn0603').onclick = echart0603;
+
     echart0101();
     echart0201();
     echart0301();
     echart0401();
     echart0501();
+    echart0601();
 }

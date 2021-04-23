@@ -318,6 +318,152 @@ function googlemap0404() {
     //google.maps.event.addDomListener(window, 'load', initialize);
 }
 
+//关闭默认控件集
+function googlemap0501() {
+    var mapProp = {
+        center: new google.maps.LatLng(51.508742, -0.120850),
+        zoom: 7,
+        disableDefaultUI: true,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(document.getElementById("googlemap05"), mapProp);
+    //google.maps.event.addDomListener(window, 'load', initialize);
+}
+
+//打开所有控件集
+function googlemap0502() {
+    var mapProp = {
+        center: new google.maps.LatLng(51.508742, -0.120850),
+        zoom: 7,
+        panControl: true,
+        zoomControl: true,
+        mapTypeControl: true,
+        scaleControl: true,
+        streetViewControl: true,
+        overviewMapControl: true,
+        rotateControl: true,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(document.getElementById("googlemap05"), mapProp);
+    //google.maps.event.addDomListener(window, 'load', initialize);
+}
+
+//修改控件集
+function googlemap0503() {
+    var mapProp = {
+        center: new google.maps.LatLng(51.508742, -0.120850),
+        zoom: 7,
+        zoomControl: true,
+        zoomControlOptions: {
+            style: google.maps.ZoomControlStyle.SMALL
+        },
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(document.getElementById("googlemap05"), mapProp);
+    //google.maps.event.addDomListener(window, 'load', initialize);
+}
+
+//修改控件集2
+function googlemap0504() {
+    var mapProp = {
+        center: new google.maps.LatLng(51.508742, -0.120850),
+        zoom: 7,
+        mapTypeControl: true,
+        mapTypeControlOptions: {
+            style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
+        },
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(document.getElementById("googlemap05"), mapProp);
+    //google.maps.event.addDomListener(window, 'load', initialize);
+}
+
+//修改控件集3
+function googlemap0505() {
+    var mapProp = {
+        center: new google.maps.LatLng(51.508742, -0.120850),
+        zoom: 7,
+        mapTypeControl: true,
+        mapTypeControlOptions: {
+            style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
+            position: google.maps.ControlPosition.TOP_CENTER
+        },
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(document.getElementById("googlemap05"), mapProp);
+    //google.maps.event.addDomListener(window, 'load', initialize);
+}
+
+//自定义控件集
+function googlemap0506() {
+    var london = new google.maps.LatLng(51.508742, -0.120850);
+
+    // Add a Home control that returns the user to London
+    function HomeControl(controlDiv, map) {
+        controlDiv.style.padding = '5px';
+        var controlUI = document.createElement('div');
+        controlUI.style.backgroundColor = 'yellow';
+        controlUI.style.border = '1px solid';
+        controlUI.style.cursor = 'pointer';
+        controlUI.style.textAlign = 'center';
+        controlUI.title = 'Set map to London';
+        controlDiv.appendChild(controlUI);
+        var controlText = document.createElement('div');
+        controlText.style.fontFamily = 'Arial,sans-serif';
+        controlText.style.fontSize = '12px';
+        controlText.style.paddingLeft = '4px';
+        controlText.style.paddingRight = '4px';
+        controlText.innerHTML = '<b>Home<b>'
+        controlUI.appendChild(controlText);
+
+        // Setup click-event listener: simply set the map to London
+        google.maps.event.addDomListener(controlUI, 'click', function () {
+            map.setCenter(london)
+        });
+    }
+
+    var mapDiv = document.getElementById('googlemap05');
+    var myOptions = {
+        zoom: 12,
+        center: london,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+    var map = new google.maps.Map(mapDiv, myOptions);
+    // Create a DIV to hold the control and call HomeControl()
+    var homeControlDiv = document.createElement('div');
+    var homeControl = new HomeControl(homeControlDiv, map);
+    //  homeControlDiv.index = 1;
+    map.controls[google.maps.ControlPosition.TOP_RIGHT].push(homeControlDiv);
+    //google.maps.event.addDomListener(window, 'load', initialize);
+}
+
+//45° 图像
+function googlemap0601() {
+    var myCenter = new google.maps.LatLng(45.434046, 12.340284);
+    var mapProp = {
+        center: myCenter,
+        zoom: 18,
+        mapTypeId: google.maps.MapTypeId.HYBRID
+    };
+
+    var map = new google.maps.Map(document.getElementById("googlemap06"), mapProp);
+    //google.maps.event.addDomListener(window, 'load', initialize);
+}
+
+//启用和停用 45° 图像 - setTilt(0)
+function googlemap0602() {
+    var myCenter = new google.maps.LatLng(45.434046, 12.340284);
+    var mapProp = {
+        center: myCenter,
+        zoom: 18,
+        mapTypeId: google.maps.MapTypeId.HYBRID
+    };
+
+    var map = new google.maps.Map(document.getElementById("googlemap06"), mapProp);
+    map.setTilt(0);
+    //google.maps.event.addDomListener(window, 'load', initialize);
+}
+
 window.onload = () => {
     document.getElementById("googlemapbtn0201").onclick = googlemap0201;
     document.getElementById("googlemapbtn0202").onclick = googlemap0201;
@@ -337,7 +483,19 @@ window.onload = () => {
     document.getElementById("googlemapbtn0403").onclick = googlemap0403;
     document.getElementById("googlemapbtn0404").onclick = googlemap0404;
 
+    document.getElementById("googlemapbtn0501").onclick = googlemap0501;
+    document.getElementById("googlemapbtn0502").onclick = googlemap0502;
+    document.getElementById("googlemapbtn0503").onclick = googlemap0503;
+    document.getElementById("googlemapbtn0504").onclick = googlemap0504;
+    document.getElementById("googlemapbtn0505").onclick = googlemap0505;
+    document.getElementById("googlemapbtn0506").onclick = googlemap0506;
+
+    document.getElementById("googlemapbtn0601").onclick = googlemap0601;
+    document.getElementById("googlemapbtn0602").onclick = googlemap0602;
+
     document.getElementById("googlemapbtn0201").click();
     googlemap0301();
     googlemap0401();
+    googlemap0501();
+    googlemap0601();
 }

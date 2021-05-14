@@ -1,0 +1,37 @@
+body {
+    box-sizing: border-box;
+}
+
+#main {
+    margin: auto auto;
+    width: 98vw;
+}
+
+h1 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+ul,
+li,
+p {
+    font-weight: .8rem;
+}
+
+div {
+    box-sizing: border-box;
+    border: solid 1px #fff;
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.row>div:nth-child(8) {
+    color: #000;
+}

@@ -8,64 +8,38 @@
     <title>BootStrap4 Grid</title>
 
     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
-    <style>
-        h1 {
-            font-size: 1.2rem;
-            font-weight: bold;
-        }
-
-        h2 {
-            font-size: 1rem;
-            font-weight: bold;
-        }
-
-        ul,
-        li,
-        p {
-            font-weight: .8rem;
-        }
-
-        div {
-            box-sizing: border-box;
-            border: solid 1px #fff;
-            text-align: center;
-            color: #fff;
-            font-size: 1rem;
-            font-weight: bold;
-        }
-
-        .row>div:nth-child(8) {
-            color: #000;
-        }
-    </style>
+    <link rel="stylesheet" href="btsp4grid.css">
 </head>
 
 <body>
-    <h1>BootStrap4 Grid System</h1>
-    <hr>
+    <main id="main">
+        <h1>BootStrap4 GridSystem</h1>
+        <hr>
 
-    <h2>网格类</h2>
-    <ul>
-        Bootstrap 4 网格系统有以下 5 个类:
-        <li>.col- 针对所有设备</li>
-        <li>.col-sm- 平板 - 屏幕宽度等于或大于 576px</li>
-        <li>.col-md- 桌面显示器 - 屏幕宽度等于或大于 768px</li>
-        <li>.col-lg- 大桌面显示器 - 屏幕宽度等于或大于 992px</li>
-        <li>.col-xl- 超大桌面显示器 - 屏幕宽度等于或大于 1200px</li>
-    </ul>
-    <hr>
+        <h2>网格类</h2>
+        <ul>
+            Bootstrap 4 网格系统有以下 5 个类:
+            <li>.col- 针对所有设备</li>
+            <li>.col-sm- 平板 - 屏幕宽度等于或大于 576px</li>
+            <li>.col-md- 桌面显示器 - 屏幕宽度等于或大于 768px</li>
+            <li>.col-lg- 大桌面显示器 - 屏幕宽度等于或大于 992px</li>
+            <li>.col-xl- 超大桌面显示器 - 屏幕宽度等于或大于 1200px</li>
+        </ul>
+        <hr>
 
-    <h2>col-xl-2 col-lg-3 col-md-4</h2>
-    <section class="row">
-        <div class="bg-primary   col-xl-2 col-lg-3 col-md-4">Column01</div>
-        <div class="bg-success   col-xl-2 col-lg-3 col-md-4">Column02</div>
-        <div class="bg-info      col-xl-2 col-lg-3 col-md-4">Column03</div>
-        <div class="bg-warning   col-xl-2 col-lg-3 col-md-4">Column04</div>
-        <div class="bg-danger    col-xl-2 col-lg-3 col-md-4">Column05</div>
-        <div class="bg-secondary col-xl-2 col-lg-3 col-md-4">Column06</div>
-        <div class="bg-dark      col-xl-2 col-lg-3 col-md-4">Column07</div>
-        <div class="bg-light     col-xl-2 col-lg-3 col-md-4">Column08</div>
-    </section>
+        <h2>col-xl-2 col-lg-3 col-md-4</h2>
+        <p>相当于设置为: col-xl-2 col-lg-3 col-md-4 col-sm-12 col-12</p>
+        <section class="row">
+            <div class="bg-primary   col-xl-2 col-lg-3 col-md-4">Column01</div>
+            <div class="bg-success   col-xl-2 col-lg-3 col-md-4">Column02</div>
+            <div class="bg-info      col-xl-2 col-lg-3 col-md-4">Column03</div>
+            <div class="bg-warning   col-xl-2 col-lg-3 col-md-4">Column04</div>
+            <div class="bg-danger    col-xl-2 col-lg-3 col-md-4">Column05</div>
+            <div class="bg-secondary col-xl-2 col-lg-3 col-md-4">Column06</div>
+            <div class="bg-dark      col-xl-2 col-lg-3 col-md-4">Column07</div>
+            <div class="bg-light     col-xl-2 col-lg-3 col-md-4">Column08</div>
+        </section>
+    </main>
 </body>
 
 </html>
